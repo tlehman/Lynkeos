@@ -87,7 +87,7 @@
 		8F1F2E7B0E6EFBA500A8D69E /* MyDeconvolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */; };
 		8F2000270C2C76FA0000AB91 /* MyImageStackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2000250C2C76FA0000AB91 /* MyImageStackerView.m */; };
 		8F2175B00ACDB8AB00B4E285 /* MyImageAligner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */; };
-		8F27ACA112CA5FA100E2707F /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F27ACA012CA5FA100E2707F /* libswscale.dylib */; };
+		8F27ACA112CA5FA100E2707F /* libswscale.2.1.103.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F27ACA012CA5FA100E2707F /* libswscale.2.1.103.dylib */; };
 		8F2BD0560E8D7F1E0084D6BA /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
 		8F2BD1320E8D8F950084D6BA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2BD1310E8D8F950084D6BA /* Carbon.framework */; };
 		8F2F1ADF0C161AE40051448E /* MyImageAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2F1ADD0C161AE40051448E /* MyImageAnalyzer.m */; };
@@ -378,7 +378,7 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		621D982716D95A270072133E /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = ../../../../usr/local/Cellar/cfitsio/3.310/lib/libcfitsio.dylib; sourceTree = "<group>"; };
 		621D982916D95B100072133E /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3.a; sourceTree = "<group>"; };
-		621D982B16D95B210072133E /* libavcodec.54.86.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.54.86.100.dylib; path = ../../../../usr/local/Cellar/ffmpeg/1.1/lib/libavcodec.54.86.100.dylib; sourceTree = "<group>"; };
+		621D982B16D95B210072133E /* libavcodec.54.86.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.54.86.100.dylib; path = /usr/local/Cellar/ffmpeg/1.1.2/lib/libavcodec.54.86.100.dylib; sourceTree = "<absolute>"; };
 		621D982D16D95B2B0072133E /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f.a; sourceTree = "<group>"; };
 		621D982F16D95B470072133E /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f_threads.a; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -447,7 +447,7 @@
 		8F2175B30ACDB99A00B4E285 /* MyImageAlignerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerTest.h; path = Tests/MyImageAlignerTest.h; sourceTree = "<group>"; };
 		8F2175B40ACDB99A00B4E285 /* MyImageAlignerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAlignerTest.m; path = Tests/MyImageAlignerTest.m; sourceTree = "<group>"; };
 		8F21D4060A9CE86400165029 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/License.rtf; sourceTree = "<group>"; };
-		8F27ACA012CA5FA100E2707F /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = usr/local/lib/libswscale.dylib; sourceTree = SDKROOT; };
+		8F27ACA012CA5FA100E2707F /* libswscale.2.1.103.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.2.1.103.dylib; path = ../../../../../../../../../usr/local/Cellar/ffmpeg/1.1.2/lib/libswscale.2.1.103.dylib; sourceTree = SDKROOT; };
 		8F2BD1310E8D8F950084D6BA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
 		8F2F1ADC0C161AE40051448E /* MyImageAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAnalyzer.h; path = Sources/MyImageAnalyzer.h; sourceTree = "<group>"; };
 		8F2F1ADD0C161AE40051448E /* MyImageAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAnalyzer.m; path = Sources/MyImageAnalyzer.m; sourceTree = "<group>"; };
@@ -576,9 +576,9 @@
 		8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageAligner.m; path = Sources/MyImageAligner.m; sourceTree = "<group>"; };
 		8FCD24B90AAA5CDC00925AC5 /* MyProcessingThread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyProcessingThread.h; path = Sources/MyProcessingThread.h; sourceTree = "<group>"; };
 		8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyProcessingThread.m; path = Sources/MyProcessingThread.m; sourceTree = "<group>"; };
-		8FCE16CE0A94590E0039505F /* libswscale.2.1.103.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.2.1.103.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libswscale.2.1.103.dylib; sourceTree = "<absolute>"; };
-		8FCE16CF0A94590E0039505F /* libavformat.54.59.106.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.54.59.106.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libavformat.54.59.106.dylib; sourceTree = "<absolute>"; };
-		8FCE16E90A945BE80039505F /* libavutil.52.13.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.52.13.100.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libavutil.52.13.100.dylib; sourceTree = "<absolute>"; };
+		8FCE16CE0A94590E0039505F /* libswscale.2.1.103.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.2.1.103.dylib; path = /usr/local/Cellar/ffmpeg/1.1.2/lib/libswscale.2.1.103.dylib; sourceTree = "<absolute>"; };
+		8FCE16CF0A94590E0039505F /* libavformat.54.59.106.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.54.59.106.dylib; path = /usr/local/Cellar/ffmpeg/1.1.2/lib/libavformat.54.59.106.dylib; sourceTree = "<absolute>"; };
+		8FCE16E90A945BE80039505F /* libavutil.52.13.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.52.13.100.dylib; path = /usr/local/Cellar/ffmpeg/1.1.2/lib/libavutil.52.13.100.dylib; sourceTree = "<absolute>"; };
 		8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosProcessingDefs.m; path = Sources/LynkeosProcessingDefs.m; sourceTree = "<group>"; };
 		8FCEFCAC0CB234A600E417AF /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
 		8FD0238F0BFB5207009AD1E0 /* MyImageAlignerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerPrefs.h; path = Sources/MyImageAlignerPrefs.h; sourceTree = "<group>"; };
@@ -797,7 +797,7 @@
 				8FCE16D10A94590E0039505F /* libavformat.54.59.106.dylib in Frameworks */,
 				8FCE16EA0A945BE80039505F /* libavutil.52.13.100.dylib in Frameworks */,
 				8F3FC5F30EBE0431004AC8F6 /* LynkeosCore.framework in Frameworks */,
-				8F27ACA112CA5FA100E2707F /* libswscale.dylib in Frameworks */,
+				8F27ACA112CA5FA100E2707F /* libswscale.2.1.103.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -807,7 +807,7 @@
 		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F27ACA012CA5FA100E2707F /* libswscale.dylib */,
+				8F27ACA012CA5FA100E2707F /* libswscale.2.1.103.dylib */,
 				8F9E09240D869EC700513880 /* CoreVideo.framework */,
 				8FD3A3890D84185B007C0463 /* QuickTime.framework */,
 				8FD3A3830D8417CF007C0463 /* QTKit.framework */,
