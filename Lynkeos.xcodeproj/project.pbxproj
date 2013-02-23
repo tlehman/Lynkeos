@@ -429,7 +429,7 @@
 		8F1369560A84CEF7003D8FB7 /* watch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = watch.gif; path = Resources/watch.gif; sourceTree = "<group>"; };
 		8F13698E0A84FE80003D8FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = "English.lproj/Lynkeos help"; sourceTree = "<group>"; };
 		8F1369CC0A84FEA2003D8FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = folder; name = French; path = "French.lproj/Lynkeos help"; sourceTree = "<group>"; };
-		8F136CB40A85056B003D8FB7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8F136CB40A85056B003D8FB7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
 		8F1415DA0CAE4B0700590244 /* MyDeconvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDeconvolution.h; path = Sources/MyDeconvolution.h; sourceTree = "<group>"; };
 		8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDeconvolution.m; path = Sources/MyDeconvolution.m; sourceTree = "<group>"; };
 		8F1B2F280D098BE90090C4AF /* MyWaveletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWaveletView.h; path = Sources/MyWaveletView.h; sourceTree = "<group>"; };
@@ -538,7 +538,7 @@
 		8FBB197A0DBA53B10020EDDC /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyChromaticLevels.nib; sourceTree = "<group>"; };
 		8FBB2CEE0D47FAC900AF45AF /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
 		8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libcfitsio.dylib; sourceTree = "<absolute>"; };
-		8FBF4F200A8422E000CF7534 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8FBF4F200A8422E000CF7534 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		8FC24A1A1327F0C20066BB4F /* mw2html.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = mw2html.sh; path = Help/mw2html.sh; sourceTree = "<group>"; };
 		8FC24A351327F8930066BB4F /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.css; path = Help/main.css; sourceTree = "<group>"; };
 		8FC2A72C0C070C0900E44D6C /* hidemargin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hidemargin.gif; path = Resources/hidemargin.gif; sourceTree = "<group>"; };
@@ -672,10 +672,10 @@
 		8FDAEF2A0A84105200672703 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8FDAEF2B0A84105700672703 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8FDAEF2C0A84105C00672703 /* Spanish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8FDAEF530A84132300672703 /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_threads.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3_threads.a; sourceTree = "<absolute>"; };
-		8FDAEF540A84132300672703 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3.a; sourceTree = "<absolute>"; };
-		8FDAEF550A84132300672703 /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3f_threads.a; sourceTree = "<absolute>"; };
-		8FDAEF560A84132300672703 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3f.a; sourceTree = "<absolute>"; };
+		8FDAEF530A84132300672703 /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_threads.a; path = /usr/local/Cellar/fftw/3.3.3/lib/libfftw3_threads.a; sourceTree = "<absolute>"; };
+		8FDAEF540A84132300672703 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = /usr/local/Cellar/fftw/3.3.3/lib/libfftw3.a; sourceTree = "<absolute>"; };
+		8FDAEF550A84132300672703 /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = /usr/local/Cellar/fftw/3.3.3/lib/libfftw3f_threads.a; sourceTree = "<absolute>"; };
+		8FDAEF560A84132300672703 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /usr/local/Cellar/fftw/3.3.3/lib/libfftw3f.a; sourceTree = "<absolute>"; };
 		8FDAF0110A8416A300672703 /* dcraw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dcraw.c; path = ThirdPartySources/dcraw.c; sourceTree = "<group>"; };
 		8FDDBF870CDE57D90002BA95 /* ProcessingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessingUtilities.h; path = Sources/ProcessingUtilities.h; sourceTree = "<group>"; };
 		8FDDBF930CDE59E10002BA95 /* ProcessingUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ProcessingUtilities.c; path = Sources/ProcessingUtilities.c; sourceTree = "<group>"; };
