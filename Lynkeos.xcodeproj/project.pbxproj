@@ -34,6 +34,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		621D982816D95A270072133E /* libcfitsio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982716D95A270072133E /* libcfitsio.dylib */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -144,7 +145,6 @@
 		8FB40D600AFCF0130075623A /* MyImageAlignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB40D5E0AFCF0130075623A /* MyImageAlignerView.m */; };
 		8FB9A6A30DBFDD96008537BC /* MyChromaticLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9A6A20DBFDD96008537BC /* MyChromaticLevels.m */; };
 		8FBB17260AA106A1003E8C5D /* dcraw in Resources */ = {isa = PBXBuildFile; fileRef = 8F13691F0A84C5AB003D8FB7 /* dcraw */; };
-		8FBF4DC80A841F5800CF7534 /* libcfitsio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */; };
 		8FBF4DD50A841FA300CF7534 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		8FBF4DDE0A841FC300CF7534 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		8FBF4F210A8422E000CF7534 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBF4F200A8422E000CF7534 /* CoreServices.framework */; };
@@ -376,6 +376,7 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		621D982716D95A270072133E /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = ../../../../usr/local/Cellar/cfitsio/3.310/lib/libcfitsio.dylib; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Lynkeos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynkeos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F02EE9B12D9F3EA00679086 /* MyImageStacker_Extrema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker_Extrema.h; path = Sources/MyImageStacker_Extrema.h; sourceTree = "<group>"; };
@@ -769,7 +770,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FBF4DD50A841FA300CF7534 /* Cocoa.framework in Frameworks */,
-				8FBF4DC80A841F5800CF7534 /* libcfitsio.dylib in Frameworks */,
+				621D982816D95A270072133E /* libcfitsio.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +853,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* Lynkeos */ = {
 			isa = PBXGroup;
 			children = (
+				621D982716D95A270072133E /* libcfitsio.dylib */,
 				8FC626E40DE377ED009DF792 /* Help */,
 				8FED912E0A9329A700746C7D /* Doc */,
 				2A37F4ABFDCFA73011CA2CEA /* Classes */,
@@ -2506,11 +2508,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/cfitsio/3.310/include;
 				INFOPLIST_FILE = "FITS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					/usr/local/Cellar/cfitsio/3.310/lib,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FITS;
@@ -2529,11 +2533,13 @@
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/cfitsio/3.310/include;
 				INFOPLIST_FILE = "FITS-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					/usr/local/Cellar/cfitsio/3.310/lib,
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = FITS;
