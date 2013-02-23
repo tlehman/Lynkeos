@@ -537,7 +537,7 @@
 		8FBA97840D55284F00103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyWavelet.nib; sourceTree = "<group>"; };
 		8FBB197A0DBA53B10020EDDC /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyChromaticLevels.nib; sourceTree = "<group>"; };
 		8FBB2CEE0D47FAC900AF45AF /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
-		8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libcfitsio.dylib; sourceTree = "<absolute>"; };
+		8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = /usr/local/Cellar/cfitsio/3.310/lib/libcfitsio.dylib; sourceTree = "<absolute>"; };
 		8FBF4F200A8422E000CF7534 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
 		8FC24A1A1327F0C20066BB4F /* mw2html.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = mw2html.sh; path = Help/mw2html.sh; sourceTree = "<group>"; };
 		8FC24A351327F8930066BB4F /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.css; path = Help/main.css; sourceTree = "<group>"; };
