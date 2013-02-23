@@ -1,0 +1,193 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\fs24 \cf0 April 3, 2011: V2.5 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Add of stacking variants "sigma clip" and "extrema" (2271899)\
+\'95	Add of RAW preference for automatic image rotation, or not.\
+\'95	Fix of plugins help display under OS X 10.6 (3268012)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+December 18, 2008: V2.4 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction of TIFF display on Intel (2127078)\
+\'95	Support for floating point TIFF (2216462),\
+\'95	Add of a process toggling on/off in the process stack window (2248076),\
+\'95	Implementation of a cache for image processing,\
+\'95	Refactoring of process chaining,\
+\'95	Fix of a bug in display when switching to/from calibration frames,\
+\'95	Better handling of exceptions in threads,\
+\'95	Fix of compatibility in reading files older than V2.3,\
+\'95	Access to the process window through the "window" menu,\
+\'95	Optimization of images refresh,\
+\'95	Access to plugins help,\
+\'95	Independent zoom factor for list and result modes.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+September 28, 2008: V2.3 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Add of the European Southern Observatory algorithm to the wavelet tool,\
+\'95	Parallelization (for multiproc/multicore) and vectorization (for Altivec/SSE) on most of the image processes,\
+\'95	Correction of TIFF files reading on Intel (2127078),\
+\'95	Fix of a memory leak at document closing (1975332),\
+\'95	Correction of a crash when saving an unprocessed image from a list (1928841),\
+\'95	Creation of a LynkeosCore framework to allow external processing plugin developement,\
+\'95	Correction of a crash when an exception is raised in a processing thread,\
+\'95	Delete RAW temporary files at application end,\
+\'95	Detect missing RAW files at document opening,\
+\'95	Add of a RAW conversion preference pane,\
+\'95	Fix of column sizes saving in the document,\
+\'95	Delete of useless "red" level and contrast line for monochrome images,\
+\'95	It is now possible to tweak the levels and contrast of an image in a list,\
+\'95	Fix of bad min and max image pixels values after some operations,\
+\'95	Fix of a bad read of quality threshold in pre V2 document files.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+May 1, 2008: V2.2 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction of  a crash upon some switching to list mode (1928672),\
+\'95	Correction of an endianness issue in RAW reader, which prevented its use on Intel architectures (1925582),\
+\'95	Correction of a missing refresh in the stacking tool (1885959),\
+\'95	Add of image updates in the process stack (1885960),\
+\'95	Correction of an issue with wavelet levels display after document load (1885958),\
+\'95	Correction of the impossibility to save an image from a list (1928841),\
+\'95	Add of a tool to correct the chromatic dispersion (1096730),\
+\'95	Add of scrollers to the alert panels (1067012),\
+\'95	URLs are now saved as relative to the document, which allows to move the images and movies with the document to another folder, or burn them on a CD (1929412),\
+\'95	Add of black, white and gamma setting for each color plane.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+March 23, 2008: V2.1 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction of  a stacking issue which made the application crash on some configurations (1901691),\
+\'95	Correction of the image updating during process (1922938),\
+\'95	Update of the RAW file types (1898526),\
+\'95	Watch cursor management correction (1210430),\
+\'95	Correction of some memory leaks,\
+\'95	Implementation of a cache for movie images which greatly speeds up image updating,\
+\'95	Grayscale Quicktime movies are no more read as RGB (which now allows to save the result as FITS).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+February 3, 2008: V2.0 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction of FITS saving in V2.0 (1869681),\
+\'95	Correction of some crashes of the developer release (1864269, 1860646, 1860644),\
+\'95	Correction of the creation of image processings inside the process stack window (1862762),\
+\'95	Correction of window closing while processing (1114333),\
+\'95	Implementation of an optional protection against spurious alignment (998921),\
+\'95	Correction of the "revert" function (1066998).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+December 27, 2007: V2.0-dev release\
+	Developer release to evaluate the version 2.0 and report bugs.\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Refactoring of application code,\
+\'95	Plug-in architecture for image processing,\
+\'95	Add of wavelet filter and Lucy-Richardson deconvolution.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+September 3, 2006: V1.4 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	AVI and MPEG formats support, thanks to the FFmpeg library,\
+\'95	Fix of the launching on G4 (1536026),\
+\'95	Some more fixes of image scrambling in plugins  (1535076),\
+\'95	Fix of a RAW plugin loading problem (1539190),\
+\'95	Add of a warning window if the stacking is started without the calibration images being themselves stacked (1207360),\
+\'95	Reorganization of the "About" window (1067014),\
+\'95	Re-factoring, corrections and optimization of the stacking routine.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+Aug 7, 2006: V1.3-UB release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Application and plugins recompiled as "Universal binaries",\
+\'95	Spanish localization by Laurence Bourcier-Huet,\
+\'95	Fix of processed image scrambling (1535076).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+May 29, 2005: V1.3 release\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Plugin architecture for image/movie file formats reading and saving,\
+\'95	Full resolution and monochrome TIFF images read (1069798),\
+\'95	Image saving into 8 or 16 bits TIFF,\
+\'95	Monochrome images/movies processing,\
+\'95	LRGB addition when combining RGB and monochrome images,\
+\'95	FITS image file format support for reading and saving (needs CFITSIO shared library to be installed) (1100700),\
+\'95	Digital cameras (most brands) RAW image file format support for (slow) reading,\
+\'95	Logarithmic scale for radius sliders in processing tab (1207372),\
+\'95	Fix a crash when analyzing on a biprocessor (1207368),\
+\'95	Improved automatic scrolling in the image frame (1207375),\
+\'95	Menu accessibility fix (1067002).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+6 Febbraio 2005: Rilascio della versione 1.2\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	\'c8 ora possibile aggiungere file con la tecnica del drag and drop (trascina e rilascia) (1067016), \
+\'95   Impiego del sistema FFTW3 (Fastest Fourier Transform in the West versione 3) per le operazioni di allineamento, analisi spettrale ed elaborazione immagini. \'c8 1,4 volte pi\'f9 rapido nell'allineamento e da 1,4 a 90 volte pi\'f9 rapido nell'elaborazione!\
+\'95	Ottimizzazioni per i computer multiprocessore (1069795),
+\f1 \
+
+\f0 \'95	Svariate ottimizzazioni aggiuntive (rispetto alla versione 1.1, il miglioramento complessivo per un computer G5 biprocessore \'e8 di circa 3 volte sull'allineamento, l'analisi e la sovrapposizione e di circa 100 volte sull'elaborazione),\
+\'95	Risolto un crash durante l'allineamento di lunghe sequenze (1090624),\
+\'95	Risolta un grosso problema di memoria nel codice di allineamento (1095271),\
+\'95	Risolto il ribaltamento del rettangolo di ritaglio durante il trascinamento (1067003),\
+\'95	Risolta la visualizzazione della lista di fotogrammi con sfondo alternato (1067008).\
+\'95	Corretto un errore numerico nel calcolo dell'entropia (1111778),\
+\'95	L'identit\'e0 del bundle \'e8 adesso "net.sourceforge.lynkeos".\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f1 \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0 \cf0 17 dicembre 2004: Rilascio della versione 1.1\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Opzione che permette di sovrapporre flat field monocromatici (1068329),\
+\'95	Nuovo e pi\'f9 efficace sistema di analisi basato sul metodo di entropia dell'immagine (1066984),\
+\'95	Considera la luminosit\'e0 dell'immagine nell'analisi spettrale (1066984),\
+\'95	La modalit\'e0 sleep viene ora prevenuta nel corso delle operazioni di allineamento, analisi e sovrapposizione (1069793),\
+\'95	Risolto un problema quando si aggiunge un filmato "corrotto" (1066983),\
+\'95	Risolto un crash quando si aggiungono pi\'f9 file contemporaneamente (1066992),\
+\'95	Risolto un crash durante la somma (1086655),\
+\'95	Risolto un problema di memoria nel codice filmato (1072854),\
+\'95	La forma del rettangolo di ritaglio non \'e8 pi\'f9 modificabile nelle modalit\'e0 flat field e dark frame (1066997).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+4 novembre 2004: rilascio della versione 1.0\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Aggiunto supporto per dark frames e flat fields\
+\'95	Ottimizzazione del procedimento di allineamento (2 volte pi\'f9 rapido)\
+\'95	Corretto l'azzeramento dei livelli del bianco e del nero dopo la registrazione\
+\'95	Corretto un bug di "ritorno all'inglese" per le localizzazioni in lingue diverse dall'inglese\
+\'95	Aggiunto un comando Annulla per l'aggiunta e l'eliminazione nella lista (non ancora stabile)\
+\'95	Aggiunta la creazione di documenti di commenti HeaderDoc (con supporto per Doxygen) nel codice\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+29 luglio 2004 : rilascio della versione 0.4\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Corretti i problemi durante l'allineamento o l'analisi quando non \'e8 definito un riquardo\
+\'95	Corretta l'impossibilit\'e0 di cancellare un filmato\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+22 luglio 2004 : rilascio della versione 0.3\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Rilascio su SourceForge\
+\'95	Corretta l'impossibilit\'e0 di usare i tasti freccia a destra e a sinistra\
+\'95	Corretta la sparizione del rettangolo di ritaglio nella somma delle immagini\
+\'95	Corretto il mancato aggiornamento dell'immagine elaborata dopo la somma\
+\'95	Corretti i disturbi nell'immagine elaborata alla modifica del rettangolo di ritaglio\
+\'95	Corretto un altro caso di disturbi nell'immagine elaborata quando il rettangolo di ritaglio si trova vicino ad uno dei lati\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li580\fi-580\ql\qnatural
+\cf0 10 luglio 2004: rilascio della versione 0.2\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Migrazione ad Xcode\
+\'95	Aiuto con possibilit\'e0 di ricerca grazie all'indice di aiuto\
+\'95	Corretto il bisogno di sommare nuovamente le immagini all'apertura di un file gi\'e0 salvato\
+\'95	Alcune azioni non appaiono come effettuate sul documento: problema ora corretto\
+\'95	Corretta la dimensione della creazione ad NSImage (sebbene non vi sia effetto visibile)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+29 giugno 2004 : rilascio iniziale (versione 0.1)}

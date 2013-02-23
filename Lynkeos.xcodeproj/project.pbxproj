@@ -1,0 +1,2874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8FD578D80DE36F2C004AAC5A /* Help */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FD578DB0DE36F50004AAC5A /* Build configuration list for PBXAggregateTarget "Help" */;
+			buildPhases = (
+				8FD578D70DE36F2C004AAC5A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Help;
+			productName = Help;
+		};
+		8FED91350A932A1D00746C7D /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8FED91380A932A8100746C7D /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				8FED91360A932A2800746C7D /* Lynkeos doc */,
+				8F849AD30E94239D004C5912 /* LynkeosCore doc */,
+			);
+			dependencies = (
+				8F849AF90E94309F004C5912 /* PBXTargetDependency */,
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8F02EE9D12D9F3EA00679086 /* MyImageStacker_Extrema.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02EE9C12D9F3EA00679086 /* MyImageStacker_Extrema.m */; };
+		8F02EEAC12DA06BB00679086 /* MyImageStacker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F02EEAA12DA06BB00679086 /* MyImageStacker.xib */; };
+		8F03CEB00DA5774000585440 /* ChromaticAlign.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F03CEAF0DA5774000585440 /* ChromaticAlign.gif */; };
+		8F03D1761346802200D51D51 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2BD1310E8D8F950084D6BA /* Carbon.framework */; };
+		8F03D17C1346805500D51D51 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2BD1310E8D8F950084D6BA /* Carbon.framework */; };
+		8F0CBAD70CB1830900A6513C /* MyDeconvolutionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0CBAD50CB1830900A6513C /* MyDeconvolutionView.m */; };
+		8F0DBD810AB0C0BA004AC636 /* MyImageListItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DBD800AB0C0BA004AC636 /* MyImageListItemTest.m */; };
+		8F0DBDBC0AB0CCCC004AC636 /* MyImageListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB40A8409F700672703 /* MyImageListItem.m */; };
+		8F0EE35A0D035933007F6843 /* MyUnsharpMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EE3560D035933007F6843 /* MyUnsharpMask.m */; };
+		8F0EE35C0D035933007F6843 /* MyUnsharpMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EE3580D035933007F6843 /* MyUnsharpMaskView.m */; };
+		8F0F92BE0CDCBF07008A9BD9 /* MyLucyRichardsonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F92BC0CDCBF07008A9BD9 /* MyLucyRichardsonView.m */; };
+		8F0F92D90CDCC290008A9BD9 /* MyLucyRichardson.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0F92D80CDCC290008A9BD9 /* MyLucyRichardson.nib */; };
+		8F1369240A84C5CC003D8FB7 /* dcraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAF0110A8416A300672703 /* dcraw.c */; };
+		8F1369570A84CEF7003D8FB7 /* bottom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369480A84CEF7003D8FB7 /* bottom.gif */; };
+		8F1369580A84CEF7003D8FB7 /* bottomLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369490A84CEF7003D8FB7 /* bottomLeft.gif */; };
+		8F1369590A84CEF7003D8FB7 /* bottomRight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694A0A84CEF7003D8FB7 /* bottomRight.gif */; };
+		8F13695A0A84CEF7003D8FB7 /* cross.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694B0A84CEF7003D8FB7 /* cross.gif */; };
+		8F13695B0A84CEF7003D8FB7 /* hand.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694C0A84CEF7003D8FB7 /* hand.gif */; };
+		8F13695C0A84CEF7003D8FB7 /* left.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694D0A84CEF7003D8FB7 /* left.gif */; };
+		8F13695D0A84CEF7003D8FB7 /* Lynkeos.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694E0A84CEF7003D8FB7 /* Lynkeos.icns */; };
+		8F13695E0A84CEF7003D8FB7 /* minus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F13694F0A84CEF7003D8FB7 /* minus.gif */; };
+		8F13695F0A84CEF7003D8FB7 /* Photolist.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369500A84CEF7003D8FB7 /* Photolist.icns */; };
+		8F1369600A84CEF7003D8FB7 /* plus.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369510A84CEF7003D8FB7 /* plus.gif */; };
+		8F1369610A84CEF7003D8FB7 /* right.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369520A84CEF7003D8FB7 /* right.gif */; };
+		8F1369620A84CEF7003D8FB7 /* top.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369530A84CEF7003D8FB7 /* top.gif */; };
+		8F1369630A84CEF7003D8FB7 /* topLeft.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369540A84CEF7003D8FB7 /* topLeft.gif */; };
+		8F1369640A84CEF7003D8FB7 /* topRight.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369550A84CEF7003D8FB7 /* topRight.gif */; };
+		8F1369650A84CEF7003D8FB7 /* watch.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1369560A84CEF7003D8FB7 /* watch.gif */; };
+		8F1369CB0A84FE80003D8FB7 /* Lynkeos help in Resources */ = {isa = PBXBuildFile; fileRef = 8F13698D0A84FE80003D8FB7 /* Lynkeos help */; };
+		8F136CB50A85056B003D8FB7 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F136CB40A85056B003D8FB7 /* IOKit.framework */; };
+		8F1415DD0CAE4B0800590244 /* MyDeconvolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */; };
+		8F1B2F2B0D098BE90090C4AF /* MyWaveletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1B2F290D098BE90090C4AF /* MyWaveletView.m */; };
+		8F1B2F590D09944D0090C4AF /* MyWavelet.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B2F580D09944D0090C4AF /* MyWavelet.nib */; };
+		8F1B2FEE0D09AC890090C4AF /* Wavelet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F1B2FED0D09AC890090C4AF /* Wavelet.gif */; };
+		8F1CE0260E104D6B00B58387 /* MyWaveletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1CE0250E104D6B00B58387 /* MyWaveletTest.m */; };
+		8F1CE02B0E104DB400B58387 /* MyWavelet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F84965D0D08A80500AF5085 /* MyWavelet.m */; };
+		8F1DC44A0DDF9F270096729F /* SMDoubleSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0A8AA80CB7BF2C00B3FD34 /* SMDoubleSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F1DC44B0DDF9F270096729F /* SMDoubleSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0A8AA90CB7BF2C00B3FD34 /* SMDoubleSlider.m */; };
+		8F1DC44C0DDF9F270096729F /* SMDoubleSliderCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0A8AAA0CB7BF2C00B3FD34 /* SMDoubleSliderCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F1DC44D0DDF9F270096729F /* SMDoubleSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0A8AAB0CB7BF2C00B3FD34 /* SMDoubleSliderCell.m */; };
+		8F1F2E600E6EF90900A8D69E /* MyDeconvolutionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1F2E5F0E6EF90900A8D69E /* MyDeconvolutionTest.m */; };
+		8F1F2E7B0E6EFBA500A8D69E /* MyDeconvolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */; };
+		8F2000270C2C76FA0000AB91 /* MyImageStackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2000250C2C76FA0000AB91 /* MyImageStackerView.m */; };
+		8F2175B00ACDB8AB00B4E285 /* MyImageAligner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */; };
+		8F27ACA112CA5FA100E2707F /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F27ACA012CA5FA100E2707F /* libswscale.dylib */; };
+		8F2BD0560E8D7F1E0084D6BA /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8F2BD1320E8D8F950084D6BA /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2BD1310E8D8F950084D6BA /* Carbon.framework */; };
+		8F2F1ADF0C161AE40051448E /* MyImageAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2F1ADD0C161AE40051448E /* MyImageAnalyzer.m */; };
+		8F33192A0D81D86F00A9F023 /* MyThreadConnectionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F3319290D81D86F00A9F023 /* MyThreadConnectionTest.m */; };
+		8F3319340D81F14200A9F023 /* LynkeosThreadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B30AAA5CBE00925AC5 /* LynkeosThreadConnection.m */; };
+		8F3824EE0AD854F400428518 /* MyImageAlignerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2175B40ACDB99A00B4E285 /* MyImageAlignerTest.m */; };
+		8F3F92590CB26CDD003118D1 /* MyDeconvolution.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F3F92580CB26CDD003118D1 /* MyDeconvolution.nib */; };
+		8F3FC5F30EBE0431004AC8F6 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8F49AADE0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F49AADD0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.m */; };
+		8F4A232E0C1B1464006394E7 /* MyImageAnalyzerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4A232C0C1B1464006394E7 /* MyImageAnalyzerView.m */; };
+		8F4A23DE0C1B2D67006394E7 /* MyImageAnalyzer.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4A23DC0C1B2D67006394E7 /* MyImageAnalyzer.nib */; };
+		8F4D48590D036B0000965F8E /* MyUnsharpMask.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F4D48580D036B0000965F8E /* MyUnsharpMask.nib */; };
+		8F4D48640D03713500965F8E /* UnsharpMask.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F4D48630D03713400965F8E /* UnsharpMask.gif */; };
+		8F512B430D95153000086CD4 /* Cache.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F512B420D95153000086CD4 /* Cache.gif */; };
+		8F51E9130ECD8B5400E9BAA8 /* ProcessStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51E9120ECD8B5400E9BAA8 /* ProcessStackManager.m */; };
+		8F51E99B0ECDDB7B00E9BAA8 /* ProcessStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F51E9120ECD8B5400E9BAA8 /* ProcessStackManager.m */; };
+		8F556AAF0A96FB10004A5E9C /* Changelog.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F556AA90A96FB10004A5E9C /* Changelog.rtf */; };
+		8F556AB00A96FB10004A5E9C /* Copyrights.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F556AAB0A96FB10004A5E9C /* Copyrights.rtf */; };
+		8F556AB10A96FB10004A5E9C /* License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F556AAD0A96FB10004A5E9C /* License.rtf */; };
+		8F556ACD0A96FCFF004A5E9C /* MyAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F556ACB0A96FCFF004A5E9C /* MyAboutWindowController.m */; };
+		8F55FD0E0DDF9CB300EE9EE5 /* LynkeosProcessableImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0C50B80C6E0100004D6FA5 /* LynkeosProcessableImage.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F55FD0F0DDF9CBE00EE9EE5 /* LynkeosProcessableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0C50B90C6E0100004D6FA5 /* LynkeosProcessableImage.m */; };
+		8F55FD100DDF9CC500EE9EE5 /* LynkeosProcessingParameterMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD73E1B0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F55FD110DDF9CCE00EE9EE5 /* LynkeosProcessingParameterMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD73E1C0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.m */; };
+		8F55FD130DDF9CFC00EE9EE5 /* LynkeosThreadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B30AAA5CBE00925AC5 /* LynkeosThreadConnection.m */; };
+		8F5A83FE0DD8A7DD00889420 /* LynkeosBasicAlignResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCA4FE20DD34E0700E76E46 /* LynkeosBasicAlignResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6385A40CDB807E00055C49 /* MyLucyRichardson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F6385A20CDB807E00055C49 /* MyLucyRichardson.m */; };
+		8F670C310C27231D00369DB6 /* MyImageStackerPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F670C2F0C27231D00369DB6 /* MyImageStackerPrefs.m */; };
+		8F6792BC0E55B44800932A4B /* LynkeosThreadConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCD24B20AAA5CBE00925AC5 /* LynkeosThreadConnection.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F6B8B7A0DD312870091895F /* corelation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEE920A8409F700672703 /* corelation.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F6B8B7B0DD3128C0091895F /* LynkeosImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEEA00A8409F700672703 /* LynkeosImageBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6B8B7C0DD3128E0091895F /* LynkeosProcessing.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCD24B60AAA5CDC00925AC5 /* LynkeosProcessing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6B8B7F0DD312C10091895F /* LynkeosFourierBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEE9A0A8409F700672703 /* LynkeosFourierBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F6B8B800DD312C30091895F /* LynkeosStandardImageBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEEAD0A8409F700672703 /* LynkeosStandardImageBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F6B8B8F0DD314150091895F /* LynkeosCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEE9D0A8409F700672703 /* LynkeosCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F81F4B90ACDCABF00557A09 /* MyProcessingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */; };
+		8F84965F0D08A80500AF5085 /* MyWavelet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F84965D0D08A80500AF5085 /* MyWavelet.m */; };
+		8F8669AB0E61B5BA007BF235 /* MyUnsharpMaskTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8669AA0E61B5BA007BF235 /* MyUnsharpMaskTest.m */; };
+		8F8669D40E61B970007BF235 /* MyUnsharpMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0EE3560D035933007F6843 /* MyUnsharpMask.m */; };
+		8F971A3F0CD4D11F0095E4E1 /* MyProcessStackView.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F971A3E0CD4D11F0095E4E1 /* MyProcessStackView.nib */; };
+		8F9D174E0C1A007300D1F1FC /* MyImageAnalyzerPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F9D174C0C1A007300D1F1FC /* MyImageAnalyzerPrefs.m */; };
+		8F9D17E10C1A132500D1F1FC /* Analysis.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F9D17E00C1A132500D1F1FC /* Analysis.gif */; };
+		8F9E09270D869EC700513880 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F9E09240D869EC700513880 /* CoreVideo.framework */; };
+		8F9FFE6F0CF07F0A0049B7A4 /* LucyRichardson.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8F9FFE6E0CF07F0A0049B7A4 /* LucyRichardson.gif */; };
+		8FA0357D12CFCB7E0061A6B1 /* MyImageStacker_Standard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA0357C12CFCB7E0061A6B1 /* MyImageStacker_Standard.m */; };
+		8FA7237C0EE21A6A00AEBC77 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F2BD1310E8D8F950084D6BA /* Carbon.framework */; };
+		8FAD2F210D948686006D43D3 /* dcraw_file_extensions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD2F200D948686006D43D3 /* dcraw_file_extensions.plist */; };
+		8FAD3DAC0CB26FDF00B7F483 /* Deconvolution.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FAD3DAB0CB26FDE00B7F483 /* Deconvolution.gif */; };
+		8FAD9EFC0C25871200C79F5F /* MyImageStacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD9EFA0C25871200C79F5F /* MyImageStacker.m */; };
+		8FAE70B00EBE063B00D9F041 /* LynkeosObjectCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD570D90D8ACFE100D743CC /* LynkeosObjectCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FAE70B10EBE063B00D9F041 /* LynkeosObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD570DA0D8ACFE100D743CC /* LynkeosObjectCache.m */; };
+		8FAEE53212CBADEC0020C6BB /* DcrawReaderPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAEE53012CBADEC0020C6BB /* DcrawReaderPrefs.xib */; };
+		8FB083760ED066B1000E88B4 /* ProcessStackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB083750ED066B1000E88B4 /* ProcessStackTest.m */; };
+		8FB14D9B0AFA609E00383D0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8FB14D9C0AFA60A000383D0F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F136CB40A85056B003D8FB7 /* IOKit.framework */; };
+		8FB28C930CD3CEDB001B5354 /* MyProcessStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB28C910CD3CEDB001B5354 /* MyProcessStackView.m */; };
+		8FB2A4320D9FFBEB0063A2B4 /* MyChromaticAlign.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FB2A4310D9FFBEB0063A2B4 /* MyChromaticAlign.nib */; };
+		8FB2A4380DA044370063A2B4 /* MyChromaticAlignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB2A4370DA044370063A2B4 /* MyChromaticAlignerView.m */; };
+		8FB40D600AFCF0130075623A /* MyImageAlignerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB40D5E0AFCF0130075623A /* MyImageAlignerView.m */; };
+		8FB9A6A30DBFDD96008537BC /* MyChromaticLevels.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9A6A20DBFDD96008537BC /* MyChromaticLevels.m */; };
+		8FBB17260AA106A1003E8C5D /* dcraw in Resources */ = {isa = PBXBuildFile; fileRef = 8F13691F0A84C5AB003D8FB7 /* dcraw */; };
+		8FBF4DC80A841F5800CF7534 /* libcfitsio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */; };
+		8FBF4DD50A841FA300CF7534 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8FBF4DDE0A841FC300CF7534 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8FBF4F210A8422E000CF7534 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FBF4F200A8422E000CF7534 /* CoreServices.framework */; };
+		8FC2A72D0C070C0900E44D6C /* hidemargin.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC2A72C0C070C0900E44D6C /* hidemargin.gif */; };
+		8FC423E30B9B57FE0073860C /* MyPluginsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD758E00B98949100FDC857 /* MyPluginsController.m */; };
+		8FC4246B0B9B699C0073860C /* MyPluginsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD758E00B98949100FDC857 /* MyPluginsController.m */; };
+		8FC424880B9B6DF30073860C /* MyListManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC424860B9B6DF30073860C /* MyListManagement.m */; };
+		8FC478AC0C06F29B009386B5 /* detachproc.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC478A90C06F29B009386B5 /* detachproc.gif */; };
+		8FC478AD0C06F29B009386B5 /* hidelist.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC478AA0C06F29B009386B5 /* hidelist.gif */; };
+		8FC478AE0C06F29B009386B5 /* split.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FC478AB0C06F29B009386B5 /* split.gif */; };
+		8FC51EB90C0327F900023B55 /* MyImageListWindowToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC51EB80C0327F900023B55 /* MyImageListWindowToolbar.m */; };
+		8FC51ED20C033A9100023B55 /* MyImageListWindowOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC51ED10C033A9100023B55 /* MyImageListWindowOutlineView.m */; };
+		8FC51EE30C033BDA00023B55 /* MyImageListWindowSplitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC51EE20C033BDA00023B55 /* MyImageListWindowSplitView.m */; };
+		8FC68F260AA4EE2400F85985 /* MyImageBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC68EB20AA4E15700F85985 /* MyImageBufferTest.m */; };
+		8FC932370AEC027200A99147 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAA0A8409F700672703 /* MyDocument.m */; };
+		8FC932380AEC028300A99147 /* MyCalibrationLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEA40A8409F700672703 /* MyCalibrationLock.m */; };
+		8FC9323E0AEC02DD00A99147 /* MyImageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB00A8409F700672703 /* MyImageList.m */; };
+		8FC9323F0AEC02DF00A99147 /* MyImageListEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB20A8409F700672703 /* MyImageListEnumerator.m */; };
+		8FC932410AEC02ED00A99147 /* MyDocumentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAC0A8409F700672703 /* MyDocumentData.m */; };
+		8FC932590AEC088500A99147 /* MyImageListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB40A8409F700672703 /* MyImageListItem.m */; };
+		8FC9E0430DBB80B3006C115F /* MyChromaticLevels.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC9E0420DBB80B3006C115F /* MyChromaticLevels.nib */; };
+		8FCA4FE50DD34E0700E76E46 /* LynkeosBasicAlignResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA4FE30DD34E0700E76E46 /* LynkeosBasicAlignResult.m */; };
+		8FCBEB990E844E70008B7545 /* LynkeosFourierBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBEB980E844E70008B7545 /* LynkeosFourierBufferTest.m */; };
+		8FCD24BD0AAA5CDC00925AC5 /* MyImageAligner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */; };
+		8FCD24BF0AAA5CDC00925AC5 /* MyProcessingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */; };
+		8FCE16D00A94590E0039505F /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CE0A94590E0039505F /* libavcodec.dylib */; };
+		8FCE16D10A94590E0039505F /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CF0A94590E0039505F /* libavformat.dylib */; };
+		8FCE16D50A9459350039505F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+		8FCE16EA0A945BE80039505F /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16E90A945BE80039505F /* libavutil.dylib */; };
+		8FCE16F20A945C270039505F /* FFmpeg.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FED915C0A937B8B00746C7D /* FFmpeg.bundle */; };
+		8FCE6ED70DD89881008E69EC /* LynkeosProcessingDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */; };
+		8FCE6F120DD89AC3008E69EC /* LynkeosLogFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F40FB850D256D8A00DC57A3 /* LynkeosLogFields.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8FCE6F130DD89AC3008E69EC /* LynkeosLogFields.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F40FB860D256D8A00DC57A3 /* LynkeosLogFields.m */; };
+		8FCE6F490DD8A06E008E69EC /* LynkeosImageProcessingParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F72BA8C0C726227002D9EA0 /* LynkeosImageProcessingParameter.m */; };
+		8FCE6F4F0DD8A095008E69EC /* LynkeosPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEEA10A8409F700672703 /* LynkeosPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FCE6F570DD8A0BF008E69EC /* LynkeosColumnDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD4426B0BCA84B200515C35 /* LynkeosColumnDescriptor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8FCE6F580DD8A0BF008E69EC /* LynkeosColumnDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4426C0BCA84B200515C35 /* LynkeosColumnDescriptor.m */; };
+		8FD023920BFB5207009AD1E0 /* MyImageAlignerPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD023900BFB5207009AD1E0 /* MyImageAlignerPrefs.m */; };
+		8FD023AA0BFB5385009AD1E0 /* MyGeneralPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD023A80BFB5385009AD1E0 /* MyGeneralPrefs.m */; };
+		8FD214B00B499F6F003DF095 /* MyImageAligner.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD214AE0B499F6F003DF095 /* MyImageAligner.nib */; };
+		8FD3A3860D8417CF007C0463 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD3A3830D8417CF007C0463 /* QTKit.framework */; };
+		8FD3A38C0D84185B007C0463 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD3A3890D84185B007C0463 /* QuickTime.framework */; };
+		8FD46CE20DD3046800766CE1 /* LynkeosFourierBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE9B0A8409F700672703 /* LynkeosFourierBuffer.m */; };
+		8FD46CF00DD304BF00766CE1 /* LynkeosCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8FD46CFA0DD304FC00766CE1 /* LynkeosStandardImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAE0A8409F700672703 /* LynkeosStandardImageBuffer.m */; };
+		8FD46D020DD3054900766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8FD46D520DD305E800766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8FD46D570DD3066100766CE1 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF540A84132300672703 /* libfftw3.a */; };
+		8FD46D580DD3066100766CE1 /* libfftw3_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF530A84132300672703 /* libfftw3_threads.a */; };
+		8FD46D590DD3066300766CE1 /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF560A84132300672703 /* libfftw3f.a */; };
+		8FD46D5A0DD3066400766CE1 /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF550A84132300672703 /* libfftw3f_threads.a */; };
+		8FD46D680DD3075D00766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
+		8FD46DBD0DD30EA400766CE1 /* corelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE930A8409F700672703 /* corelation.m */; };
+		8FD573770D8AF50000D743CC /* MyCachePrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD573750D8AF50000D743CC /* MyCachePrefs.m */; };
+		8FD758E20B98949100FDC857 /* MyPluginsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD758E00B98949100FDC857 /* MyPluginsController.m */; };
+		8FD85A490D4007CC00E7FA65 /* MyImageListEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB20A8409F700672703 /* MyImageListEnumerator.m */; };
+		8FD961340E7D1AC9007152D3 /* ProcessingUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 8FDDBF930CDE59E10002BA95 /* ProcessingUtilities.c */; };
+		8FDAEECE0A8409F700672703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEA20A8409F700672703 /* main.m */; };
+		8FDAEECF0A8409F700672703 /* MyCalibrationLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEA40A8409F700672703 /* MyCalibrationLock.m */; };
+		8FDAEED00A8409F700672703 /* MyCocoaFilesReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEA60A8409F700672703 /* MyCocoaFilesReader.m */; };
+		8FDAEED10A8409F700672703 /* MyCustomViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEA80A8409F700672703 /* MyCustomViews.m */; };
+		8FDAEED20A8409F700672703 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAA0A8409F700672703 /* MyDocument.m */; };
+		8FDAEED30A8409F700672703 /* MyDocumentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAC0A8409F700672703 /* MyDocumentData.m */; };
+		8FDAEED50A8409F700672703 /* MyImageList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB00A8409F700672703 /* MyImageList.m */; };
+		8FDAEED60A8409F700672703 /* MyImageListEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB20A8409F700672703 /* MyImageListEnumerator.m */; };
+		8FDAEED70A8409F700672703 /* MyImageListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB40A8409F700672703 /* MyImageListItem.m */; };
+		8FDAEED80A8409F700672703 /* MyImageListWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEB60A8409F700672703 /* MyImageListWindow.m */; };
+		8FDAEEDA0A8409F700672703 /* MyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEBA0A8409F700672703 /* MyImageView.m */; };
+		8FDAEEDB0A8409F700672703 /* MyImageViewSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEBB0A8409F700672703 /* MyImageViewSelection.m */; };
+		8FDAEEDF0A8409F700672703 /* MyTiff16Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEC30A8409F700672703 /* MyTiff16Reader.m */; };
+		8FDAEEE00A8409F700672703 /* MyTiffWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEC50A8409F700672703 /* MyTiffWriter.m */; };
+		8FDAEEE10A8409F700672703 /* MyUserPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEC70A8409F700672703 /* MyUserPrefsController.m */; };
+		8FDAEEF50A840D7200672703 /* ImageListWindow.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAEEF30A840D7200672703 /* ImageListWindow.nib */; };
+		8FDAEEF80A840DAE00672703 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAEEF60A840DAE00672703 /* Localizable.strings */; };
+		8FDAEF0D0A840E6900672703 /* TiffWriter.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAEF0B0A840E6900672703 /* TiffWriter.nib */; };
+		8FDAEF140A840E8C00672703 /* FITSWriter.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDAEF120A840E8C00672703 /* FITSWriter.nib */; };
+		8FDAEF5D0A84137A00672703 /* FITSReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE970A8409F700672703 /* FITSReader.m */; };
+		8FDAEF5E0A84137A00672703 /* FITSWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE990A8409F700672703 /* FITSWriter.m */; };
+		8FDAEF5F0A84138F00672703 /* DcrawReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE950A8409F700672703 /* DcrawReader.m */; };
+		8FDAEF680A84140500672703 /* FITS.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FDAEEFD0A840E3900672703 /* FITS.bundle */; };
+		8FDAEF6A0A84141C00672703 /* RAW.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FDAEF060A840E5200672703 /* RAW.bundle */; };
+		8FE216C70DDF9559000E7D4D /* LynkeosFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEE9E0A8409F700672703 /* LynkeosFileReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE216C80DDF9559000E7D4D /* LynkeosFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDAEE9F0A8409F700672703 /* LynkeosFileWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE2542C0DD32EB600213B84 /* LynkeosProcessingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FD340D40AFE730D007A00E0 /* LynkeosProcessingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE3C35D0E588261002C9F4B /* LynkeosGammaCorrecter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FE3C35B0E588261002C9F4B /* LynkeosGammaCorrecter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE3C35E0E588261002C9F4B /* LynkeosGammaCorrecter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3C35C0E588261002C9F4B /* LynkeosGammaCorrecter.m */; };
+		8FE4399A0DC791CD00981D5E /* ChromaticLevels.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FE439990DC791CD00981D5E /* ChromaticLevels.gif */; };
+		8FE489D50CF072FA004939C8 /* List.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FE489D40CF072F9004939C8 /* List.gif */; };
+		8FE834240D97B41C00EF04EC /* MyCustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE834230D97B41C00EF04EC /* MyCustomAlert.m */; };
+		8FE834280D97BE7600EF04EC /* MyCustomAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE834230D97B41C00EF04EC /* MyCustomAlert.m */; };
+		8FEBD9F012D27799007AA622 /* MyImageStacker_SigmaReject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEBD9EF12D27799007AA622 /* MyImageStacker_SigmaReject.m */; };
+		8FEBFDE00CF4DA9600C263B9 /* ProcessStack.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FEBFDDF0CF4DA9500C263B9 /* ProcessStack.gif */; };
+		8FED91630A937BC000746C7D /* FFmpegReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FED91620A937BC000746C7D /* FFmpegReader.m */; };
+		8FF351CF0E8ADFD100C4F672 /* DcrawReaderPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF351CE0E8ADFD100C4F672 /* DcrawReaderPrefs.m */; };
+		8FF352170E8AE52800C4F672 /* Dcraw.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8FF352160E8AE52800C4F672 /* Dcraw.icns */; };
+		8FFC7A240BF2522D00E67179 /* Align.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC7A230BF2522D00E67179 /* Align.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F100E420DEB635A003A8B5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD578D80DE36F2C004AAC5A;
+			remoteInfo = Help;
+		};
+		8F1369260A84C63A003D8FB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F13691E0A84C5AB003D8FB7;
+			remoteInfo = dcraw;
+		};
+		8F2BD01C0E8D7E570084D6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD46CDC0DD303FD00766CE1;
+			remoteInfo = LynkeosCore;
+		};
+		8F3319170D81D80900A9F023 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F33190B0D81D7F300A9F023;
+			remoteInfo = "Tests-ThreadConnection";
+		};
+		8F6CF83C0C0240FD00CA0138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F2175AA0ACDB7FA00B4E285;
+			remoteInfo = "Tests-Process";
+		};
+		8F849AF80E94309F004C5912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD46CDC0DD303FD00766CE1;
+			remoteInfo = LynkeosCore;
+		};
+		8FC57A6E12CF8D870080E708 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F13691E0A84C5AB003D8FB7;
+			remoteInfo = dcraw;
+		};
+		8FC68F280AA4EE4700F85985 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FC68F200AA4EE0600F85985;
+			remoteInfo = "Tests-Appli";
+		};
+		8FD46DA30DD30DC300766CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD46CDC0DD303FD00766CE1;
+			remoteInfo = LynkeosCore;
+		};
+		8FD46DA80DD30DD100766CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD46CDC0DD303FD00766CE1;
+			remoteInfo = LynkeosCore;
+		};
+		8FD46DAD0DD30DDF00766CE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FD46CDC0DD303FD00766CE1;
+			remoteInfo = LynkeosCore;
+		};
+		8FDAEF600A8413AA00672703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDAEEFC0A840E3900672703;
+			remoteInfo = FITS;
+		};
+		8FDAEF620A8413D700672703 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FDAEF050A840E5200672703;
+			remoteInfo = Dcraw;
+		};
+		8FED91690A937C0500746C7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FED915B0A937B8B00746C7D;
+			remoteInfo = FFmpeg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB3FF1B0DDFBA4F00B69A36 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8FD46CF00DD304BF00766CE1 /* LynkeosCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEF660A8413F700672703 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FCE16F20A945C270039505F /* FFmpeg.bundle in CopyFiles */,
+				8FDAEF6A0A84141C00672703 /* RAW.bundle in CopyFiles */,
+				8FDAEF680A84140500672703 /* FITS.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* Lynkeos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynkeos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F02EE9B12D9F3EA00679086 /* MyImageStacker_Extrema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker_Extrema.h; path = Sources/MyImageStacker_Extrema.h; sourceTree = "<group>"; };
+		8F02EE9C12D9F3EA00679086 /* MyImageStacker_Extrema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageStacker_Extrema.m; path = Sources/MyImageStacker_Extrema.m; sourceTree = "<group>"; };
+		8F02EEAB12DA06BB00679086 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyImageStacker.xib; sourceTree = "<group>"; };
+		8F02EEAD12DA06D300679086 /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/MyImageStacker.xib; sourceTree = "<group>"; };
+		8F02EEAE12DA06EF00679086 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/MyImageStacker.xib; sourceTree = "<group>"; };
+		8F02EEBB12DA156500679086 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Italian; path = Italian.lproj/MyImageStacker.xib; sourceTree = "<group>"; };
+		8F03CEAF0DA5774000585440 /* ChromaticAlign.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ChromaticAlign.gif; path = Resources/ChromaticAlign.gif; sourceTree = "<group>"; };
+		8F0A8AA80CB7BF2C00B3FD34 /* SMDoubleSlider.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SMDoubleSlider.h; path = ThirdPartySources/SMDoubleSlider/SMDoubleSlider.h; sourceTree = "<group>"; };
+		8F0A8AA90CB7BF2C00B3FD34 /* SMDoubleSlider.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SMDoubleSlider.m; path = ThirdPartySources/SMDoubleSlider/SMDoubleSlider.m; sourceTree = "<group>"; };
+		8F0A8AAA0CB7BF2C00B3FD34 /* SMDoubleSliderCell.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SMDoubleSliderCell.h; path = ThirdPartySources/SMDoubleSlider/SMDoubleSliderCell.h; sourceTree = "<group>"; };
+		8F0A8AAB0CB7BF2C00B3FD34 /* SMDoubleSliderCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = SMDoubleSliderCell.m; path = ThirdPartySources/SMDoubleSlider/SMDoubleSliderCell.m; sourceTree = "<group>"; };
+		8F0C50B80C6E0100004D6FA5 /* LynkeosProcessableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosProcessableImage.h; path = Sources/LynkeosProcessableImage.h; sourceTree = "<group>"; };
+		8F0C50B90C6E0100004D6FA5 /* LynkeosProcessableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosProcessableImage.m; path = Sources/LynkeosProcessableImage.m; sourceTree = "<group>"; };
+		8F0CBAD40CB1830900A6513C /* MyDeconvolutionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDeconvolutionView.h; path = Sources/MyDeconvolutionView.h; sourceTree = "<group>"; };
+		8F0CBAD50CB1830900A6513C /* MyDeconvolutionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDeconvolutionView.m; path = Sources/MyDeconvolutionView.m; sourceTree = "<group>"; };
+		8F0DBD7F0AB0C0BA004AC636 /* MyImageListItemTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageListItemTest.h; path = Tests/MyImageListItemTest.h; sourceTree = "<group>"; };
+		8F0DBD800AB0C0BA004AC636 /* MyImageListItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageListItemTest.m; path = Tests/MyImageListItemTest.m; sourceTree = "<group>"; };
+		8F0EE3550D035933007F6843 /* MyUnsharpMask.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyUnsharpMask.h; path = Sources/MyUnsharpMask.h; sourceTree = "<group>"; };
+		8F0EE3560D035933007F6843 /* MyUnsharpMask.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyUnsharpMask.m; path = Sources/MyUnsharpMask.m; sourceTree = "<group>"; };
+		8F0EE3570D035933007F6843 /* MyUnsharpMaskView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyUnsharpMaskView.h; path = Sources/MyUnsharpMaskView.h; sourceTree = "<group>"; };
+		8F0EE3580D035933007F6843 /* MyUnsharpMaskView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyUnsharpMaskView.m; path = Sources/MyUnsharpMaskView.m; sourceTree = "<group>"; };
+		8F0F92BB0CDCBF07008A9BD9 /* MyLucyRichardsonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLucyRichardsonView.h; path = Sources/MyLucyRichardsonView.h; sourceTree = "<group>"; };
+		8F0F92BC0CDCBF07008A9BD9 /* MyLucyRichardsonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLucyRichardsonView.m; path = Sources/MyLucyRichardsonView.m; sourceTree = "<group>"; };
+		8F0F92CE0CDCC23D008A9BD9 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyLucyRichardson.nib; sourceTree = "<group>"; };
+		8F100C580DEAFCD9003A8B5E /* LynkeosHelpIcon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LynkeosHelpIcon.gif; path = Help/LynkeosHelpIcon.gif; sourceTree = "<group>"; };
+		8F100CEE0DEB184D003A8B5E /* frenchHelp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = frenchHelp.xml; sourceTree = "<group>"; };
+		8F100D950DEB2826003A8B5E /* LynkeosHelp.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; path = LynkeosHelp.html; sourceTree = "<group>"; };
+		8F100D960DEB2826003A8B5E /* LynkeosTOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LynkeosTOC.html; sourceTree = "<group>"; };
+		8F13691F0A84C5AB003D8FB7 /* dcraw */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dcraw; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1369480A84CEF7003D8FB7 /* bottom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bottom.gif; path = Resources/bottom.gif; sourceTree = "<group>"; };
+		8F1369490A84CEF7003D8FB7 /* bottomLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bottomLeft.gif; path = Resources/bottomLeft.gif; sourceTree = "<group>"; };
+		8F13694A0A84CEF7003D8FB7 /* bottomRight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = bottomRight.gif; path = Resources/bottomRight.gif; sourceTree = "<group>"; };
+		8F13694B0A84CEF7003D8FB7 /* cross.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = cross.gif; path = Resources/cross.gif; sourceTree = "<group>"; };
+		8F13694C0A84CEF7003D8FB7 /* hand.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hand.gif; path = Resources/hand.gif; sourceTree = "<group>"; };
+		8F13694D0A84CEF7003D8FB7 /* left.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = left.gif; path = Resources/left.gif; sourceTree = "<group>"; };
+		8F13694E0A84CEF7003D8FB7 /* Lynkeos.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Lynkeos.icns; path = Resources/Lynkeos.icns; sourceTree = "<group>"; };
+		8F13694F0A84CEF7003D8FB7 /* minus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = minus.gif; path = Resources/minus.gif; sourceTree = "<group>"; };
+		8F1369500A84CEF7003D8FB7 /* Photolist.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Photolist.icns; path = Resources/Photolist.icns; sourceTree = "<group>"; };
+		8F1369510A84CEF7003D8FB7 /* plus.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = plus.gif; path = Resources/plus.gif; sourceTree = "<group>"; };
+		8F1369520A84CEF7003D8FB7 /* right.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = right.gif; path = Resources/right.gif; sourceTree = "<group>"; };
+		8F1369530A84CEF7003D8FB7 /* top.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = top.gif; path = Resources/top.gif; sourceTree = "<group>"; };
+		8F1369540A84CEF7003D8FB7 /* topLeft.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = topLeft.gif; path = Resources/topLeft.gif; sourceTree = "<group>"; };
+		8F1369550A84CEF7003D8FB7 /* topRight.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = topRight.gif; path = Resources/topRight.gif; sourceTree = "<group>"; };
+		8F1369560A84CEF7003D8FB7 /* watch.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = watch.gif; path = Resources/watch.gif; sourceTree = "<group>"; };
+		8F13698E0A84FE80003D8FB7 /* English */ = {isa = PBXFileReference; lastKnownFileType = folder; name = English; path = "English.lproj/Lynkeos help"; sourceTree = "<group>"; };
+		8F1369CC0A84FEA2003D8FB7 /* French */ = {isa = PBXFileReference; lastKnownFileType = folder; name = French; path = "French.lproj/Lynkeos help"; sourceTree = "<group>"; };
+		8F136CB40A85056B003D8FB7 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		8F1415DA0CAE4B0700590244 /* MyDeconvolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDeconvolution.h; path = Sources/MyDeconvolution.h; sourceTree = "<group>"; };
+		8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDeconvolution.m; path = Sources/MyDeconvolution.m; sourceTree = "<group>"; };
+		8F1B2F280D098BE90090C4AF /* MyWaveletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWaveletView.h; path = Sources/MyWaveletView.h; sourceTree = "<group>"; };
+		8F1B2F290D098BE90090C4AF /* MyWaveletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyWaveletView.m; path = Sources/MyWaveletView.m; sourceTree = "<group>"; };
+		8F1B2F420D098F640090C4AF /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyWavelet.nib; sourceTree = "<group>"; };
+		8F1B2FED0D09AC890090C4AF /* Wavelet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Wavelet.gif; path = Resources/Wavelet.gif; sourceTree = "<group>"; };
+		8F1CE0240E104D6B00B58387 /* MyWaveletTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWaveletTest.h; path = Tests/MyWaveletTest.h; sourceTree = "<group>"; };
+		8F1CE0250E104D6B00B58387 /* MyWaveletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyWaveletTest.m; path = Tests/MyWaveletTest.m; sourceTree = "<group>"; };
+		8F1F2E5E0E6EF90900A8D69E /* MyDeconvolutionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyDeconvolutionTest.h; path = Tests/MyDeconvolutionTest.h; sourceTree = "<group>"; };
+		8F1F2E5F0E6EF90900A8D69E /* MyDeconvolutionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyDeconvolutionTest.m; path = Tests/MyDeconvolutionTest.m; sourceTree = "<group>"; };
+		8F2000240C2C76FA0000AB91 /* MyImageStackerView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageStackerView.h; path = Sources/MyImageStackerView.h; sourceTree = "<group>"; };
+		8F2000250C2C76FA0000AB91 /* MyImageStackerView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageStackerView.m; path = Sources/MyImageStackerView.m; sourceTree = "<group>"; };
+		8F2175AB0ACDB7FA00B4E285 /* Tests-Process.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Process.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F2175AC0ACDB7FA00B4E285 /* Tests-Process-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Process-Info.plist"; sourceTree = "<group>"; };
+		8F2175B30ACDB99A00B4E285 /* MyImageAlignerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerTest.h; path = Tests/MyImageAlignerTest.h; sourceTree = "<group>"; };
+		8F2175B40ACDB99A00B4E285 /* MyImageAlignerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAlignerTest.m; path = Tests/MyImageAlignerTest.m; sourceTree = "<group>"; };
+		8F21D4060A9CE86400165029 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/License.rtf; sourceTree = "<group>"; };
+		8F27ACA012CA5FA100E2707F /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = usr/local/lib/libswscale.dylib; sourceTree = SDKROOT; };
+		8F2BD1310E8D8F950084D6BA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		8F2F1ADC0C161AE40051448E /* MyImageAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAnalyzer.h; path = Sources/MyImageAnalyzer.h; sourceTree = "<group>"; };
+		8F2F1ADD0C161AE40051448E /* MyImageAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAnalyzer.m; path = Sources/MyImageAnalyzer.m; sourceTree = "<group>"; };
+		8F2F1AF40C161BE00051448E /* MyImageAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAnalyzer.h; path = Sources/MyImageAnalyzer.h; sourceTree = "<group>"; };
+		8F30CA2C0D54E70500D3237B /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8F33190C0D81D7F300A9F023 /* Tests-ThreadConnection.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-ThreadConnection.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F33190D0D81D7F300A9F023 /* Tests-ThreadConnection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-ThreadConnection-Info.plist"; sourceTree = "<group>"; };
+		8F3319280D81D86F00A9F023 /* MyThreadConnectionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyThreadConnectionTest.h; path = Tests/MyThreadConnectionTest.h; sourceTree = "<group>"; };
+		8F3319290D81D86F00A9F023 /* MyThreadConnectionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyThreadConnectionTest.m; path = Tests/MyThreadConnectionTest.m; sourceTree = "<group>"; };
+		8F40FB850D256D8A00DC57A3 /* LynkeosLogFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosLogFields.h; path = Sources/LynkeosLogFields.h; sourceTree = "<group>"; };
+		8F40FB860D256D8A00DC57A3 /* LynkeosLogFields.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosLogFields.m; path = Sources/LynkeosLogFields.m; sourceTree = "<group>"; };
+		8F4493FA0D55157600C10124 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MyImageAligner.nib; sourceTree = "<group>"; };
+		8F4493FB0D55158200C10124 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MyImageAnalyzer.nib; sourceTree = "<group>"; };
+		8F4493FD0D55159A00C10124 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
+		8F4493FE0D5515A400C10124 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/MyUnsharpMask.nib; sourceTree = "<group>"; };
+		8F49AADC0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageListEnumeratorTest.h; path = Tests/MyImageListEnumeratorTest.h; sourceTree = "<group>"; };
+		8F49AADD0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageListEnumeratorTest.m; path = Tests/MyImageListEnumeratorTest.m; sourceTree = "<group>"; };
+		8F4A232B0C1B1464006394E7 /* MyImageAnalyzerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAnalyzerView.h; path = Sources/MyImageAnalyzerView.h; sourceTree = "<group>"; };
+		8F4A232C0C1B1464006394E7 /* MyImageAnalyzerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAnalyzerView.m; path = Sources/MyImageAnalyzerView.m; sourceTree = "<group>"; };
+		8F4A23DD0C1B2D67006394E7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyImageAnalyzer.nib; sourceTree = "<group>"; };
+		8F4D484E0D036AE300965F8E /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyUnsharpMask.nib; sourceTree = "<group>"; };
+		8F4D48630D03713400965F8E /* UnsharpMask.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = UnsharpMask.gif; path = Resources/UnsharpMask.gif; sourceTree = "<group>"; };
+		8F512B420D95153000086CD4 /* Cache.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Cache.gif; path = Resources/Cache.gif; sourceTree = "<group>"; };
+		8F51E9110ECD8B5400E9BAA8 /* ProcessStackManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessStackManager.h; path = Sources/ProcessStackManager.h; sourceTree = "<group>"; };
+		8F51E9120ECD8B5400E9BAA8 /* ProcessStackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessStackManager.m; path = Sources/ProcessStackManager.m; sourceTree = "<group>"; };
+		8F556AAA0A96FB10004A5E9C /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Changelog.rtf; sourceTree = "<group>"; };
+		8F556AAC0A96FB10004A5E9C /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Copyrights.rtf; sourceTree = "<group>"; };
+		8F556AAE0A96FB10004A5E9C /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/License.rtf; sourceTree = "<group>"; };
+		8F556AB20A96FB33004A5E9C /* French */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = French; path = French.lproj/Changelog.rtf; sourceTree = "<group>"; };
+		8F556AB30A96FB42004A5E9C /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Italian; path = Italian.lproj/Changelog.rtf; sourceTree = "<group>"; };
+		8F556AB40A96FB4C004A5E9C /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/Changelog.rtf; sourceTree = "<group>"; };
+		8F556AB50A96FB5F004A5E9C /* French */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = French; path = French.lproj/Copyrights.rtf; sourceTree = "<group>"; };
+		8F556AB60A96FB65004A5E9C /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Italian; path = Italian.lproj/Copyrights.rtf; sourceTree = "<group>"; };
+		8F556AB70A96FB6B004A5E9C /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/Copyrights.rtf; sourceTree = "<group>"; };
+		8F556ACA0A96FCFF004A5E9C /* MyAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyAboutWindowController.h; path = Sources/MyAboutWindowController.h; sourceTree = "<group>"; };
+		8F556ACB0A96FCFF004A5E9C /* MyAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyAboutWindowController.m; path = Sources/MyAboutWindowController.m; sourceTree = "<group>"; };
+		8F556AE70A96FFB0004A5E9C /* French */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = French; path = French.lproj/License.rtf; sourceTree = "<group>"; };
+		8F5BF94A0DE9ECF90042C980 /* wiki2AppleHelp.xslt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = wiki2AppleHelp.xslt; path = Help/wiki2AppleHelp.xslt; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		8F6385A10CDB807E00055C49 /* MyLucyRichardson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyLucyRichardson.h; path = Sources/MyLucyRichardson.h; sourceTree = "<group>"; };
+		8F6385A20CDB807E00055C49 /* MyLucyRichardson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyLucyRichardson.m; path = Sources/MyLucyRichardson.m; sourceTree = "<group>"; };
+		8F670C2E0C27231D00369DB6 /* MyImageStackerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStackerPrefs.h; path = Sources/MyImageStackerPrefs.h; sourceTree = "<group>"; };
+		8F670C2F0C27231D00369DB6 /* MyImageStackerPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageStackerPrefs.m; path = Sources/MyImageStackerPrefs.m; sourceTree = "<group>"; };
+		8F72BA8C0C726227002D9EA0 /* LynkeosImageProcessingParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosImageProcessingParameter.m; path = Sources/LynkeosImageProcessingParameter.m; sourceTree = "<group>"; };
+		8F84965C0D08A80500AF5085 /* MyWavelet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyWavelet.h; path = Sources/MyWavelet.h; sourceTree = "<group>"; };
+		8F84965D0D08A80500AF5085 /* MyWavelet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyWavelet.m; path = Sources/MyWavelet.m; sourceTree = "<group>"; };
+		8F849A990E941D32004C5912 /* LynkeosCore.doxy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LynkeosCore.doxy; path = Docs/LynkeosCore.doxy; sourceTree = "<group>"; };
+		8F85CAB80CD4D02300038226 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyProcessStackView.nib; sourceTree = "<group>"; };
+		8F8669A90E61B5BA007BF235 /* MyUnsharpMaskTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyUnsharpMaskTest.h; path = Tests/MyUnsharpMaskTest.h; sourceTree = "<group>"; };
+		8F8669AA0E61B5BA007BF235 /* MyUnsharpMaskTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyUnsharpMaskTest.m; path = Tests/MyUnsharpMaskTest.m; sourceTree = "<group>"; };
+		8F991C3D0A97863D00A4EFD5 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Italian; path = Italian.lproj/License.rtf; sourceTree = "<group>"; };
+		8F9D174B0C1A007300D1F1FC /* MyImageAnalyzerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAnalyzerPrefs.h; path = Sources/MyImageAnalyzerPrefs.h; sourceTree = "<group>"; };
+		8F9D174C0C1A007300D1F1FC /* MyImageAnalyzerPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAnalyzerPrefs.m; path = Sources/MyImageAnalyzerPrefs.m; sourceTree = "<group>"; };
+		8F9D17E00C1A132500D1F1FC /* Analysis.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Analysis.gif; path = Resources/Analysis.gif; sourceTree = "<group>"; };
+		8F9E09240D869EC700513880 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8F9FFE6E0CF07F0A0049B7A4 /* LucyRichardson.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LucyRichardson.gif; path = Resources/LucyRichardson.gif; sourceTree = "<group>"; };
+		8FA0357B12CFCB7E0061A6B1 /* MyImageStacker_Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker_Standard.h; path = Sources/MyImageStacker_Standard.h; sourceTree = "<group>"; };
+		8FA0357C12CFCB7E0061A6B1 /* MyImageStacker_Standard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageStacker_Standard.m; path = Sources/MyImageStacker_Standard.m; sourceTree = "<group>"; };
+		8FA7A5750D47FF070078ED78 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8FA892460DB93B2800A89D18 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyChromaticAlign.nib; sourceTree = "<group>"; };
+		8FA892470DB93B3200A89D18 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyChromaticAlign.nib; sourceTree = "<group>"; };
+		8FAD2F200D948686006D43D3 /* dcraw_file_extensions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = dcraw_file_extensions.plist; path = Resources/dcraw_file_extensions.plist; sourceTree = "<group>"; };
+		8FAD3DAB0CB26FDE00B7F483 /* Deconvolution.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Deconvolution.gif; path = Resources/Deconvolution.gif; sourceTree = "<group>"; };
+		8FAD9EF90C25871200C79F5F /* MyImageStacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker.h; path = Sources/MyImageStacker.h; sourceTree = "<group>"; };
+		8FAD9EFA0C25871200C79F5F /* MyImageStacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageStacker.m; path = Sources/MyImageStacker.m; sourceTree = "<group>"; };
+		8FAEE53112CBADEC0020C6BB /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DcrawReaderPrefs.xib; sourceTree = "<group>"; };
+		8FAEE53412CBAE0E0020C6BB /* French */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = French; path = French.lproj/DcrawReaderPrefs.xib; sourceTree = "<group>"; };
+		8FAEE53612CBAE2E0020C6BB /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Spanish; path = Spanish.lproj/DcrawReaderPrefs.xib; sourceTree = "<group>"; };
+		8FB083740ED066B1000E88B4 /* ProcessStackTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessStackTest.h; path = Tests/ProcessStackTest.h; sourceTree = "<group>"; };
+		8FB083750ED066B1000E88B4 /* ProcessStackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProcessStackTest.m; path = Tests/ProcessStackTest.m; sourceTree = "<group>"; };
+		8FB28C900CD3CEDB001B5354 /* MyProcessStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyProcessStackView.h; path = Sources/MyProcessStackView.h; sourceTree = "<group>"; };
+		8FB28C910CD3CEDB001B5354 /* MyProcessStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyProcessStackView.m; path = Sources/MyProcessStackView.m; sourceTree = "<group>"; };
+		8FB2A4120D9FFAA70063A2B4 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyChromaticAlign.nib; sourceTree = "<group>"; };
+		8FB2A4360DA044370063A2B4 /* MyChromaticAlignerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyChromaticAlignerView.h; path = Sources/MyChromaticAlignerView.h; sourceTree = "<group>"; };
+		8FB2A4370DA044370063A2B4 /* MyChromaticAlignerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyChromaticAlignerView.m; path = Sources/MyChromaticAlignerView.m; sourceTree = "<group>"; };
+		8FB40D5D0AFCF0130075623A /* MyImageAlignerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerView.h; path = Sources/MyImageAlignerView.h; sourceTree = "<group>"; };
+		8FB40D5E0AFCF0130075623A /* MyImageAlignerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAlignerView.m; path = Sources/MyImageAlignerView.m; sourceTree = "<group>"; };
+		8FB9A6A10DBFDD96008537BC /* MyChromaticLevels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyChromaticLevels.h; path = Sources/MyChromaticLevels.h; sourceTree = "<group>"; };
+		8FB9A6A20DBFDD96008537BC /* MyChromaticLevels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyChromaticLevels.m; path = Sources/MyChromaticLevels.m; sourceTree = "<group>"; };
+		8FBA977B0D5527F500103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		8FBA977C0D5527FF00103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
+		8FBA977D0D55280C00103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyImageAligner.nib; sourceTree = "<group>"; };
+		8FBA977E0D55281600103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyImageAnalyzer.nib; sourceTree = "<group>"; };
+		8FBA97800D55282900103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
+		8FBA97810D55283200103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyUnsharpMask.nib; sourceTree = "<group>"; };
+		8FBA97820D55283C00103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyProcessStackView.nib; sourceTree = "<group>"; };
+		8FBA97830D55284500103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyLucyRichardson.nib; sourceTree = "<group>"; };
+		8FBA97840D55284F00103563 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyWavelet.nib; sourceTree = "<group>"; };
+		8FBB197A0DBA53B10020EDDC /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyChromaticLevels.nib; sourceTree = "<group>"; };
+		8FBB2CEE0D47FAC900AF45AF /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
+		8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libcfitsio.dylib; sourceTree = "<absolute>"; };
+		8FBF4F200A8422E000CF7534 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /Developer/SDKs/MacOSX10.4u.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8FC24A1A1327F0C20066BB4F /* mw2html.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = mw2html.sh; path = Help/mw2html.sh; sourceTree = "<group>"; };
+		8FC24A351327F8930066BB4F /* main.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = main.css; path = Help/main.css; sourceTree = "<group>"; };
+		8FC2A72C0C070C0900E44D6C /* hidemargin.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hidemargin.gif; path = Resources/hidemargin.gif; sourceTree = "<group>"; };
+		8FC3F5E90BF7AA01009D2254 /* MyGuiConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyGuiConstants.h; path = Sources/MyGuiConstants.h; sourceTree = "<group>"; };
+		8FC424850B9B6DF30073860C /* MyListManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyListManagement.h; path = Sources/MyListManagement.h; sourceTree = "<group>"; };
+		8FC424860B9B6DF30073860C /* MyListManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyListManagement.m; path = Sources/MyListManagement.m; sourceTree = "<group>"; };
+		8FC478A90C06F29B009386B5 /* detachproc.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = detachproc.gif; path = Resources/detachproc.gif; sourceTree = "<group>"; };
+		8FC478AA0C06F29B009386B5 /* hidelist.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = hidelist.gif; path = Resources/hidelist.gif; sourceTree = "<group>"; };
+		8FC478AB0C06F29B009386B5 /* split.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = split.gif; path = Resources/split.gif; sourceTree = "<group>"; };
+		8FC51EB80C0327F900023B55 /* MyImageListWindowToolbar.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListWindowToolbar.m; path = Sources/MyImageListWindowToolbar.m; sourceTree = "<group>"; };
+		8FC51ED10C033A9100023B55 /* MyImageListWindowOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListWindowOutlineView.m; path = Sources/MyImageListWindowOutlineView.m; sourceTree = "<group>"; };
+		8FC51EE20C033BDA00023B55 /* MyImageListWindowSplitView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListWindowSplitView.m; path = Sources/MyImageListWindowSplitView.m; sourceTree = "<group>"; };
+		8FC626EB0DE3785A009DF792 /* englishHelp.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = englishHelp.xml; path = Help/English/englishHelp.xml; sourceTree = "<group>"; };
+		8FC626EC0DE3785A009DF792 /* LynkeosHelp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = LynkeosHelp.html; path = Help/English/LynkeosHelp.html; sourceTree = "<group>"; };
+		8FC626EE0DE3785A009DF792 /* LynkeosTOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = LynkeosTOC.html; path = Help/English/LynkeosTOC.html; sourceTree = "<group>"; };
+		8FC68EB10AA4E15700F85985 /* MyImageBufferTest.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageBufferTest.h; path = Tests/MyImageBufferTest.h; sourceTree = "<group>"; };
+		8FC68EB20AA4E15700F85985 /* MyImageBufferTest.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageBufferTest.m; path = Tests/MyImageBufferTest.m; sourceTree = "<group>"; };
+		8FC68F210AA4EE0600F85985 /* Tests-Appli.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests-Appli.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC68F220AA4EE0600F85985 /* Tests-Appli-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Appli-Info.plist"; sourceTree = "<group>"; };
+		8FC8D3510D4937D000F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
+		8FC8D3530D49386500F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyImageAligner.nib; sourceTree = "<group>"; };
+		8FC8D3550D49396000F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyImageAnalyzer.nib; sourceTree = "<group>"; };
+		8FC8D35A0D493BA400F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyLucyRichardson.nib; sourceTree = "<group>"; };
+		8FC8D3650D49431E00F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyProcessStackView.nib; sourceTree = "<group>"; };
+		8FC8D3670D49446000F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyUnsharpMask.nib; sourceTree = "<group>"; };
+		8FC8D3690D49458400F48051 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyWavelet.nib; sourceTree = "<group>"; };
+		8FCA4FE20DD34E0700E76E46 /* LynkeosBasicAlignResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosBasicAlignResult.h; path = Sources/LynkeosBasicAlignResult.h; sourceTree = "<group>"; };
+		8FCA4FE30DD34E0700E76E46 /* LynkeosBasicAlignResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosBasicAlignResult.m; path = Sources/LynkeosBasicAlignResult.m; sourceTree = "<group>"; };
+		8FCBEB970E844E70008B7545 /* LynkeosFourierBufferTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosFourierBufferTest.h; path = Tests/LynkeosFourierBufferTest.h; sourceTree = "<group>"; };
+		8FCBEB980E844E70008B7545 /* LynkeosFourierBufferTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosFourierBufferTest.m; path = Tests/LynkeosFourierBufferTest.m; sourceTree = "<group>"; };
+		8FCD24B20AAA5CBE00925AC5 /* LynkeosThreadConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosThreadConnection.h; path = ThreadConnectionSources/LynkeosThreadConnection.h; sourceTree = "<group>"; };
+		8FCD24B30AAA5CBE00925AC5 /* LynkeosThreadConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosThreadConnection.m; path = ThreadConnectionSources/LynkeosThreadConnection.m; sourceTree = "<group>"; };
+		8FCD24B60AAA5CDC00925AC5 /* LynkeosProcessing.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosProcessing.h; path = Sources/LynkeosProcessing.h; sourceTree = "<group>"; };
+		8FCD24B70AAA5CDC00925AC5 /* MyImageAligner.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageAligner.h; path = Sources/MyImageAligner.h; sourceTree = "<group>"; };
+		8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageAligner.m; path = Sources/MyImageAligner.m; sourceTree = "<group>"; };
+		8FCD24B90AAA5CDC00925AC5 /* MyProcessingThread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyProcessingThread.h; path = Sources/MyProcessingThread.h; sourceTree = "<group>"; };
+		8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyProcessingThread.m; path = Sources/MyProcessingThread.m; sourceTree = "<group>"; };
+		8FCE16CE0A94590E0039505F /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavcodec.dylib; sourceTree = "<absolute>"; };
+		8FCE16CF0A94590E0039505F /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavformat.dylib; sourceTree = "<absolute>"; };
+		8FCE16E90A945BE80039505F /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavutil.dylib; sourceTree = "<absolute>"; };
+		8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosProcessingDefs.m; path = Sources/LynkeosProcessingDefs.m; sourceTree = "<group>"; };
+		8FCEFCAC0CB234A600E417AF /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
+		8FD0238F0BFB5207009AD1E0 /* MyImageAlignerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerPrefs.h; path = Sources/MyImageAlignerPrefs.h; sourceTree = "<group>"; };
+		8FD023900BFB5207009AD1E0 /* MyImageAlignerPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageAlignerPrefs.m; path = Sources/MyImageAlignerPrefs.m; sourceTree = "<group>"; };
+		8FD023A70BFB5385009AD1E0 /* MyGeneralPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGeneralPrefs.h; path = Sources/MyGeneralPrefs.h; sourceTree = "<group>"; };
+		8FD023A80BFB5385009AD1E0 /* MyGeneralPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyGeneralPrefs.m; path = Sources/MyGeneralPrefs.m; sourceTree = "<group>"; };
+		8FD214AF0B499F6F003DF095 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyImageAligner.nib; sourceTree = "<group>"; };
+		8FD2ED0B0D54E0D100C77A28 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
+		8FD340D40AFE730D007A00E0 /* LynkeosProcessingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosProcessingView.h; path = Sources/LynkeosProcessingView.h; sourceTree = "<group>"; };
+		8FD3A3830D8417CF007C0463 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		8FD3A3890D84185B007C0463 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		8FD4426B0BCA84B200515C35 /* LynkeosColumnDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosColumnDescriptor.h; path = Sources/LynkeosColumnDescriptor.h; sourceTree = "<group>"; };
+		8FD4426C0BCA84B200515C35 /* LynkeosColumnDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosColumnDescriptor.m; path = Sources/LynkeosColumnDescriptor.m; sourceTree = "<group>"; };
+		8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LynkeosCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD46CDE0DD303FD00766CE1 /* LynkeosCore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LynkeosCore-Info.plist"; sourceTree = "<group>"; };
+		8FD570D90D8ACFE100D743CC /* LynkeosObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosObjectCache.h; path = Sources/LynkeosObjectCache.h; sourceTree = "<group>"; };
+		8FD570DA0D8ACFE100D743CC /* LynkeosObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosObjectCache.m; path = Sources/LynkeosObjectCache.m; sourceTree = "<group>"; };
+		8FD573740D8AF50000D743CC /* MyCachePrefs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyCachePrefs.h; path = Sources/MyCachePrefs.h; sourceTree = "<group>"; };
+		8FD573750D8AF50000D743CC /* MyCachePrefs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyCachePrefs.m; path = Sources/MyCachePrefs.m; sourceTree = "<group>"; };
+		8FD73E1B0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosProcessingParameterMgr.h; path = Sources/LynkeosProcessingParameterMgr.h; sourceTree = "<group>"; };
+		8FD73E1C0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosProcessingParameterMgr.m; path = Sources/LynkeosProcessingParameterMgr.m; sourceTree = "<group>"; };
+		8FD758DF0B98949100FDC857 /* MyPluginsController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyPluginsController.h; path = Sources/MyPluginsController.h; sourceTree = "<group>"; };
+		8FD758E00B98949100FDC857 /* MyPluginsController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyPluginsController.m; path = Sources/MyPluginsController.m; sourceTree = "<group>"; };
+		8FD961530E7D21A3007152D3 /* LynkeosStandardImageBufferAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosStandardImageBufferAdditions.h; path = Sources/LynkeosStandardImageBufferAdditions.h; sourceTree = "<group>"; };
+		8FDAEE920A8409F700672703 /* corelation.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = corelation.h; path = Sources/corelation.h; sourceTree = "<group>"; };
+		8FDAEE930A8409F700672703 /* corelation.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = corelation.m; path = Sources/corelation.m; sourceTree = "<group>"; };
+		8FDAEE940A8409F700672703 /* DcrawReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DcrawReader.h; path = Sources/DcrawReader.h; sourceTree = "<group>"; };
+		8FDAEE950A8409F700672703 /* DcrawReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = DcrawReader.m; path = Sources/DcrawReader.m; sourceTree = "<group>"; };
+		8FDAEE960A8409F700672703 /* FITSReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FITSReader.h; path = Sources/FITSReader.h; sourceTree = "<group>"; };
+		8FDAEE970A8409F700672703 /* FITSReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FITSReader.m; path = Sources/FITSReader.m; sourceTree = "<group>"; };
+		8FDAEE980A8409F700672703 /* FITSWriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FITSWriter.h; path = Sources/FITSWriter.h; sourceTree = "<group>"; };
+		8FDAEE990A8409F700672703 /* FITSWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FITSWriter.m; path = Sources/FITSWriter.m; sourceTree = "<group>"; };
+		8FDAEE9A0A8409F700672703 /* LynkeosFourierBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosFourierBuffer.h; path = Sources/LynkeosFourierBuffer.h; sourceTree = "<group>"; };
+		8FDAEE9B0A8409F700672703 /* LynkeosFourierBuffer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosFourierBuffer.m; path = Sources/LynkeosFourierBuffer.m; sourceTree = "<group>"; };
+		8FDAEE9D0A8409F700672703 /* LynkeosCommon.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosCommon.h; path = Sources/LynkeosCommon.h; sourceTree = "<group>"; };
+		8FDAEE9E0A8409F700672703 /* LynkeosFileReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosFileReader.h; path = Sources/LynkeosFileReader.h; sourceTree = "<group>"; };
+		8FDAEE9F0A8409F700672703 /* LynkeosFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosFileWriter.h; path = Sources/LynkeosFileWriter.h; sourceTree = "<group>"; };
+		8FDAEEA00A8409F700672703 /* LynkeosImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosImageBuffer.h; path = Sources/LynkeosImageBuffer.h; sourceTree = "<group>"; };
+		8FDAEEA10A8409F700672703 /* LynkeosPreferences.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosPreferences.h; path = Sources/LynkeosPreferences.h; sourceTree = "<group>"; };
+		8FDAEEA20A8409F700672703 /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/main.m; sourceTree = "<group>"; };
+		8FDAEEA30A8409F700672703 /* MyCalibrationLock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyCalibrationLock.h; path = Sources/MyCalibrationLock.h; sourceTree = "<group>"; };
+		8FDAEEA40A8409F700672703 /* MyCalibrationLock.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyCalibrationLock.m; path = Sources/MyCalibrationLock.m; sourceTree = "<group>"; };
+		8FDAEEA50A8409F700672703 /* MyCocoaFilesReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyCocoaFilesReader.h; path = Sources/MyCocoaFilesReader.h; sourceTree = "<group>"; };
+		8FDAEEA60A8409F700672703 /* MyCocoaFilesReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyCocoaFilesReader.m; path = Sources/MyCocoaFilesReader.m; sourceTree = "<group>"; };
+		8FDAEEA70A8409F700672703 /* MyCustomViews.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyCustomViews.h; path = Sources/MyCustomViews.h; sourceTree = "<group>"; };
+		8FDAEEA80A8409F700672703 /* MyCustomViews.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyCustomViews.m; path = Sources/MyCustomViews.m; sourceTree = "<group>"; };
+		8FDAEEA90A8409F700672703 /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyDocument.h; path = Sources/MyDocument.h; sourceTree = "<group>"; };
+		8FDAEEAA0A8409F700672703 /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyDocument.m; path = Sources/MyDocument.m; sourceTree = "<group>"; };
+		8FDAEEAB0A8409F700672703 /* MyDocumentData.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyDocumentData.h; path = Sources/MyDocumentData.h; sourceTree = "<group>"; };
+		8FDAEEAC0A8409F700672703 /* MyDocumentData.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyDocumentData.m; path = Sources/MyDocumentData.m; sourceTree = "<group>"; };
+		8FDAEEAD0A8409F700672703 /* LynkeosStandardImageBuffer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = LynkeosStandardImageBuffer.h; path = Sources/LynkeosStandardImageBuffer.h; sourceTree = "<group>"; };
+		8FDAEEAE0A8409F700672703 /* LynkeosStandardImageBuffer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosStandardImageBuffer.m; path = Sources/LynkeosStandardImageBuffer.m; sourceTree = "<group>"; };
+		8FDAEEAF0A8409F700672703 /* MyImageList.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageList.h; path = Sources/MyImageList.h; sourceTree = "<group>"; };
+		8FDAEEB00A8409F700672703 /* MyImageList.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageList.m; path = Sources/MyImageList.m; sourceTree = "<group>"; };
+		8FDAEEB10A8409F700672703 /* MyImageListEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageListEnumerator.h; path = Sources/MyImageListEnumerator.h; sourceTree = "<group>"; };
+		8FDAEEB20A8409F700672703 /* MyImageListEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListEnumerator.m; path = Sources/MyImageListEnumerator.m; sourceTree = "<group>"; };
+		8FDAEEB30A8409F700672703 /* MyImageListItem.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageListItem.h; path = Sources/MyImageListItem.h; sourceTree = "<group>"; };
+		8FDAEEB40A8409F700672703 /* MyImageListItem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListItem.m; path = Sources/MyImageListItem.m; sourceTree = "<group>"; };
+		8FDAEEB50A8409F700672703 /* MyImageListWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageListWindow.h; path = Sources/MyImageListWindow.h; sourceTree = "<group>"; };
+		8FDAEEB60A8409F700672703 /* MyImageListWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageListWindow.m; path = Sources/MyImageListWindow.m; sourceTree = "<group>"; };
+		8FDAEEB90A8409F700672703 /* MyImageView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyImageView.h; path = Sources/MyImageView.h; sourceTree = "<group>"; };
+		8FDAEEBA0A8409F700672703 /* MyImageView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageView.m; path = Sources/MyImageView.m; sourceTree = "<group>"; };
+		8FDAEEBB0A8409F700672703 /* MyImageViewSelection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageViewSelection.m; path = Sources/MyImageViewSelection.m; sourceTree = "<group>"; };
+		8FDAEEC20A8409F700672703 /* MyTiff16Reader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyTiff16Reader.h; path = Sources/MyTiff16Reader.h; sourceTree = "<group>"; };
+		8FDAEEC30A8409F700672703 /* MyTiff16Reader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyTiff16Reader.m; path = Sources/MyTiff16Reader.m; sourceTree = "<group>"; };
+		8FDAEEC40A8409F700672703 /* MyTiffWriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyTiffWriter.h; path = Sources/MyTiffWriter.h; sourceTree = "<group>"; };
+		8FDAEEC50A8409F700672703 /* MyTiffWriter.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyTiffWriter.m; path = Sources/MyTiffWriter.m; sourceTree = "<group>"; };
+		8FDAEEC60A8409F700672703 /* MyUserPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyUserPrefsController.h; path = Sources/MyUserPrefsController.h; sourceTree = "<group>"; };
+		8FDAEEC70A8409F700672703 /* MyUserPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyUserPrefsController.m; path = Sources/MyUserPrefsController.m; sourceTree = "<group>"; };
+		8FDAEEC80A8409F700672703 /* processing_core.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = processing_core.h; path = Sources/processing_core.h; sourceTree = "<group>"; };
+		8FDAEEF40A840D7200672703 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ImageListWindow.nib; sourceTree = "<group>"; };
+		8FDAEEF70A840DAE00672703 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FDAEEFD0A840E3900672703 /* FITS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FITS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDAEEFE0A840E3900672703 /* FITS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FITS-Info.plist"; sourceTree = "<group>"; };
+		8FDAEF060A840E5200672703 /* RAW.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAW.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FDAEF070A840E5200672703 /* Dcraw-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dcraw-Info.plist"; sourceTree = "<group>"; };
+		8FDAEF0C0A840E6900672703 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/TiffWriter.nib; sourceTree = "<group>"; };
+		8FDAEF130A840E8C00672703 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FITSWriter.nib; sourceTree = "<group>"; };
+		8FDAEF1E0A840FD800672703 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/TiffWriter.nib; sourceTree = "<group>"; };
+		8FDAEF1F0A840FDE00672703 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/TiffWriter.nib; sourceTree = "<group>"; };
+		8FDAEF200A840FE700672703 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/TiffWriter.nib; sourceTree = "<group>"; };
+		8FDAEF210A840FF700672703 /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/FITSWriter.nib; sourceTree = "<group>"; };
+		8FDAEF220A840FFE00672703 /* Italian */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Italian; path = Italian.lproj/FITSWriter.nib; sourceTree = "<group>"; };
+		8FDAEF230A84100600672703 /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/FITSWriter.nib; sourceTree = "<group>"; };
+		8FDAEF240A84101A00672703 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FDAEF250A84102000672703 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FDAEF260A84102500672703 /* Spanish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8FDAEF270A84103400672703 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = French; path = French.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8FDAEF280A84103A00672703 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Italian; path = Italian.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8FDAEF290A84104100672703 /* Spanish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = Spanish; path = Spanish.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8FDAEF2A0A84105200672703 /* French */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = French; path = French.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FDAEF2B0A84105700672703 /* Italian */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Italian; path = Italian.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FDAEF2C0A84105C00672703 /* Spanish */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Spanish; path = Spanish.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8FDAEF530A84132300672703 /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_threads.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3_threads.a; sourceTree = "<absolute>"; };
+		8FDAEF540A84132300672703 /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3.a; sourceTree = "<absolute>"; };
+		8FDAEF550A84132300672703 /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3f_threads.a; sourceTree = "<absolute>"; };
+		8FDAEF560A84132300672703 /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libfftw3f.a; sourceTree = "<absolute>"; };
+		8FDAF0110A8416A300672703 /* dcraw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = dcraw.c; path = ThirdPartySources/dcraw.c; sourceTree = "<group>"; };
+		8FDDBF870CDE57D90002BA95 /* ProcessingUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProcessingUtilities.h; path = Sources/ProcessingUtilities.h; sourceTree = "<group>"; };
+		8FDDBF930CDE59E10002BA95 /* ProcessingUtilities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ProcessingUtilities.c; path = Sources/ProcessingUtilities.c; sourceTree = "<group>"; };
+		8FE158B80E119BE600C68210 /* ESO_wavelet.odt */ = {isa = PBXFileReference; lastKnownFileType = file; name = ESO_wavelet.odt; path = Docs/ESO_wavelet.odt; sourceTree = "<group>"; };
+		8FE3C35B0E588261002C9F4B /* LynkeosGammaCorrecter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LynkeosGammaCorrecter.h; path = Sources/LynkeosGammaCorrecter.h; sourceTree = "<group>"; };
+		8FE3C35C0E588261002C9F4B /* LynkeosGammaCorrecter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LynkeosGammaCorrecter.m; path = Sources/LynkeosGammaCorrecter.m; sourceTree = "<group>"; };
+		8FE439990DC791CD00981D5E /* ChromaticLevels.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ChromaticLevels.gif; path = Resources/ChromaticLevels.gif; sourceTree = "<group>"; };
+		8FE439A10DC7920100981D5E /* French */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = French; path = French.lproj/MyChromaticLevels.nib; sourceTree = "<group>"; };
+		8FE439A30DC7A99200981D5E /* Spanish */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Spanish; path = Spanish.lproj/MyChromaticLevels.nib; sourceTree = "<group>"; };
+		8FE489D40CF072F9004939C8 /* List.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = List.gif; path = Resources/List.gif; sourceTree = "<group>"; };
+		8FE834220D97B41C00EF04EC /* MyCustomAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCustomAlert.h; path = Sources/MyCustomAlert.h; sourceTree = "<group>"; };
+		8FE834230D97B41C00EF04EC /* MyCustomAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCustomAlert.m; path = Sources/MyCustomAlert.m; sourceTree = "<group>"; };
+		8FEBD9EE12D27799007AA622 /* MyImageStacker_SigmaReject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker_SigmaReject.h; path = Sources/MyImageStacker_SigmaReject.h; sourceTree = "<group>"; };
+		8FEBD9EF12D27799007AA622 /* MyImageStacker_SigmaReject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImageStacker_SigmaReject.m; path = Sources/MyImageStacker_SigmaReject.m; sourceTree = "<group>"; };
+		8FEBFDDF0CF4DA9500C263B9 /* ProcessStack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = ProcessStack.gif; path = Resources/ProcessStack.gif; sourceTree = "<group>"; };
+		8FED912F0A9329DE00746C7D /* doxy-filter */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = "doxy-filter"; path = "Docs/doxy-filter"; sourceTree = "<group>"; };
+		8FED91300A9329DE00746C7D /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = Doxyfile; path = Docs/Doxyfile; sourceTree = "<group>"; };
+		8FED91310A9329DE00746C7D /* doxytag-apple */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; name = "doxytag-apple"; path = "Docs/doxytag-apple"; sourceTree = "<group>"; };
+		8FED91320A9329DE00746C7D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = LICENSE.txt; path = Docs/LICENSE.txt; sourceTree = "<group>"; };
+		8FED91330A9329DE00746C7D /* TODO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = TODO.rtf; path = Docs/TODO.rtf; sourceTree = "<group>"; };
+		8FED91510A937AA500746C7D /* index.html */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.html; name = index.html; path = build/Release/LynkeosDoc/html/index.html; sourceTree = "<group>"; };
+		8FED915C0A937B8B00746C7D /* FFmpeg.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFmpeg.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FED915D0A937B8B00746C7D /* FFmpeg-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FFmpeg-Info.plist"; sourceTree = "<group>"; };
+		8FED91610A937BC000746C7D /* FFmpegReader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = FFmpegReader.h; path = Sources/FFmpegReader.h; sourceTree = "<group>"; };
+		8FED91620A937BC000746C7D /* FFmpegReader.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = FFmpegReader.m; path = Sources/FFmpegReader.m; sourceTree = "<group>"; };
+		8FF351CD0E8ADFD100C4F672 /* DcrawReaderPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DcrawReaderPrefs.h; path = Sources/DcrawReaderPrefs.h; sourceTree = "<group>"; };
+		8FF351CE0E8ADFD100C4F672 /* DcrawReaderPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DcrawReaderPrefs.m; path = Sources/DcrawReaderPrefs.m; sourceTree = "<group>"; };
+		8FF352160E8AE52800C4F672 /* Dcraw.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Dcraw.icns; path = Resources/Dcraw.icns; sourceTree = "<group>"; };
+		8FF8CB950CF8F71F00406FB5 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtiff.a; path = /usr/local/lib/libtiff.a; sourceTree = "<absolute>"; };
+		8FFC7A230BF2522D00E67179 /* Align.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Align.gif; path = Resources/Align.gif; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FA7237C0EE21A6A00AEBC77 /* Carbon.framework in Frameworks */,
+				8FD46D020DD3054900766CE1 /* LynkeosCore.framework in Frameworks */,
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				8FBF4F210A8422E000CF7534 /* CoreServices.framework in Frameworks */,
+				8F136CB50A85056B003D8FB7 /* IOKit.framework in Frameworks */,
+				8FD3A3860D8417CF007C0463 /* QTKit.framework in Frameworks */,
+				8FD3A38C0D84185B007C0463 /* QuickTime.framework in Frameworks */,
+				8F9E09270D869EC700513880 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F13691D0A84C5AB003D8FB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2175A80ACDB7FA00B4E285 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F03D17C1346805500D51D51 /* Carbon.framework in Frameworks */,
+				8FB14D9B0AFA609E00383D0F /* Cocoa.framework in Frameworks */,
+				8FB14D9C0AFA60A000383D0F /* IOKit.framework in Frameworks */,
+				8FD46D520DD305E800766CE1 /* LynkeosCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3319090D81D7F300A9F023 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC68F1E0AA4EE0600F85985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F03D1761346802200D51D51 /* Carbon.framework in Frameworks */,
+				8FD46D680DD3075D00766CE1 /* LynkeosCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD46CDB0DD303FD00766CE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD46D570DD3066100766CE1 /* libfftw3.a in Frameworks */,
+				8FD46D580DD3066100766CE1 /* libfftw3_threads.a in Frameworks */,
+				8FD46D590DD3066300766CE1 /* libfftw3f.a in Frameworks */,
+				8FD46D5A0DD3066400766CE1 /* libfftw3f_threads.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEEFB0A840E3900672703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBF4DD50A841FA300CF7534 /* Cocoa.framework in Frameworks */,
+				8FBF4DC80A841F5800CF7534 /* libcfitsio.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEF040A840E5200672703 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2BD0560E8D7F1E0084D6BA /* LynkeosCore.framework in Frameworks */,
+				8FBF4DDE0A841FC300CF7534 /* Cocoa.framework in Frameworks */,
+				8F2BD1320E8D8F950084D6BA /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FED915A0A937B8B00746C7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCE16D50A9459350039505F /* Cocoa.framework in Frameworks */,
+				8FCE16D00A94590E0039505F /* libavcodec.dylib in Frameworks */,
+				8FCE16D10A94590E0039505F /* libavformat.dylib in Frameworks */,
+				8FCE16EA0A945BE80039505F /* libavutil.dylib in Frameworks */,
+				8F3FC5F30EBE0431004AC8F6 /* LynkeosCore.framework in Frameworks */,
+				8F27ACA112CA5FA100E2707F /* libswscale.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F27ACA012CA5FA100E2707F /* libswscale.dylib */,
+				8F9E09240D869EC700513880 /* CoreVideo.framework */,
+				8FD3A3890D84185B007C0463 /* QuickTime.framework */,
+				8FD3A3830D8417CF007C0463 /* QTKit.framework */,
+				8FF8CB950CF8F71F00406FB5 /* libtiff.a */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+				8FBF4F200A8422E000CF7534 /* CoreServices.framework */,
+				8F136CB40A85056B003D8FB7 /* IOKit.framework */,
+				8FDAEF530A84132300672703 /* libfftw3_threads.a */,
+				8FDAEF540A84132300672703 /* libfftw3.a */,
+				8FDAEF550A84132300672703 /* libfftw3f_threads.a */,
+				8FDAEF560A84132300672703 /* libfftw3f.a */,
+				8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */,
+				8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */,
+				8FCE16CE0A94590E0039505F /* libavcodec.dylib */,
+				8FCE16CF0A94590E0039505F /* libavformat.dylib */,
+				8FCE16E90A945BE80039505F /* libavutil.dylib */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F2BD1310E8D8F950084D6BA /* Carbon.framework */,
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* Lynkeos.app */,
+				8FDAEEFD0A840E3900672703 /* FITS.bundle */,
+				8FDAEF060A840E5200672703 /* RAW.bundle */,
+				8FED915C0A937B8B00746C7D /* FFmpeg.bundle */,
+				8F13691F0A84C5AB003D8FB7 /* dcraw */,
+				8FED91510A937AA500746C7D /* index.html */,
+				8FC68F210AA4EE0600F85985 /* Tests-Appli.octest */,
+				8F2175AB0ACDB7FA00B4E285 /* Tests-Process.octest */,
+				8F33190C0D81D7F300A9F023 /* Tests-ThreadConnection.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* Lynkeos */ = {
+			isa = PBXGroup;
+			children = (
+				8FC626E40DE377ED009DF792 /* Help */,
+				8FED912E0A9329A700746C7D /* Doc */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				8FC68E990AA4DC2800F85985 /* Tests */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+				8FDAEEFE0A840E3900672703 /* FITS-Info.plist */,
+				8FDAEF070A840E5200672703 /* Dcraw-Info.plist */,
+				8FED915D0A937B8B00746C7D /* FFmpeg-Info.plist */,
+				8FC68F220AA4EE0600F85985 /* Tests-Appli-Info.plist */,
+				8F2175AC0ACDB7FA00B4E285 /* Tests-Process-Info.plist */,
+				8F33190D0D81D7F300A9F023 /* Tests-ThreadConnection-Info.plist */,
+				8FD46CDE0DD303FD00766CE1 /* LynkeosCore-Info.plist */,
+			);
+			name = Lynkeos;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F2B07900A89415B009C649B /* FileAccess */,
+				8FDAEEE30A840A2A00672703 /* Models */,
+				8FDAEEE40A840A7600672703 /* Views */,
+				8FDAEEE50A840A7F00672703 /* Controllers */,
+				8FDAEEE60A840AA200672703 /* Processing */,
+				8FFEC96A0C020E160023DDE0 /* Support */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAF0110A8416A300672703 /* dcraw.c */,
+				8FDAEE9D0A8409F700672703 /* LynkeosCommon.h */,
+				8FDAEEA20A8409F700672703 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F02EEAA12DA06BB00679086 /* MyImageStacker.xib */,
+				8FAEE53012CBADEC0020C6BB /* DcrawReaderPrefs.xib */,
+				8FF352160E8AE52800C4F672 /* Dcraw.icns */,
+				8FC9E0420DBB80B3006C115F /* MyChromaticLevels.nib */,
+				8F03CEAF0DA5774000585440 /* ChromaticAlign.gif */,
+				8FE439990DC791CD00981D5E /* ChromaticLevels.gif */,
+				8F512B420D95153000086CD4 /* Cache.gif */,
+				8F1B2FED0D09AC890090C4AF /* Wavelet.gif */,
+				8F4D48630D03713400965F8E /* UnsharpMask.gif */,
+				8FEBFDDF0CF4DA9500C263B9 /* ProcessStack.gif */,
+				8F9FFE6E0CF07F0A0049B7A4 /* LucyRichardson.gif */,
+				8FE489D40CF072F9004939C8 /* List.gif */,
+				8FAD3DAB0CB26FDE00B7F483 /* Deconvolution.gif */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				8FDAEEF30A840D7200672703 /* ImageListWindow.nib */,
+				8FDAEF0B0A840E6900672703 /* TiffWriter.nib */,
+				8FDAEF120A840E8C00672703 /* FITSWriter.nib */,
+				8FD214AE0B499F6F003DF095 /* MyImageAligner.nib */,
+				8F4A23DC0C1B2D67006394E7 /* MyImageAnalyzer.nib */,
+				8F3F92580CB26CDD003118D1 /* MyDeconvolution.nib */,
+				8F4D48580D036B0000965F8E /* MyUnsharpMask.nib */,
+				8F971A3E0CD4D11F0095E4E1 /* MyProcessStackView.nib */,
+				8F0F92D80CDCC290008A9BD9 /* MyLucyRichardson.nib */,
+				8F1B2F580D09944D0090C4AF /* MyWavelet.nib */,
+				8FB2A4310D9FFBEB0063A2B4 /* MyChromaticAlign.nib */,
+				8FDAEEF60A840DAE00672703 /* Localizable.strings */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				8F556AA90A96FB10004A5E9C /* Changelog.rtf */,
+				8F556AAB0A96FB10004A5E9C /* Copyrights.rtf */,
+				8F556AAD0A96FB10004A5E9C /* License.rtf */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				8F13698D0A84FE80003D8FB7 /* Lynkeos help */,
+				8F9D17E00C1A132500D1F1FC /* Analysis.gif */,
+				8FC2A72C0C070C0900E44D6C /* hidemargin.gif */,
+				8F1369480A84CEF7003D8FB7 /* bottom.gif */,
+				8F1369490A84CEF7003D8FB7 /* bottomLeft.gif */,
+				8F13694A0A84CEF7003D8FB7 /* bottomRight.gif */,
+				8F13694B0A84CEF7003D8FB7 /* cross.gif */,
+				8F13694C0A84CEF7003D8FB7 /* hand.gif */,
+				8F13694D0A84CEF7003D8FB7 /* left.gif */,
+				8F13694E0A84CEF7003D8FB7 /* Lynkeos.icns */,
+				8F13694F0A84CEF7003D8FB7 /* minus.gif */,
+				8F1369500A84CEF7003D8FB7 /* Photolist.icns */,
+				8F1369510A84CEF7003D8FB7 /* plus.gif */,
+				8F1369520A84CEF7003D8FB7 /* right.gif */,
+				8F1369530A84CEF7003D8FB7 /* top.gif */,
+				8F1369540A84CEF7003D8FB7 /* topLeft.gif */,
+				8F1369550A84CEF7003D8FB7 /* topRight.gif */,
+				8F1369560A84CEF7003D8FB7 /* watch.gif */,
+				8FFC7A230BF2522D00E67179 /* Align.gif */,
+				8FC478A90C06F29B009386B5 /* detachproc.gif */,
+				8FC478AA0C06F29B009386B5 /* hidelist.gif */,
+				8FC478AB0C06F29B009386B5 /* split.gif */,
+				8FAD2F200D948686006D43D3 /* dcraw_file_extensions.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F2B07900A89415B009C649B /* FileAccess */ = {
+			isa = PBXGroup;
+			children = (
+				8FDAEEA50A8409F700672703 /* MyCocoaFilesReader.h */,
+				8FDAEEA60A8409F700672703 /* MyCocoaFilesReader.m */,
+				8FED91610A937BC000746C7D /* FFmpegReader.h */,
+				8FED91620A937BC000746C7D /* FFmpegReader.m */,
+				8FDAEE9E0A8409F700672703 /* LynkeosFileReader.h */,
+				8FDAEE9F0A8409F700672703 /* LynkeosFileWriter.h */,
+				8FDAEE960A8409F700672703 /* FITSReader.h */,
+				8FDAEE970A8409F700672703 /* FITSReader.m */,
+				8FDAEE980A8409F700672703 /* FITSWriter.h */,
+				8FDAEE990A8409F700672703 /* FITSWriter.m */,
+				8FDAEE940A8409F700672703 /* DcrawReader.h */,
+				8FDAEE950A8409F700672703 /* DcrawReader.m */,
+				8FDAEEC20A8409F700672703 /* MyTiff16Reader.h */,
+				8FDAEEC30A8409F700672703 /* MyTiff16Reader.m */,
+				8FDAEEC40A8409F700672703 /* MyTiffWriter.h */,
+				8FDAEEC50A8409F700672703 /* MyTiffWriter.m */,
+				8FF351CD0E8ADFD100C4F672 /* DcrawReaderPrefs.h */,
+				8FF351CE0E8ADFD100C4F672 /* DcrawReaderPrefs.m */,
+			);
+			name = FileAccess;
+			sourceTree = "<group>";
+		};
+		8FC626E40DE377ED009DF792 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				8FC24A351327F8930066BB4F /* main.css */,
+				8FC24A1A1327F0C20066BB4F /* mw2html.sh */,
+				8F100C580DEAFCD9003A8B5E /* LynkeosHelpIcon.gif */,
+				8FC626E80DE37816009DF792 /* English */,
+				8FC626E90DE37827009DF792 /* French */,
+				8F5BF94A0DE9ECF90042C980 /* wiki2AppleHelp.xslt */,
+			);
+			name = Help;
+			sourceTree = "<group>";
+		};
+		8FC626E80DE37816009DF792 /* English */ = {
+			isa = PBXGroup;
+			children = (
+				8FC626EB0DE3785A009DF792 /* englishHelp.xml */,
+				8FC626EC0DE3785A009DF792 /* LynkeosHelp.html */,
+				8FC626EE0DE3785A009DF792 /* LynkeosTOC.html */,
+			);
+			name = English;
+			sourceTree = "<group>";
+		};
+		8FC626E90DE37827009DF792 /* French */ = {
+			isa = PBXGroup;
+			children = (
+				8F100D950DEB2826003A8B5E /* LynkeosHelp.html */,
+				8F100D960DEB2826003A8B5E /* LynkeosTOC.html */,
+				8F100CEE0DEB184D003A8B5E /* frenchHelp.xml */,
+			);
+			name = French;
+			path = Help/French;
+			sourceTree = "<group>";
+		};
+		8FC68E990AA4DC2800F85985 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8FCBEB970E844E70008B7545 /* LynkeosFourierBufferTest.h */,
+				8FCBEB980E844E70008B7545 /* LynkeosFourierBufferTest.m */,
+				8F1F2E5E0E6EF90900A8D69E /* MyDeconvolutionTest.h */,
+				8F1F2E5F0E6EF90900A8D69E /* MyDeconvolutionTest.m */,
+				8F1CE0240E104D6B00B58387 /* MyWaveletTest.h */,
+				8F1CE0250E104D6B00B58387 /* MyWaveletTest.m */,
+				8F49AADC0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.h */,
+				8F49AADD0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.m */,
+				8FC68EB10AA4E15700F85985 /* MyImageBufferTest.h */,
+				8FC68EB20AA4E15700F85985 /* MyImageBufferTest.m */,
+				8F0DBD7F0AB0C0BA004AC636 /* MyImageListItemTest.h */,
+				8F0DBD800AB0C0BA004AC636 /* MyImageListItemTest.m */,
+				8F2175B30ACDB99A00B4E285 /* MyImageAlignerTest.h */,
+				8F2175B40ACDB99A00B4E285 /* MyImageAlignerTest.m */,
+				8F3319280D81D86F00A9F023 /* MyThreadConnectionTest.h */,
+				8F3319290D81D86F00A9F023 /* MyThreadConnectionTest.m */,
+				8F8669A90E61B5BA007BF235 /* MyUnsharpMaskTest.h */,
+				8F8669AA0E61B5BA007BF235 /* MyUnsharpMaskTest.m */,
+				8FB083740ED066B1000E88B4 /* ProcessStackTest.h */,
+				8FB083750ED066B1000E88B4 /* ProcessStackTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		8FDAEEE30A840A2A00672703 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FD961530E7D21A3007152D3 /* LynkeosStandardImageBufferAdditions.h */,
+				8FD4426B0BCA84B200515C35 /* LynkeosColumnDescriptor.h */,
+				8FD4426C0BCA84B200515C35 /* LynkeosColumnDescriptor.m */,
+				8FDAEEA10A8409F700672703 /* LynkeosPreferences.h */,
+				8FD73E1B0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.h */,
+				8FD73E1C0AB9E7C0001F51A0 /* LynkeosProcessingParameterMgr.m */,
+				8F0C50B80C6E0100004D6FA5 /* LynkeosProcessableImage.h */,
+				8F0C50B90C6E0100004D6FA5 /* LynkeosProcessableImage.m */,
+				8F72BA8C0C726227002D9EA0 /* LynkeosImageProcessingParameter.m */,
+				8FDAEEAD0A8409F700672703 /* LynkeosStandardImageBuffer.h */,
+				8FDAEEAE0A8409F700672703 /* LynkeosStandardImageBuffer.m */,
+				8FDAEE9A0A8409F700672703 /* LynkeosFourierBuffer.h */,
+				8FDAEE9B0A8409F700672703 /* LynkeosFourierBuffer.m */,
+				8FDAEEAF0A8409F700672703 /* MyImageList.h */,
+				8FDAEEB00A8409F700672703 /* MyImageList.m */,
+				8FDAEEB10A8409F700672703 /* MyImageListEnumerator.h */,
+				8FDAEEB20A8409F700672703 /* MyImageListEnumerator.m */,
+				8FDAEEB30A8409F700672703 /* MyImageListItem.h */,
+				8FDAEEB40A8409F700672703 /* MyImageListItem.m */,
+				8FDAEEAB0A8409F700672703 /* MyDocumentData.h */,
+				8FDAEEAC0A8409F700672703 /* MyDocumentData.m */,
+				8FD570D90D8ACFE100D743CC /* LynkeosObjectCache.h */,
+				8FD570DA0D8ACFE100D743CC /* LynkeosObjectCache.m */,
+				8FCA4FE20DD34E0700E76E46 /* LynkeosBasicAlignResult.h */,
+				8FCA4FE30DD34E0700E76E46 /* LynkeosBasicAlignResult.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8FDAEEE40A840A7600672703 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8F0A8AA80CB7BF2C00B3FD34 /* SMDoubleSlider.h */,
+				8F0A8AA90CB7BF2C00B3FD34 /* SMDoubleSlider.m */,
+				8F0A8AAA0CB7BF2C00B3FD34 /* SMDoubleSliderCell.h */,
+				8F0A8AAB0CB7BF2C00B3FD34 /* SMDoubleSliderCell.m */,
+				8FD340D40AFE730D007A00E0 /* LynkeosProcessingView.h */,
+				8FDAEEB90A8409F700672703 /* MyImageView.h */,
+				8FDAEEBA0A8409F700672703 /* MyImageView.m */,
+				8FDAEEBB0A8409F700672703 /* MyImageViewSelection.m */,
+				8FDAEEA70A8409F700672703 /* MyCustomViews.h */,
+				8FDAEEA80A8409F700672703 /* MyCustomViews.m */,
+				8FC3F5E90BF7AA01009D2254 /* MyGuiConstants.h */,
+				8F40FB850D256D8A00DC57A3 /* LynkeosLogFields.h */,
+				8F40FB860D256D8A00DC57A3 /* LynkeosLogFields.m */,
+				8FE834220D97B41C00EF04EC /* MyCustomAlert.h */,
+				8FE834230D97B41C00EF04EC /* MyCustomAlert.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8FDAEEE50A840A7F00672703 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FD573740D8AF50000D743CC /* MyCachePrefs.h */,
+				8FD573750D8AF50000D743CC /* MyCachePrefs.m */,
+				8FD023A70BFB5385009AD1E0 /* MyGeneralPrefs.h */,
+				8FD023A80BFB5385009AD1E0 /* MyGeneralPrefs.m */,
+				8FC424850B9B6DF30073860C /* MyListManagement.h */,
+				8FC424860B9B6DF30073860C /* MyListManagement.m */,
+				8F556ACA0A96FCFF004A5E9C /* MyAboutWindowController.h */,
+				8F556ACB0A96FCFF004A5E9C /* MyAboutWindowController.m */,
+				8FDAEEC60A8409F700672703 /* MyUserPrefsController.h */,
+				8FDAEEC70A8409F700672703 /* MyUserPrefsController.m */,
+				8FD758DF0B98949100FDC857 /* MyPluginsController.h */,
+				8FD758E00B98949100FDC857 /* MyPluginsController.m */,
+				8FDAEEB50A8409F700672703 /* MyImageListWindow.h */,
+				8FDAEEB60A8409F700672703 /* MyImageListWindow.m */,
+				8FDAEEA90A8409F700672703 /* MyDocument.h */,
+				8FDAEEAA0A8409F700672703 /* MyDocument.m */,
+				8FDAEEA30A8409F700672703 /* MyCalibrationLock.h */,
+				8FDAEEA40A8409F700672703 /* MyCalibrationLock.m */,
+				8FC51EB80C0327F900023B55 /* MyImageListWindowToolbar.m */,
+				8FC51ED10C033A9100023B55 /* MyImageListWindowOutlineView.m */,
+				8FC51EE20C033BDA00023B55 /* MyImageListWindowSplitView.m */,
+				8FB28C900CD3CEDB001B5354 /* MyProcessStackView.h */,
+				8FB28C910CD3CEDB001B5354 /* MyProcessStackView.m */,
+				8F51E9110ECD8B5400E9BAA8 /* ProcessStackManager.h */,
+				8F51E9120ECD8B5400E9BAA8 /* ProcessStackManager.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8FDAEEE60A840AA200672703 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				8FEBD9EE12D27799007AA622 /* MyImageStacker_SigmaReject.h */,
+				8FEBD9EF12D27799007AA622 /* MyImageStacker_SigmaReject.m */,
+				8FA0357B12CFCB7E0061A6B1 /* MyImageStacker_Standard.h */,
+				8FA0357C12CFCB7E0061A6B1 /* MyImageStacker_Standard.m */,
+				8FB9A6A10DBFDD96008537BC /* MyChromaticLevels.h */,
+				8FB9A6A20DBFDD96008537BC /* MyChromaticLevels.m */,
+				8F0EE3550D035933007F6843 /* MyUnsharpMask.h */,
+				8F0EE3560D035933007F6843 /* MyUnsharpMask.m */,
+				8F0EE3570D035933007F6843 /* MyUnsharpMaskView.h */,
+				8F0EE3580D035933007F6843 /* MyUnsharpMaskView.m */,
+				8FDDBF930CDE59E10002BA95 /* ProcessingUtilities.c */,
+				8FDDBF870CDE57D90002BA95 /* ProcessingUtilities.h */,
+				8F4A232B0C1B1464006394E7 /* MyImageAnalyzerView.h */,
+				8F4A232C0C1B1464006394E7 /* MyImageAnalyzerView.m */,
+				8F9D174B0C1A007300D1F1FC /* MyImageAnalyzerPrefs.h */,
+				8F9D174C0C1A007300D1F1FC /* MyImageAnalyzerPrefs.m */,
+				8FCD24B60AAA5CDC00925AC5 /* LynkeosProcessing.h */,
+				8FCD24B70AAA5CDC00925AC5 /* MyImageAligner.h */,
+				8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */,
+				8FD0238F0BFB5207009AD1E0 /* MyImageAlignerPrefs.h */,
+				8FD023900BFB5207009AD1E0 /* MyImageAlignerPrefs.m */,
+				8FB40D5D0AFCF0130075623A /* MyImageAlignerView.h */,
+				8FB40D5E0AFCF0130075623A /* MyImageAlignerView.m */,
+				8F670C2E0C27231D00369DB6 /* MyImageStackerPrefs.h */,
+				8F670C2F0C27231D00369DB6 /* MyImageStackerPrefs.m */,
+				8F2000240C2C76FA0000AB91 /* MyImageStackerView.h */,
+				8F2000250C2C76FA0000AB91 /* MyImageStackerView.m */,
+				8FAD9EF90C25871200C79F5F /* MyImageStacker.h */,
+				8FAD9EFA0C25871200C79F5F /* MyImageStacker.m */,
+				8FDAEEC80A8409F700672703 /* processing_core.h */,
+				8FDAEEA00A8409F700672703 /* LynkeosImageBuffer.h */,
+				8FDAEE920A8409F700672703 /* corelation.h */,
+				8FDAEE930A8409F700672703 /* corelation.m */,
+				8F2F1AF40C161BE00051448E /* MyImageAnalyzer.h */,
+				8F2F1ADC0C161AE40051448E /* MyImageAnalyzer.h */,
+				8F2F1ADD0C161AE40051448E /* MyImageAnalyzer.m */,
+				8F1415DA0CAE4B0700590244 /* MyDeconvolution.h */,
+				8F1415DB0CAE4B0700590244 /* MyDeconvolution.m */,
+				8F0CBAD40CB1830900A6513C /* MyDeconvolutionView.h */,
+				8F0CBAD50CB1830900A6513C /* MyDeconvolutionView.m */,
+				8F6385A10CDB807E00055C49 /* MyLucyRichardson.h */,
+				8F6385A20CDB807E00055C49 /* MyLucyRichardson.m */,
+				8F0F92BB0CDCBF07008A9BD9 /* MyLucyRichardsonView.h */,
+				8F0F92BC0CDCBF07008A9BD9 /* MyLucyRichardsonView.m */,
+				8F84965C0D08A80500AF5085 /* MyWavelet.h */,
+				8F84965D0D08A80500AF5085 /* MyWavelet.m */,
+				8F1B2F280D098BE90090C4AF /* MyWaveletView.h */,
+				8F1B2F290D098BE90090C4AF /* MyWaveletView.m */,
+				8FB2A4360DA044370063A2B4 /* MyChromaticAlignerView.h */,
+				8FB2A4370DA044370063A2B4 /* MyChromaticAlignerView.m */,
+				8F02EE9B12D9F3EA00679086 /* MyImageStacker_Extrema.h */,
+				8F02EE9C12D9F3EA00679086 /* MyImageStacker_Extrema.m */,
+			);
+			name = Processing;
+			sourceTree = "<group>";
+		};
+		8FED912E0A9329A700746C7D /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				8FE158B80E119BE600C68210 /* ESO_wavelet.odt */,
+				8FED912F0A9329DE00746C7D /* doxy-filter */,
+				8FED91300A9329DE00746C7D /* Doxyfile */,
+				8FED91310A9329DE00746C7D /* doxytag-apple */,
+				8FED91320A9329DE00746C7D /* LICENSE.txt */,
+				8FED91330A9329DE00746C7D /* TODO.rtf */,
+				8F849A990E941D32004C5912 /* LynkeosCore.doxy */,
+			);
+			name = Doc;
+			sourceTree = "<group>";
+		};
+		8FFEC96A0C020E160023DDE0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8FCD24B20AAA5CBE00925AC5 /* LynkeosThreadConnection.h */,
+				8FCD24B30AAA5CBE00925AC5 /* LynkeosThreadConnection.m */,
+				8FCD24B90AAA5CDC00925AC5 /* MyProcessingThread.h */,
+				8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */,
+				8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */,
+				8FE3C35B0E588261002C9F4B /* LynkeosGammaCorrecter.h */,
+				8FE3C35C0E588261002C9F4B /* LynkeosGammaCorrecter.m */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8FD46CD80DD303FD00766CE1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6B8B7A0DD312870091895F /* corelation.h in Headers */,
+				8F6B8B7B0DD3128C0091895F /* LynkeosImageBuffer.h in Headers */,
+				8F6B8B7C0DD3128E0091895F /* LynkeosProcessing.h in Headers */,
+				8F6B8B7F0DD312C10091895F /* LynkeosFourierBuffer.h in Headers */,
+				8F6B8B800DD312C30091895F /* LynkeosStandardImageBuffer.h in Headers */,
+				8F6B8B8F0DD314150091895F /* LynkeosCommon.h in Headers */,
+				8FE2542C0DD32EB600213B84 /* LynkeosProcessingView.h in Headers */,
+				8FCE6F120DD89AC3008E69EC /* LynkeosLogFields.h in Headers */,
+				8FCE6F4F0DD8A095008E69EC /* LynkeosPreferences.h in Headers */,
+				8FCE6F570DD8A0BF008E69EC /* LynkeosColumnDescriptor.h in Headers */,
+				8F5A83FE0DD8A7DD00889420 /* LynkeosBasicAlignResult.h in Headers */,
+				8FE216C70DDF9559000E7D4D /* LynkeosFileReader.h in Headers */,
+				8FE216C80DDF9559000E7D4D /* LynkeosFileWriter.h in Headers */,
+				8F55FD0E0DDF9CB300EE9EE5 /* LynkeosProcessableImage.h in Headers */,
+				8F55FD100DDF9CC500EE9EE5 /* LynkeosProcessingParameterMgr.h in Headers */,
+				8F1DC44A0DDF9F270096729F /* SMDoubleSlider.h in Headers */,
+				8F1DC44C0DDF9F270096729F /* SMDoubleSliderCell.h in Headers */,
+				8F6792BC0E55B44800932A4B /* LynkeosThreadConnection.h in Headers */,
+				8FE3C35D0E588261002C9F4B /* LynkeosGammaCorrecter.h in Headers */,
+				8FAE70B00EBE063B00D9F041 /* LynkeosObjectCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* Lynkeos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Lynkeos" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				8FDAEF660A8413F700672703 /* CopyFiles */,
+				8FB3FF1B0DDFBA4F00B69A36 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			comments = "XCode does not support the explicit linking with a static library. Therefore, the libtiff.a is not added to the \"Frameworks\" but to the \"Other linker flags\" build setting of the Lynkeos target.";
+			dependencies = (
+				8FDAEF610A8413AA00672703 /* PBXTargetDependency */,
+				8F1369270A84C63A003D8FB7 /* PBXTargetDependency */,
+				8FDAEF630A8413D700672703 /* PBXTargetDependency */,
+				8FED916A0A937C0500746C7D /* PBXTargetDependency */,
+				8FD46DA40DD30DC300766CE1 /* PBXTargetDependency */,
+				8FC68F290AA4EE4700F85985 /* PBXTargetDependency */,
+				8F3319180D81D80900A9F023 /* PBXTargetDependency */,
+				8F6CF83D0C0240FD00CA0138 /* PBXTargetDependency */,
+				8F100E430DEB635A003A8B5E /* PBXTargetDependency */,
+			);
+			name = Lynkeos;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Lynkeos;
+			productReference = 8D15AC370486D014006FF6A4 /* Lynkeos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F13691E0A84C5AB003D8FB7 /* dcraw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F1369210A84C5CA003D8FB7 /* Build configuration list for PBXNativeTarget "dcraw" */;
+			buildPhases = (
+				8F13691C0A84C5AB003D8FB7 /* Sources */,
+				8F13691D0A84C5AB003D8FB7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dcraw;
+			productName = dcraw;
+			productReference = 8F13691F0A84C5AB003D8FB7 /* dcraw */;
+			productType = "com.apple.product-type.tool";
+		};
+		8F2175AA0ACDB7FA00B4E285 /* Tests-Process */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F2175AD0ACDB7FC00B4E285 /* Build configuration list for PBXNativeTarget "Tests-Process" */;
+			buildPhases = (
+				8F2175A60ACDB7FA00B4E285 /* Resources */,
+				8F2175A70ACDB7FA00B4E285 /* Sources */,
+				8F2175A80ACDB7FA00B4E285 /* Frameworks */,
+				8F2175A90ACDB7FA00B4E285 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD46DAE0DD30DDF00766CE1 /* PBXTargetDependency */,
+			);
+			name = "Tests-Process";
+			productName = "Tests-Process";
+			productReference = 8F2175AB0ACDB7FA00B4E285 /* Tests-Process.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8F33190B0D81D7F300A9F023 /* Tests-ThreadConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F3319100D81D7F400A9F023 /* Build configuration list for PBXNativeTarget "Tests-ThreadConnection" */;
+			buildPhases = (
+				8F3319070D81D7F300A9F023 /* Resources */,
+				8F3319080D81D7F300A9F023 /* Sources */,
+				8F3319090D81D7F300A9F023 /* Frameworks */,
+				8F33190A0D81D7F300A9F023 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tests-ThreadConnection";
+			productName = "Tests-ThreadConnection";
+			productReference = 8F33190C0D81D7F300A9F023 /* Tests-ThreadConnection.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8FC68F200AA4EE0600F85985 /* Tests-Appli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FC68F230AA4EE0700F85985 /* Build configuration list for PBXNativeTarget "Tests-Appli" */;
+			buildPhases = (
+				8FC68F1C0AA4EE0600F85985 /* Resources */,
+				8FC68F1D0AA4EE0600F85985 /* Sources */,
+				8FC68F1E0AA4EE0600F85985 /* Frameworks */,
+				8FC68F1F0AA4EE0600F85985 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FD46DA90DD30DD100766CE1 /* PBXTargetDependency */,
+			);
+			name = "Tests-Appli";
+			productName = "Tests-Appli";
+			productReference = 8FC68F210AA4EE0600F85985 /* Tests-Appli.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8FD46CDC0DD303FD00766CE1 /* LynkeosCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD46CDF0DD3040000766CE1 /* Build configuration list for PBXNativeTarget "LynkeosCore" */;
+			buildPhases = (
+				8FD46CD80DD303FD00766CE1 /* Headers */,
+				8FD46CD90DD303FD00766CE1 /* Resources */,
+				8FD46CDA0DD303FD00766CE1 /* Sources */,
+				8FD46CDB0DD303FD00766CE1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LynkeosCore;
+			productName = LynkeosCore;
+			productReference = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8FDAEEFC0A840E3900672703 /* FITS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDAEEFF0A840E3A00672703 /* Build configuration list for PBXNativeTarget "FITS" */;
+			buildPhases = (
+				8FDAEEF90A840E3900672703 /* Resources */,
+				8FDAEEFA0A840E3900672703 /* Sources */,
+				8FDAEEFB0A840E3900672703 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FITS;
+			productName = FITS;
+			productReference = 8FDAEEFD0A840E3900672703 /* FITS.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8FDAEF050A840E5200672703 /* RAW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FDAEF080A840E5300672703 /* Build configuration list for PBXNativeTarget "RAW" */;
+			buildPhases = (
+				8FDAEF020A840E5200672703 /* Resources */,
+				8FDAEF030A840E5200672703 /* Sources */,
+				8FDAEF040A840E5200672703 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F2BD01D0E8D7E570084D6BA /* PBXTargetDependency */,
+				8FC57A6F12CF8D870080E708 /* PBXTargetDependency */,
+			);
+			name = RAW;
+			productName = Dcraw;
+			productReference = 8FDAEF060A840E5200672703 /* RAW.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8FED915B0A937B8B00746C7D /* FFmpeg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FED915E0A937B8C00746C7D /* Build configuration list for PBXNativeTarget "FFmpeg" */;
+			buildPhases = (
+				8FED91580A937B8B00746C7D /* Resources */,
+				8FED91590A937B8B00746C7D /* Sources */,
+				8FED915A0A937B8B00746C7D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFmpeg;
+			productName = FFmpeg;
+			productReference = 8FED915C0A937B8B00746C7D /* FFmpeg.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Lynkeos" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+				Spanish,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* Lynkeos */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Lynkeos */,
+				8FDAEEFC0A840E3900672703 /* FITS */,
+				8FDAEF050A840E5200672703 /* RAW */,
+				8FED915B0A937B8B00746C7D /* FFmpeg */,
+				8F13691E0A84C5AB003D8FB7 /* dcraw */,
+				8FD46CDC0DD303FD00766CE1 /* LynkeosCore */,
+				8FD578D80DE36F2C004AAC5A /* Help */,
+				8FED91350A932A1D00746C7D /* Documentation */,
+				8FC68F200AA4EE0600F85985 /* Tests-Appli */,
+				8F2175AA0ACDB7FA00B4E285 /* Tests-Process */,
+				8F33190B0D81D7F300A9F023 /* Tests-ThreadConnection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				8F556AAF0A96FB10004A5E9C /* Changelog.rtf in Resources */,
+				8F556AB00A96FB10004A5E9C /* Copyrights.rtf in Resources */,
+				8F556AB10A96FB10004A5E9C /* License.rtf in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				8FDAEEF80A840DAE00672703 /* Localizable.strings in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8FDAEEF50A840D7200672703 /* ImageListWindow.nib in Resources */,
+				8FDAEF0D0A840E6900672703 /* TiffWriter.nib in Resources */,
+				8F3F92590CB26CDD003118D1 /* MyDeconvolution.nib in Resources */,
+				8F1369570A84CEF7003D8FB7 /* bottom.gif in Resources */,
+				8F1369580A84CEF7003D8FB7 /* bottomLeft.gif in Resources */,
+				8F1369590A84CEF7003D8FB7 /* bottomRight.gif in Resources */,
+				8F13695A0A84CEF7003D8FB7 /* cross.gif in Resources */,
+				8F13695B0A84CEF7003D8FB7 /* hand.gif in Resources */,
+				8F13695C0A84CEF7003D8FB7 /* left.gif in Resources */,
+				8F13695D0A84CEF7003D8FB7 /* Lynkeos.icns in Resources */,
+				8F13695E0A84CEF7003D8FB7 /* minus.gif in Resources */,
+				8F13695F0A84CEF7003D8FB7 /* Photolist.icns in Resources */,
+				8F1369600A84CEF7003D8FB7 /* plus.gif in Resources */,
+				8F1369610A84CEF7003D8FB7 /* right.gif in Resources */,
+				8F1369620A84CEF7003D8FB7 /* top.gif in Resources */,
+				8F1369630A84CEF7003D8FB7 /* topLeft.gif in Resources */,
+				8F1369640A84CEF7003D8FB7 /* topRight.gif in Resources */,
+				8F1369650A84CEF7003D8FB7 /* watch.gif in Resources */,
+				8F1369CB0A84FE80003D8FB7 /* Lynkeos help in Resources */,
+				8FD214B00B499F6F003DF095 /* MyImageAligner.nib in Resources */,
+				8FFC7A240BF2522D00E67179 /* Align.gif in Resources */,
+				8FC478AC0C06F29B009386B5 /* detachproc.gif in Resources */,
+				8FC478AD0C06F29B009386B5 /* hidelist.gif in Resources */,
+				8FC478AE0C06F29B009386B5 /* split.gif in Resources */,
+				8FC2A72D0C070C0900E44D6C /* hidemargin.gif in Resources */,
+				8F9D17E10C1A132500D1F1FC /* Analysis.gif in Resources */,
+				8F4A23DE0C1B2D67006394E7 /* MyImageAnalyzer.nib in Resources */,
+				8FAD3DAC0CB26FDF00B7F483 /* Deconvolution.gif in Resources */,
+				8F971A3F0CD4D11F0095E4E1 /* MyProcessStackView.nib in Resources */,
+				8F0F92D90CDCC290008A9BD9 /* MyLucyRichardson.nib in Resources */,
+				8FE489D50CF072FA004939C8 /* List.gif in Resources */,
+				8F9FFE6F0CF07F0A0049B7A4 /* LucyRichardson.gif in Resources */,
+				8FEBFDE00CF4DA9600C263B9 /* ProcessStack.gif in Resources */,
+				8F4D48590D036B0000965F8E /* MyUnsharpMask.nib in Resources */,
+				8F4D48640D03713500965F8E /* UnsharpMask.gif in Resources */,
+				8F1B2F590D09944D0090C4AF /* MyWavelet.nib in Resources */,
+				8F1B2FEE0D09AC890090C4AF /* Wavelet.gif in Resources */,
+				8F512B430D95153000086CD4 /* Cache.gif in Resources */,
+				8FB2A4320D9FFBEB0063A2B4 /* MyChromaticAlign.nib in Resources */,
+				8F03CEB00DA5774000585440 /* ChromaticAlign.gif in Resources */,
+				8FC9E0430DBB80B3006C115F /* MyChromaticLevels.nib in Resources */,
+				8FE4399A0DC791CD00981D5E /* ChromaticLevels.gif in Resources */,
+				8F02EEAC12DA06BB00679086 /* MyImageStacker.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2175A60ACDB7FA00B4E285 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3319070D81D7F300A9F023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC68F1C0AA4EE0600F85985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD46CD90DD303FD00766CE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEEF90A840E3900672703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDAEF140A840E8C00672703 /* FITSWriter.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEF020A840E5200672703 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBB17260AA106A1003E8C5D /* dcraw in Resources */,
+				8FAD2F210D948686006D43D3 /* dcraw_file_extensions.plist in Resources */,
+				8FF352170E8AE52800C4F672 /* Dcraw.icns in Resources */,
+				8FAEE53212CBADEC0020C6BB /* DcrawReaderPrefs.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FED91580A937B8B00746C7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F2175A90ACDB7FA00B4E285 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest.OK.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle, and record the result\nrm ${TEST_RESULT}.KO.txt 2> /dev/null\n\n# There is hack to rename the result file in case of failure, in order to force test execution until success\nTEST_RESULT=${TARGET_BUILD_DIR}/${TARGETNAME}.octest\n(\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" || mv ${TEST_RESULT}.OK.txt ${TEST_RESULT}.KO.txt ) 2>&1 | tee ${TEST_RESULT}.OK.txt\n# Exit with the test result\ntest -f ${TEST_RESULT}.OK.txt\n";
+		};
+		8F33190A0D81D7F300A9F023 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest.OK.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle, and record the result\nrm ${TEST_RESULT}.KO.txt 2> /dev/null\n\n# There is hack to rename the result file in case of failure, in order to force test execution until success\nTEST_RESULT=${TARGET_BUILD_DIR}/${TARGETNAME}.octest\n(\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" || mv ${TEST_RESULT}.OK.txt ${TEST_RESULT}.KO.txt ) 2>&1 | tee ${TEST_RESULT}.OK.txt\n# Exit with the test result\ntest -f ${TEST_RESULT}.OK.txt\n";
+		};
+		8F849AD30E94239D004C5912 /* LynkeosCore doc */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "LynkeosCore doc";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Place ourselves in the documentation folder\ncd $TARGET_BUILD_DIR\n\n# First generate the tag files\n#export BASEDOC='/Developer/ADC Reference Library/documentation/Cocoa/Reference'\nexport BASEDOC='/Developer/Documentation/DocSets/com.apple.ADC_Reference_Library.CoreReference.docset/Contents/Resources/Documents/documentation/Cocoa/Reference'\nif [ -z \"$BASEDOCURL\" ]\nthen\n  export BASEDOCURL=$(echo $BASEDOC | sed -e \"s/\\ /%20/g\" )\nfi\n\nif [ ! -f foundation.tag ]\nthen\n  $SOURCE_ROOT/Docs/doxytag-apple foundation.tag \"$BASEDOC/Foundation\" Classes Protocols\nfi\nif [ ! -f appkit.tag ]\nthen\n  $SOURCE_ROOT/Docs/doxytag-apple appkit.tag \"$BASEDOC/ApplicationKit\" Classes Protocols\nfi\n\n# And run Doxygen\nexport DOXYTOOLS=/Developer/Applications/Utilities/\n$DOXYTOOLS/Doxygen.app/Contents/Resources/doxygen $SOURCE_ROOT/Docs/LynkeosCore.doxy\n\nexit $?";
+		};
+		8FC68F1F0AA4EE0600F85985 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest",
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${TARGETNAME}.octest.OK.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle, and record the result\nrm -f ${TEST_RESULT}.KO.txt 2> /dev/null\n\n# There is hack to rename the result file in case of failure, in order to force test execution until success\nTEST_RESULT=${TARGET_BUILD_DIR}/${TARGETNAME}.octest\n(\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\" || mv ${TEST_RESULT}.OK.txt ${TEST_RESULT}.KO.txt ) 2>&1 | tee ${TEST_RESULT}.OK.txt\n# Exit with the test result\ntest -f ${TEST_RESULT}.OK.txt\n";
+		};
+		8FD578D70DE36F2C004AAC5A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#set -x\n\nexport PATH=$PATH:/opt/local/bin\n\nxml --version > /dev/null\nif [ $? -ne 0 ]\nthen\n   echo \"error: You shall install xmlstarlet tools in /opt/local to build the help\"\n   exit 1\nfi\n\ncd ${TARGET_TEMP_DIR}\ntest -d \"wikidump\" || ${SRCROOT}/Help/mw2html.sh --restrict=https://sourceforge.net/apps/mediawiki/lynkeos/ https://sourceforge.net/apps/mediawiki/lynkeos/index.php?title=Help:Contents wikidump\n\nsrc=${TARGET_TEMP_DIR}/wikidump\ntest -d \"${SRCROOT}/English.lproj/Lynkeos help\" || mkdir \"${SRCROOT}/English.lproj/Lynkeos help\"\ntest -d \"${SRCROOT}/French.lproj/Lynkeos help\" || mkdir \"${SRCROOT}/French.lproj/Lynkeos help\"\n\nfunction buildHelp\n{\nset -x\nxmlconf=$1\n\ncd ${TARGET_TEMP_DIR}\n\nlocale=$(xml sel -T -t -m \"/xml\" -v \"localization\" $xmlconf)\ndst=$(xml sel -T -t -m \"/xml\" -v \"destination\" $xmlconf)\nref=${SRCROOT}/Help/${locale}\nembed=$(xml sel -T -t -m \"/xml\" -v \"embed\" $xmlconf)\ncase $embed in\n   Y|YES|Yes|yes) dstpath=${SRCROOT}/${locale}.lproj/$dst ;;\n   *) dstpath=${TARGET_BUILD_DIR}/Help/Resources/${locale}.lproj/$dst\nesac\n\n# Check dependencies, and do nothing if no new prerequisite\nif [ -d \"$dstpath\" ]\nthen\n   newer=$(find ${SRCROOT}/Help -newer \"$dstpath\")\nelse\n   newer=$xmlconf\nfi\ntest -n \"$newer\" -o $src -nt \"${dstpath}/${dst}.helpindex\" -o $src -nt \"$dstpath\" || return 0\n\necho \"Building $dst\"\n\n# Clean destination directory before building\ntest ! -d \"$dstpath\" || rm -rf \"$dstpath\"\nmkdir \"$dstpath\"\n\n# First, copy common files\ncp $src/external.png \"$dstpath\"\ncp $ref/../project-support.jpg \"$dstpath\"\ncp $ref/../LynkeosHelpIcon.gif \"$dstpath\"\ncp $ref/../main.css \"$dstpath\"\ncp $ref/LynkeosHelp.html \"$dstpath\"\ncp $ref/LynkeosToc.html \"$dstpath\"\n\n# Alter and copy html files\nhtmllist=$(xml sel -T -t -m \"/xml/help/file\" -v \"@name\" -n $xmlconf)\nfor f in $htmllist\ndo\n   # Extract parameters for this file\n   title=$(xml sel -T -t -m \"/xml/help/file[@name='$f']\" -v \"title\" $xmlconf)\n   description=$(xml sel -T -t -m \"/xml/help/file[@name='$f']\" -v \"description\" $xmlconf)\n   if [ -z \"$description\" ] ; then description=$title ; fi\n   noindex=$(xml sel -t -v \"count(/xml/help/file[@name='$f']/noindex)\" $xmlconf)\n   stripTOC=$(xml sel -t -v \"count(/xml/help/file[@name='$f']/stripTOC)\" $xmlconf)\n\n   # Extract additional xslt if any (it will be included in the main xslt file)\n   echo \"<?xml version='1.0' encoding='utf-8'?>\" > extraTemplates.xslt\n   echo \"<xsl:stylesheet version='1.0' xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>\" >> extraTemplates.xslt\n   xml sel -t -m \"/xml/help/file[@name='$f']\" -c \"xsl:template\" -n $xmlconf >> extraTemplates.xslt\n   echo \"</xsl:stylesheet>\" >> extraTemplates.xslt\n\n   # Transform to Apple help compliant HTML\n   xsltproc --html --path ${TARGET_TEMP_DIR} \\\n      --stringparam \"title\" \"$title\" \\\n      --stringparam \"description\" \"$description\" \\\n      --param \"noindex\" \"$noindex\" \\\n      --param \"stripTOC\" \"$stripTOC\" \\\n      ${SRCROOT}/Help/wiki2AppleHelp.xslt \"$src\"/$f.html | xml fo -o -H > \"$dstpath\"/$f.html\n\n   # Extract all images used in this page and copy missing ones\n   images=$(xml sel -t -m \"//img\" -v \"@src\" -n \"$dstpath\"/$f.html)\n   for i in $images\n   do\n      test -f \"$dstpath\"/$i || cp \"$src\"/$i \"$dstpath\"/$i\n   done\ndone\n\n# Index the result\ncase \"$locale\" in\n   \"English\") stopword=\"en\" ;;\n   \"French\") stopword=\"fr\" ;;\nesac\nhiutil -C -f \"${dstpath}/${dst}.helpindex\" -a -s \"$stopword\" \"${dstpath}\"\n}\n\n# Generate the help files\nbuildHelp ${SRCROOT}/Help/English/englishHelp.xml\nbuildHelp ${SRCROOT}/Help/French/frenchHelp.xml\n";
+		};
+		8FED91360A932A2800746C7D /* Lynkeos doc */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Docs/Doxyfile",
+				"$(SRCROOT)/Sources/*.[hmc]",
+				"$(SRCROOT)/ThreadConnectionSources/*.hmc",
+			);
+			name = "Lynkeos doc";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/LynkeosDoc/html/index.html",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Place ourselves in the documentation folder\ncd $TARGET_BUILD_DIR\n\n# First generate the tag files\n#export BASEDOC='/Developer/ADC Reference Library/documentation/Cocoa/Reference'\nexport BASEDOC='/Developer/Documentation/DocSets/com.apple.ADC_Reference_Library.CoreReference.docset/Contents/Resources/Documents/documentation/Cocoa/Reference'\nif [ -z \"$BASEDOCURL\" ]\nthen\n  export BASEDOCURL=$(echo $BASEDOC | sed -e \"s/\\ /%20/g\" )\nfi\n\nif [ ! -f foundation.tag ]\nthen\n  $SOURCE_ROOT/Docs/doxytag-apple foundation.tag \"$BASEDOC/Foundation\" Classes Protocols\nfi\nif [ ! -f appkit.tag ]\nthen\n  $SOURCE_ROOT/Docs/doxytag-apple appkit.tag \"$BASEDOC/ApplicationKit\" Classes Protocols\nfi\n\n# And run Doxygen\nexport DOXYTOOLS=/Developer/Applications/Utilities/\n$DOXYTOOLS/Doxygen.app/Contents/Resources/doxygen $SOURCE_ROOT/Docs/Doxyfile\n\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDAEECE0A8409F700672703 /* main.m in Sources */,
+				8FDAEECF0A8409F700672703 /* MyCalibrationLock.m in Sources */,
+				8FDAEED00A8409F700672703 /* MyCocoaFilesReader.m in Sources */,
+				8FDAEED10A8409F700672703 /* MyCustomViews.m in Sources */,
+				8FDAEED20A8409F700672703 /* MyDocument.m in Sources */,
+				8FDAEED30A8409F700672703 /* MyDocumentData.m in Sources */,
+				8FDAEED50A8409F700672703 /* MyImageList.m in Sources */,
+				8FDAEED60A8409F700672703 /* MyImageListEnumerator.m in Sources */,
+				8FDAEED70A8409F700672703 /* MyImageListItem.m in Sources */,
+				8FDAEED80A8409F700672703 /* MyImageListWindow.m in Sources */,
+				8FDAEEDA0A8409F700672703 /* MyImageView.m in Sources */,
+				8FDAEEDB0A8409F700672703 /* MyImageViewSelection.m in Sources */,
+				8FDAEEDF0A8409F700672703 /* MyTiff16Reader.m in Sources */,
+				8FDAEEE00A8409F700672703 /* MyTiffWriter.m in Sources */,
+				8FDAEEE10A8409F700672703 /* MyUserPrefsController.m in Sources */,
+				8F556ACD0A96FCFF004A5E9C /* MyAboutWindowController.m in Sources */,
+				8FCD24BD0AAA5CDC00925AC5 /* MyImageAligner.m in Sources */,
+				8FCD24BF0AAA5CDC00925AC5 /* MyProcessingThread.m in Sources */,
+				8FB40D600AFCF0130075623A /* MyImageAlignerView.m in Sources */,
+				8FD758E20B98949100FDC857 /* MyPluginsController.m in Sources */,
+				8FC424880B9B6DF30073860C /* MyListManagement.m in Sources */,
+				8FD023920BFB5207009AD1E0 /* MyImageAlignerPrefs.m in Sources */,
+				8FD023AA0BFB5385009AD1E0 /* MyGeneralPrefs.m in Sources */,
+				8FC51EB90C0327F900023B55 /* MyImageListWindowToolbar.m in Sources */,
+				8FC51ED20C033A9100023B55 /* MyImageListWindowOutlineView.m in Sources */,
+				8FC51EE30C033BDA00023B55 /* MyImageListWindowSplitView.m in Sources */,
+				8F2F1ADF0C161AE40051448E /* MyImageAnalyzer.m in Sources */,
+				8F9D174E0C1A007300D1F1FC /* MyImageAnalyzerPrefs.m in Sources */,
+				8F4A232E0C1B1464006394E7 /* MyImageAnalyzerView.m in Sources */,
+				8FAD9EFC0C25871200C79F5F /* MyImageStacker.m in Sources */,
+				8F670C310C27231D00369DB6 /* MyImageStackerPrefs.m in Sources */,
+				8F2000270C2C76FA0000AB91 /* MyImageStackerView.m in Sources */,
+				8F1415DD0CAE4B0800590244 /* MyDeconvolution.m in Sources */,
+				8F0CBAD70CB1830900A6513C /* MyDeconvolutionView.m in Sources */,
+				8FB28C930CD3CEDB001B5354 /* MyProcessStackView.m in Sources */,
+				8F6385A40CDB807E00055C49 /* MyLucyRichardson.m in Sources */,
+				8F0F92BE0CDCBF07008A9BD9 /* MyLucyRichardsonView.m in Sources */,
+				8F0EE35A0D035933007F6843 /* MyUnsharpMask.m in Sources */,
+				8F0EE35C0D035933007F6843 /* MyUnsharpMaskView.m in Sources */,
+				8F84965F0D08A80500AF5085 /* MyWavelet.m in Sources */,
+				8F1B2F2B0D098BE90090C4AF /* MyWaveletView.m in Sources */,
+				8FD573770D8AF50000D743CC /* MyCachePrefs.m in Sources */,
+				8FE834240D97B41C00EF04EC /* MyCustomAlert.m in Sources */,
+				8FB2A4380DA044370063A2B4 /* MyChromaticAlignerView.m in Sources */,
+				8FB9A6A30DBFDD96008537BC /* MyChromaticLevels.m in Sources */,
+				8FD961340E7D1AC9007152D3 /* ProcessingUtilities.c in Sources */,
+				8F51E9130ECD8B5400E9BAA8 /* ProcessStackManager.m in Sources */,
+				8FA0357D12CFCB7E0061A6B1 /* MyImageStacker_Standard.m in Sources */,
+				8FEBD9F012D27799007AA622 /* MyImageStacker_SigmaReject.m in Sources */,
+				8F02EE9D12D9F3EA00679086 /* MyImageStacker_Extrema.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F13691C0A84C5AB003D8FB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1369240A84C5CC003D8FB7 /* dcraw.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2175A70ACDB7FA00B4E285 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F2175B00ACDB8AB00B4E285 /* MyImageAligner.m in Sources */,
+				8F81F4B90ACDCABF00557A09 /* MyProcessingThread.m in Sources */,
+				8F3824EE0AD854F400428518 /* MyImageAlignerTest.m in Sources */,
+				8FC932370AEC027200A99147 /* MyDocument.m in Sources */,
+				8FC932380AEC028300A99147 /* MyCalibrationLock.m in Sources */,
+				8FC9323E0AEC02DD00A99147 /* MyImageList.m in Sources */,
+				8FC9323F0AEC02DF00A99147 /* MyImageListEnumerator.m in Sources */,
+				8FC932410AEC02ED00A99147 /* MyDocumentData.m in Sources */,
+				8FC932590AEC088500A99147 /* MyImageListItem.m in Sources */,
+				8FC423E30B9B57FE0073860C /* MyPluginsController.m in Sources */,
+				8FE834280D97BE7600EF04EC /* MyCustomAlert.m in Sources */,
+				8F1CE0260E104D6B00B58387 /* MyWaveletTest.m in Sources */,
+				8F1CE02B0E104DB400B58387 /* MyWavelet.m in Sources */,
+				8F8669AB0E61B5BA007BF235 /* MyUnsharpMaskTest.m in Sources */,
+				8F8669D40E61B970007BF235 /* MyUnsharpMask.m in Sources */,
+				8F1F2E600E6EF90900A8D69E /* MyDeconvolutionTest.m in Sources */,
+				8F1F2E7B0E6EFBA500A8D69E /* MyDeconvolution.m in Sources */,
+				8F51E99B0ECDDB7B00E9BAA8 /* ProcessStackManager.m in Sources */,
+				8FB083760ED066B1000E88B4 /* ProcessStackTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3319080D81D7F300A9F023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F33192A0D81D86F00A9F023 /* MyThreadConnectionTest.m in Sources */,
+				8F3319340D81F14200A9F023 /* LynkeosThreadConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC68F1D0AA4EE0600F85985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FC68F260AA4EE2400F85985 /* MyImageBufferTest.m in Sources */,
+				8F0DBD810AB0C0BA004AC636 /* MyImageListItemTest.m in Sources */,
+				8F0DBDBC0AB0CCCC004AC636 /* MyImageListItem.m in Sources */,
+				8FC4246B0B9B699C0073860C /* MyPluginsController.m in Sources */,
+				8F49AADE0D3EA94C00D0BC60 /* MyImageListEnumeratorTest.m in Sources */,
+				8FD85A490D4007CC00E7FA65 /* MyImageListEnumerator.m in Sources */,
+				8FCBEB990E844E70008B7545 /* LynkeosFourierBufferTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD46CDA0DD303FD00766CE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD46CE20DD3046800766CE1 /* LynkeosFourierBuffer.m in Sources */,
+				8FD46CFA0DD304FC00766CE1 /* LynkeosStandardImageBuffer.m in Sources */,
+				8FD46DBD0DD30EA400766CE1 /* corelation.m in Sources */,
+				8FCA4FE50DD34E0700E76E46 /* LynkeosBasicAlignResult.m in Sources */,
+				8FCE6ED70DD89881008E69EC /* LynkeosProcessingDefs.m in Sources */,
+				8FCE6F130DD89AC3008E69EC /* LynkeosLogFields.m in Sources */,
+				8FCE6F490DD8A06E008E69EC /* LynkeosImageProcessingParameter.m in Sources */,
+				8FCE6F580DD8A0BF008E69EC /* LynkeosColumnDescriptor.m in Sources */,
+				8F55FD0F0DDF9CBE00EE9EE5 /* LynkeosProcessableImage.m in Sources */,
+				8F55FD110DDF9CCE00EE9EE5 /* LynkeosProcessingParameterMgr.m in Sources */,
+				8F55FD130DDF9CFC00EE9EE5 /* LynkeosThreadConnection.m in Sources */,
+				8F1DC44B0DDF9F270096729F /* SMDoubleSlider.m in Sources */,
+				8F1DC44D0DDF9F270096729F /* SMDoubleSliderCell.m in Sources */,
+				8FE3C35E0E588261002C9F4B /* LynkeosGammaCorrecter.m in Sources */,
+				8FAE70B10EBE063B00D9F041 /* LynkeosObjectCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEEFA0A840E3900672703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDAEF5D0A84137A00672703 /* FITSReader.m in Sources */,
+				8FDAEF5E0A84137A00672703 /* FITSWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FDAEF030A840E5200672703 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FDAEF5F0A84138F00672703 /* DcrawReader.m in Sources */,
+				8FF351CF0E8ADFD100C4F672 /* DcrawReaderPrefs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FED91590A937B8B00746C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FED91630A937BC000746C7D /* FFmpegReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F100E430DEB635A003A8B5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD578D80DE36F2C004AAC5A /* Help */;
+			targetProxy = 8F100E420DEB635A003A8B5E /* PBXContainerItemProxy */;
+		};
+		8F1369270A84C63A003D8FB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F13691E0A84C5AB003D8FB7 /* dcraw */;
+			targetProxy = 8F1369260A84C63A003D8FB7 /* PBXContainerItemProxy */;
+		};
+		8F2BD01D0E8D7E570084D6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD46CDC0DD303FD00766CE1 /* LynkeosCore */;
+			targetProxy = 8F2BD01C0E8D7E570084D6BA /* PBXContainerItemProxy */;
+		};
+		8F3319180D81D80900A9F023 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F33190B0D81D7F300A9F023 /* Tests-ThreadConnection */;
+			targetProxy = 8F3319170D81D80900A9F023 /* PBXContainerItemProxy */;
+		};
+		8F6CF83D0C0240FD00CA0138 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F2175AA0ACDB7FA00B4E285 /* Tests-Process */;
+			targetProxy = 8F6CF83C0C0240FD00CA0138 /* PBXContainerItemProxy */;
+		};
+		8F849AF90E94309F004C5912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD46CDC0DD303FD00766CE1 /* LynkeosCore */;
+			targetProxy = 8F849AF80E94309F004C5912 /* PBXContainerItemProxy */;
+		};
+		8FC57A6F12CF8D870080E708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F13691E0A84C5AB003D8FB7 /* dcraw */;
+			targetProxy = 8FC57A6E12CF8D870080E708 /* PBXContainerItemProxy */;
+		};
+		8FC68F290AA4EE4700F85985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FC68F200AA4EE0600F85985 /* Tests-Appli */;
+			targetProxy = 8FC68F280AA4EE4700F85985 /* PBXContainerItemProxy */;
+		};
+		8FD46DA40DD30DC300766CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD46CDC0DD303FD00766CE1 /* LynkeosCore */;
+			targetProxy = 8FD46DA30DD30DC300766CE1 /* PBXContainerItemProxy */;
+		};
+		8FD46DA90DD30DD100766CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD46CDC0DD303FD00766CE1 /* LynkeosCore */;
+			targetProxy = 8FD46DA80DD30DD100766CE1 /* PBXContainerItemProxy */;
+		};
+		8FD46DAE0DD30DDF00766CE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FD46CDC0DD303FD00766CE1 /* LynkeosCore */;
+			targetProxy = 8FD46DAD0DD30DDF00766CE1 /* PBXContainerItemProxy */;
+		};
+		8FDAEF610A8413AA00672703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDAEEFC0A840E3900672703 /* FITS */;
+			targetProxy = 8FDAEF600A8413AA00672703 /* PBXContainerItemProxy */;
+		};
+		8FDAEF630A8413D700672703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FDAEF050A840E5200672703 /* RAW */;
+			targetProxy = 8FDAEF620A8413D700672703 /* PBXContainerItemProxy */;
+		};
+		8FED916A0A937C0500746C7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FED915B0A937B8B00746C7D /* FFmpeg */;
+			targetProxy = 8FED91690A937C0500746C7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1660FE840EACC02AAC07 /* English */,
+				8FDAEF2A0A84105200672703 /* French */,
+				8FDAEF2B0A84105700672703 /* Italian */,
+				8FDAEF2C0A84105C00672703 /* Spanish */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4B7FDCFA73011CA2CEA /* English */,
+				8FA7A5750D47FF070078ED78 /* French */,
+				8F30CA2C0D54E70500D3237B /* Italian */,
+				8FBA977B0D5527F500103563 /* Spanish */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A37F4BAFDCFA73011CA2CEA /* English */,
+				8FDAEF270A84103400672703 /* French */,
+				8FDAEF280A84103A00672703 /* Italian */,
+				8FDAEF290A84104100672703 /* Spanish */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8F02EEAA12DA06BB00679086 /* MyImageStacker.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F02EEAB12DA06BB00679086 /* English */,
+				8F02EEAD12DA06D300679086 /* French */,
+				8F02EEAE12DA06EF00679086 /* Spanish */,
+				8F02EEBB12DA156500679086 /* Italian */,
+			);
+			name = MyImageStacker.xib;
+			sourceTree = "<group>";
+		};
+		8F0F92D80CDCC290008A9BD9 /* MyLucyRichardson.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F0F92CE0CDCC23D008A9BD9 /* English */,
+				8FC8D35A0D493BA400F48051 /* French */,
+				8FBA97830D55284500103563 /* Spanish */,
+			);
+			name = MyLucyRichardson.nib;
+			sourceTree = "<group>";
+		};
+		8F13698D0A84FE80003D8FB7 /* Lynkeos help */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F13698E0A84FE80003D8FB7 /* English */,
+				8F1369CC0A84FEA2003D8FB7 /* French */,
+			);
+			name = "Lynkeos help";
+			sourceTree = "<group>";
+		};
+		8F1B2F580D09944D0090C4AF /* MyWavelet.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F1B2F420D098F640090C4AF /* English */,
+				8FC8D3690D49458400F48051 /* French */,
+				8FBA97840D55284F00103563 /* Spanish */,
+			);
+			name = MyWavelet.nib;
+			sourceTree = "<group>";
+		};
+		8F3F92580CB26CDD003118D1 /* MyDeconvolution.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FCEFCAC0CB234A600E417AF /* English */,
+				8FC8D3510D4937D000F48051 /* French */,
+				8F4493FD0D55159A00C10124 /* Italian */,
+				8FBA97800D55282900103563 /* Spanish */,
+			);
+			name = MyDeconvolution.nib;
+			sourceTree = "<group>";
+		};
+		8F4A23DC0C1B2D67006394E7 /* MyImageAnalyzer.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F4A23DD0C1B2D67006394E7 /* English */,
+				8FC8D3550D49396000F48051 /* French */,
+				8F4493FB0D55158200C10124 /* Italian */,
+				8FBA977E0D55281600103563 /* Spanish */,
+			);
+			name = MyImageAnalyzer.nib;
+			sourceTree = "<group>";
+		};
+		8F4D48580D036B0000965F8E /* MyUnsharpMask.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F4D484E0D036AE300965F8E /* English */,
+				8FC8D3670D49446000F48051 /* French */,
+				8F4493FE0D5515A400C10124 /* Italian */,
+				8FBA97810D55283200103563 /* Spanish */,
+			);
+			name = MyUnsharpMask.nib;
+			sourceTree = "<group>";
+		};
+		8F556AA90A96FB10004A5E9C /* Changelog.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F556AAA0A96FB10004A5E9C /* English */,
+				8F556AB20A96FB33004A5E9C /* French */,
+				8F556AB30A96FB42004A5E9C /* Italian */,
+				8F556AB40A96FB4C004A5E9C /* Spanish */,
+			);
+			name = Changelog.rtf;
+			sourceTree = "<group>";
+		};
+		8F556AAB0A96FB10004A5E9C /* Copyrights.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F556AAC0A96FB10004A5E9C /* English */,
+				8F556AB50A96FB5F004A5E9C /* French */,
+				8F556AB60A96FB65004A5E9C /* Italian */,
+				8F556AB70A96FB6B004A5E9C /* Spanish */,
+			);
+			name = Copyrights.rtf;
+			sourceTree = "<group>";
+		};
+		8F556AAD0A96FB10004A5E9C /* License.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F556AAE0A96FB10004A5E9C /* English */,
+				8F556AE70A96FFB0004A5E9C /* French */,
+				8F991C3D0A97863D00A4EFD5 /* Italian */,
+				8F21D4060A9CE86400165029 /* Spanish */,
+			);
+			name = License.rtf;
+			sourceTree = "<group>";
+		};
+		8F971A3E0CD4D11F0095E4E1 /* MyProcessStackView.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F85CAB80CD4D02300038226 /* English */,
+				8FC8D3650D49431E00F48051 /* French */,
+				8FBA97820D55283C00103563 /* Spanish */,
+			);
+			name = MyProcessStackView.nib;
+			sourceTree = "<group>";
+		};
+		8FAEE53012CBADEC0020C6BB /* DcrawReaderPrefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FAEE53112CBADEC0020C6BB /* English */,
+				8FAEE53412CBAE0E0020C6BB /* French */,
+				8FAEE53612CBAE2E0020C6BB /* Spanish */,
+			);
+			name = DcrawReaderPrefs.xib;
+			sourceTree = "<group>";
+		};
+		8FB2A4310D9FFBEB0063A2B4 /* MyChromaticAlign.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB2A4120D9FFAA70063A2B4 /* English */,
+				8FA892460DB93B2800A89D18 /* French */,
+				8FA892470DB93B3200A89D18 /* Spanish */,
+			);
+			name = MyChromaticAlign.nib;
+			sourceTree = "<group>";
+		};
+		8FC9E0420DBB80B3006C115F /* MyChromaticLevels.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FBB197A0DBA53B10020EDDC /* English */,
+				8FE439A10DC7920100981D5E /* French */,
+				8FE439A30DC7A99200981D5E /* Spanish */,
+			);
+			name = MyChromaticLevels.nib;
+			sourceTree = "<group>";
+		};
+		8FD214AE0B499F6F003DF095 /* MyImageAligner.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FD214AF0B499F6F003DF095 /* English */,
+				8FC8D3530D49386500F48051 /* French */,
+				8F4493FA0D55157600C10124 /* Italian */,
+				8FBA977D0D55280C00103563 /* Spanish */,
+			);
+			name = MyImageAligner.nib;
+			sourceTree = "<group>";
+		};
+		8FDAEEF30A840D7200672703 /* ImageListWindow.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDAEEF40A840D7200672703 /* English */,
+				8FBB2CEE0D47FAC900AF45AF /* French */,
+				8FD2ED0B0D54E0D100C77A28 /* Italian */,
+				8FBA977C0D5527FF00103563 /* Spanish */,
+			);
+			name = ImageListWindow.nib;
+			sourceTree = "<group>";
+		};
+		8FDAEEF60A840DAE00672703 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDAEEF70A840DAE00672703 /* English */,
+				8FDAEF240A84101A00672703 /* French */,
+				8FDAEF250A84102000672703 /* Italian */,
+				8FDAEF260A84102500672703 /* Spanish */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		8FDAEF0B0A840E6900672703 /* TiffWriter.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDAEF0C0A840E6900672703 /* English */,
+				8FDAEF1E0A840FD800672703 /* French */,
+				8FDAEF1F0A840FDE00672703 /* Italian */,
+				8FDAEF200A840FE700672703 /* Spanish */,
+			);
+			name = TiffWriter.nib;
+			sourceTree = "<group>";
+		};
+		8FDAEF120A840E8C00672703 /* FITSWriter.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FDAEF130A840E8C00672703 /* English */,
+				8FDAEF210A840FF700672703 /* French */,
+				8FDAEF220A840FFE00672703 /* Italian */,
+				8FDAEF230A84100600672703 /* Spanish */,
+			);
+			name = FITSWriter.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F1369220A84C5CA003D8FB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NO_JPEG,
+					NO_LCMS,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = dcraw;
+			};
+			name = Debug;
+		};
+		8F1369230A84C5CA003D8FB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NO_JPEG,
+					NO_LCMS,
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_SIGN_COMPARE = NO;
+				INSTALL_PATH = "$(HOME)/bin";
+				PREBINDING = NO;
+				PRODUCT_NAME = dcraw;
+			};
+			name = Release;
+		};
+		8F2175AE0ACDB7FC00B4E285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_PREPROCESSOR_DEFINITIONS = NO_FILE_FORMAT_COMPATIBILITY_CODE;
+				INFOPLIST_FILE = "Tests-Process-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-Process";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		8F2175AF0ACDB7FC00B4E285 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
+					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_PREPROCESSOR_DEFINITIONS = NO_FILE_FORMAT_COMPATIBILITY_CODE;
+				INFOPLIST_FILE = "Tests-Process-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-Process";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8F33190E0D81D7F400A9F023 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-ThreadConnection-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-ThreadConnection";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8F33190F0D81D7F400A9F023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				INFOPLIST_FILE = "Tests-ThreadConnection-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-ThreadConnection";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8FC68F240AA4EE0700F85985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(value)",
+					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_PREPROCESSOR_DEFINITIONS = NO_FILE_FORMAT_COMPATIBILITY_CODE;
+				INFOPLIST_FILE = "Tests-Appli-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-Appli";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		8FC68F250AA4EE0700F85985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(value)",
+					"$(DEVELOPER_FRAMEWORKS_DIR_QUOTED)",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Cocoa.framework/Headers/Cocoa.h";
+				GCC_PREPROCESSOR_DEFINITIONS = NO_FILE_FORMAT_COMPATIBILITY_CODE;
+				INFOPLIST_FILE = "Tests-Appli-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "Tests-Appli";
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8FD46CE00DD3040000766CE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				FRAMEWORK_VERSION = B;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LynkeosCore-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LynkeosCore;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		8FD46CE10DD3040000766CE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				FRAMEWORK_VERSION = B;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = "LynkeosCore-Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = LynkeosCore;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8FD578D90DE36F2D004AAC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Help;
+			};
+			name = Debug;
+		};
+		8FD578DA0DE36F2D004AAC5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Help;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8FDAEF000A840E3A00672703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FITS-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FITS;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8FDAEF010A840E3A00672703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FITS-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FITS;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8FDAEF090A840E5300672703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Carbon.framework/Headers/Carbon.h";
+				INFOPLIST_FILE = "Dcraw-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = RAW;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8FDAEF0A0A840E5300672703 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				INFOPLIST_FILE = "Dcraw-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PREBINDING = NO;
+				PRODUCT_NAME = RAW;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8FED91390A932A8100746C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Documentation;
+			};
+			name = Debug;
+		};
+		8FED913A0A932A8100746C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = Documentation;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8FED915F0A937B8C00746C7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FFmpeg-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FFmpeg;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8FED91600A937B8C00746C7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "FFmpeg-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = FFmpeg;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 21.0;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS = (
+					"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/usr/local/lib/libtiff.a",
+					"-lz",
+				);
+				PRODUCT_NAME = Lynkeos;
+				STRIP_STYLE = debugging;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				CURRENT_PROJECT_VERSION = 2.1.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				OTHER_LDFLAGS = (
+					"$(SYSTEM_DEVELOPER_DIR)/SDKs/MacOSX10.4u.sdk/usr/local/lib/libtiff.a",
+					"-lz",
+				);
+				PRODUCT_NAME = Lynkeos;
+				STRIP_STYLE = debugging;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				BASEDOCURL = "";
+				CURRENT_PROJECT_VERSION = 25.0;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = "-mmacosx-version-min=10.5";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				BASEDOCURL = "http://developer.apple.com/documentation/Cocoa/Reference";
+				CURRENT_PROJECT_VERSION = 25.0;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				OTHER_CFLAGS = "-mmacosx-version-min=10.5";
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F1369210A84C5CA003D8FB7 /* Build configuration list for PBXNativeTarget "dcraw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F1369220A84C5CA003D8FB7 /* Debug */,
+				8F1369230A84C5CA003D8FB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F2175AD0ACDB7FC00B4E285 /* Build configuration list for PBXNativeTarget "Tests-Process" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F2175AE0ACDB7FC00B4E285 /* Debug */,
+				8F2175AF0ACDB7FC00B4E285 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F3319100D81D7F400A9F023 /* Build configuration list for PBXNativeTarget "Tests-ThreadConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F33190E0D81D7F400A9F023 /* Debug */,
+				8F33190F0D81D7F400A9F023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FC68F230AA4EE0700F85985 /* Build configuration list for PBXNativeTarget "Tests-Appli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FC68F240AA4EE0700F85985 /* Debug */,
+				8FC68F250AA4EE0700F85985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD46CDF0DD3040000766CE1 /* Build configuration list for PBXNativeTarget "LynkeosCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD46CE00DD3040000766CE1 /* Debug */,
+				8FD46CE10DD3040000766CE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD578DB0DE36F50004AAC5A /* Build configuration list for PBXAggregateTarget "Help" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FD578D90DE36F2D004AAC5A /* Debug */,
+				8FD578DA0DE36F2D004AAC5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDAEEFF0A840E3A00672703 /* Build configuration list for PBXNativeTarget "FITS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDAEF000A840E3A00672703 /* Debug */,
+				8FDAEF010A840E3A00672703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FDAEF080A840E5300672703 /* Build configuration list for PBXNativeTarget "RAW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FDAEF090A840E5300672703 /* Debug */,
+				8FDAEF0A0A840E5300672703 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FED91380A932A8100746C7D /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FED91390A932A8100746C7D /* Debug */,
+				8FED913A0A932A8100746C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FED915E0A937B8C00746C7D /* Build configuration list for PBXNativeTarget "FFmpeg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FED915F0A937B8C00746C7D /* Debug */,
+				8FED91600A937B8C00746C7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Lynkeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "Lynkeos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

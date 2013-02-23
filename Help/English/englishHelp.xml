@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<localization>English</localization>
+<destination>Lynkeos help</destination>
+<embed>YES</embed>
+<help xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>
+<file name="help_contents">
+<title>Lynkeos help</title>
+<xsl:template match="//div[@class='floatright']">
+<xsl:copy>
+   <xsl:apply-templates select="@*"/>
+   <xsl:attribute name="class">center</xsl:attribute>
+   <xsl:apply-templates select="node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+<noindex/>
+</file>
+<file name="help_intro">
+<title>Introduction to Lynkeos</title>
+<description>A brief description of Lynkeos</description>
+</file>
+<file name="help_changes">
+<title>Lynkeos changes since version 1</title>
+</file>
+<file name="help_install">
+<title>Installing Lynkeos</title>
+<description>How to install Lynkeos</description>
+<xsl:template match="//a[@href='help_tutorial.html']">
+<xsl:copy>
+   <xsl:apply-templates select="@*"/>
+   <xsl:attribute name="href">https://sourceforge.net/apps/mediawiki/lynkeos/index.php?title=Help:Tutorial</xsl:attribute>
+   <xsl:attribute name="target">_top</xsl:attribute>
+   <xsl:apply-templates select="node()"/>
+</xsl:copy>
+</xsl:template>
+</file>
+<file name="help_concepts">
+<title>Lynkeos concepts</title>
+<description>An explanation of some signal processing concepts used in Lynkeos</description>
+</file>
+<file name="help_reference">
+<title>Lynkeos reference</title>
+<stripTOC/>
+</file>
+<file name="help_ref_docwindow">
+<title>Lynkeos document window</title>
+<description>General description of the document window</description>
+<xsl:template match="//img[@align='right']">
+<xsl:copy>
+<xsl:attribute name="align">center</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+</file>
+<file name="help_ref_listframe">
+<title>Lynkeos List frame</title>
+<description>Description of the list frame display and actions</description>
+</file>
+<file name="help_ref_imageframe">
+<title>Lynkeos Image frame</title>
+<description>Description of the image frame and its controls</description>
+</file>
+<file name="help_ref_toolsframe">
+<title>Tools frame</title>
+<description>Description of the tools frame</description>
+<xsl:template match="//img[@align='right']">
+<xsl:copy>
+<xsl:attribute name="align">center</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+</file>
+<file name="help_ref_listtab">
+<title>List tool</title>
+<description>Description of the images list building tool</description>
+</file>
+<file name="help_ref_aligntab">
+<title>Align tool</title>
+<description>Description of the alignment tool</description>
+</file>
+<file name="help_ref_analyzetab">
+<title>Analyze tool</title>
+<description>Description of the image analysis and autoselect tools</description>
+</file>
+<file name="help_ref_stacktab">
+<title>Stack tool</title>
+<description>Description of the image stacking tool</description>
+</file>
+<file name="help_ref_deconvolution">
+<title>Deconvolution tool</title>
+<description>Description of the deconvolution tool</description>
+</file>
+<file name="help_ref_lucyrichardson">
+<title>Lucy Richardson deconvolution tool</title>
+<description>Description of the Lucy Richardson deconvolution tool</description>
+</file>
+<file name="help_ref_wavelet">
+<title>Wavelet filter tool</title>
+<description>Description of the Wavelet filter tool</description>
+</file>
+<file name="help_ref_unsharp">
+<title>Unsharp mask tool</title>
+<description>Description of the Unsharp mask tool</description>
+</file>
+<file name="help_ref_procstack">
+<title>Process stack tool</title>
+<description>Description of the Process stack tool</description>
+</file>
+<file name="help_ref_chromalign">
+<title>Chromatic align tool</title>
+<description>Description of the chromatic align tool</description>
+</file>
+<file name="help_ref_chromalevels">
+<title>Levels and gamma tool</title>
+<description>Description of the levels and gamma tool</description>
+</file>
+<file name="help_ref_prefwindow">
+<title>Preferences window</title>
+<description>Description of the preferences window</description>
+</file>
+<file name="help_troubleshooting">
+<title>Troubleshooting</title>
+<description>What to do if you encounter some problems</description>
+</file>
+<file name="help_GPL">
+<title>GNU General Public License - GNU Project - Free Software Foundation (FSF)</title>
+<description>GNU General Public License</description>
+<noindex/>
+</file>
+</help>
+</xml>

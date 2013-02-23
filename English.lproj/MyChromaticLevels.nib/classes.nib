@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {changeGammaStep = id; changeLevel = id; changeLevelStep = id; }; 
+            CLASS = MyChromaticLevelsView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_blackGammaSteppers" = NSMatrix; 
+                "_blackGammaTextFields" = NSMatrix; 
+                "_gammaStep" = NSComboBox; 
+                "_levelStep" = NSComboBox; 
+                "_levelsNames" = NSMatrix; 
+                "_levelsSliders" = NSMatrix; 
+                "_panel" = NSView; 
+                "_planeNames" = NSMatrix; 
+                "_whiteSteppers" = NSMatrix; 
+                "_whiteTextFields" = NSMatrix; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {CLASS = SMDoubleSliderCell; LANGUAGE = ObjC; SUPERCLASS = NSSliderCell; }
+    ); 
+    IBVersion = 1; 
+}

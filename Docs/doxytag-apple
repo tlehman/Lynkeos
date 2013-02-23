@@ -1,0 +1,72 @@
+#!/bin/bash
+
+function write_tags
+{
+   cd "$basedoc"
+
+   echo "<?xml version='1.0' encoding='ISO-8859-1' standalone='yes'?>"
+   echo "<tagfile>"
+
+   for d in $docdirs
+   do
+      for f in $(find $d -name Reference.html)
+      do
+         awk '
+function compound( kind )
+{
+   if ( match( $0, /title="[^"]*"/) )
+   {
+      cl = substr($0, RSTART+7, RLENGTH-8);
+      print "<compound kind=\"" kind "\" objc=\"yes\">" ;
+      if ( kind == "protocol" )
+         print "<name>" cl "-p</name>" ;
+      else
+         print "<name>" cl "</name>" ;
+      print "<filename>" FILENAME "</filename>" ;
+      inCompound = 1;
+   }
+}
+
+function inherit( trail )
+{
+   if ( inCompound &&
+        match( $0, /logicalPath="\/\/apple_ref\/occ\/cl\/[^"]*"/) )
+   {
+      cl = substr($0, RSTART+32, RLENGTH-33);
+      print( "  <base>" cl "</base>" );
+   }   
+}
+
+BEGIN { inCompound = 0 }
+END \
+{
+   if ( inCompound )
+      print "</compound>"; 
+   inCompound = 0;
+}
+/<a name="\/\/apple_ref\/occ\/cl\// { compound( "class" ) }
+/<a name="\/\/apple_ref\/occ\/cat\// { compound( "category" ) }
+/<a name="\/\/apple_ref\/occ\/intf\// { compound( "protocol" ) }
+/^from:.*logicalPath="\/\/apple_ref\/occ\/cl\// { inherit( "" ) }
+' $f
+
+      done
+   done
+
+   echo "</tagfile>"
+}
+
+if [ $# -lt 3 ]
+then
+   echo "Usage $0 tagfile base dir [dir ...]"
+   exit 1
+fi
+
+export tagfile=$1
+shift
+export basedoc="$1"
+shift
+export docdirs=$*
+
+echo -n > $tagfile
+write_tags >> $tagfile

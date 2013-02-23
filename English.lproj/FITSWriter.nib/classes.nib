@@ -1,0 +1,18 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                cancelParams = id; 
+                changeBits = id; 
+                changeCompression = id; 
+                confirmParams = id; 
+            }; 
+            CLASS = FITSWriter; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {"_cfgPanel" = NSPanel; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

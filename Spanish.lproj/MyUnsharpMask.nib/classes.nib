@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {gainChange = id; gradientChange = id; radiusChange = id; }; 
+            CLASS = MyUnsharpMaskView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_gainSlider" = NSSlider; 
+                "_gainText" = NSTextField; 
+                "_gradientButton" = NSButton; 
+                "_panel" = NSView; 
+                "_progress" = NSProgressIndicator; 
+                "_radiusSlider" = NSSlider; 
+                "_radiusText" = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

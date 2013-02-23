@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {radiusChange = id; thresholdChange = id; }; 
+            CLASS = MyDeconvolutionView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_panel" = NSView; 
+                "_progress" = NSProgressIndicator; 
+                "_radiusSlider" = NSSlider; 
+                "_radiusText" = NSTextField; 
+                "_thresholdSlider" = NSSlider; 
+                "_thresholdText" = NSTextField; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

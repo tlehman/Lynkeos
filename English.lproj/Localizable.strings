@@ -1,0 +1,202 @@
+/*
+//  Lynkeos
+//  $Id: Localizable.strings 434 2008-08-11 20:13:29Z j-etienne $
+//
+//  Created by Jean-Etienne LAMIAUD on Sun June 27, 2004.
+//  Copyright (c) 2003-2008. Jean-Etienne LAMIAUD
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+// 
+*/
+
+/* Add image action */
+"Add image" = "Add";
+
+/* List menu title */
+"ListMenu" = "Lists management";
+
+/* List tool title */
+"ListTool" = "Lists";
+
+/* List tooltip */
+"ListTip" = "Manage the list of images/movies";
+
+/* Align tool */
+"Align" = "Align";
+
+/* Align tooltip */
+"AlignTip" = "Align the selected images";
+
+/* Analysis menu */
+"AnalyseMenu" = "Sharpness analysis";
+
+/* Analysis tool */
+"AnalyseTool" = "Analyse";
+
+/* Analysis tooltip */
+"AnalysisTip" = "Analyse image sharpness";
+
+/* Deconvolution tool */
+"Deconvolution" = "Deconvolution";
+
+/* Deconvolution tooltip */
+"DeconvolutionTip" = "Easy sharpening of the image";
+
+/* Unsharp mask tool */
+"UnsharpMask" = "Unsharp mask";
+
+/* Unsharp mask tooltip */
+"UnsharpMaskTip" = "Enhance short scale contrast";
+
+/* Wavelet transform menu */
+"WaveletMenu" = "Wavelet transform";
+
+/* Wavelet transform tool */
+"WaveletTool" = "Wavelet";
+
+/* Wavelet transform tooltip */
+"WaveletTip" = "Acts on \"frequency layers\" in the image";
+
+/* Wavelet frequency display */
+"WaveletFreq" = "Frequ.";
+
+/* Wavelet period display */
+"WaveletPeriod" = "Pixels";
+
+/* Lucy/Richardson menu */
+"LucyRichardson" = "Lucy Richardson";
+
+/* Lucy/Richardson tool */
+"LucyRichardsonTool" = "LucyRichardson";
+
+/* Lucy/Richardson tooltip */
+"LucyRichardsonTip" = "Iterative deconvolution algorithm";
+
+/* Process stack menu title */
+"ProcessStackMenu" = "Process stack";
+
+/* Process stack tool title */
+"ProcessStackTool" = "Processings";
+
+/* Process Stack tooltip */
+"ProcessStackTip" = "Stack of processings for one image";
+
+/* Process stack add menu title */
+"AddProcess" = "--Add a processing--";
+
+/* Chromatic align menu title */
+"ChromaAlignMenu" = "Chromatic alignment";
+
+/* Chromatic align tool title */
+"ChromaAlignTool" = "Chroma align";
+
+/* Chromatic align tooltip */
+"ChromaAlignTip" = "Correction of chromatic dispersion";
+
+/* Cannot add alert panel title */
+"CannotAddTitle" = "Cannot add image/movie";
+
+/* Red plane name */
+"RedPlane" = "Red";
+
+/* Green plane name */
+"GreenPlane" = "Green";
+
+/* Blue plane name */
+"BluePlane" = "Blue";
+
+/* Chromatic Levels menu title */
+"ChromaLevelsMenu" = "Levels and Gamma";
+
+/* Chromatic Levels tool title */
+"ChromaLevelsTool" = "Levels";
+
+/* Chromatic Levels tooltip */
+"ChromaLevelsTip" = "Set the levels and gamma correction for each color";
+
+/* Name of "levels" line */
+"LevelsNames" = "Levels";
+
+/* Cannot add alert panel text */
+"CannotAddText" = "You can not use this image/movie since you are using dark frames or flat fields, and it is not the same size as your previous images or movies";
+
+/* Cannot lock alert panel title */
+"CannotLockTitle" = "Cannot use dark frame or flat field";
+
+/* Cannot lock alert panel text */
+"CannotLockText" = "You can not use dark frames or flat fields since your images/movies are of differing sizes";
+
+/* Reference image action */
+"Change reference image" = "Change reference image";
+
+/* Delete image action */
+"Delete image" = "Delete";
+
+/* Message of lost file alert panel message */
+"FilesNotFound" = "The following files could not be found\n";
+
+/* Lost file alert panel title */
+"LostFile" = "LostFile";
+
+/* First line of bad file alert message */
+"BadFile" = "Error opening file :\n%@\nMaybe it is not an image nor a movie.";
+
+/* Bad format file alert panel title */
+"BadFileTitle" = "File opening error";
+
+/* Save image window title */
+"Save image" = "Save image";
+
+/* Stack */
+"Stack" = "Stack";
+
+/* Stack menu */
+"StackMenu" = "Stack images";
+
+/* Stack tool */
+"StackTool" = "Stack";
+
+/* Stack tooltip */
+"StackTip" = "Stack all the selected and aligned images";
+
+/* Stop button */
+"Stop" = "Stop";
+
+/* Deprecated format alert panel title */
+"DeprecatedFormat" = "Deprecated file format";
+
+/* Deprecated format text */
+"DeprecatedFormatText" = "The file you are opening is using a deprecated format that will not be supported in future releases.\nYou should re-save it, in order to be able to use this file later.";
+
+/* Stack alert title */
+"CalibrationNotReadyTitle" = "Calibration frames are not stacked";
+
+/* Stack alert text */
+"CalibrationNotReadyText" = "You have added dark frames and/or flat fields without stacking them. If you continue, the stack operation will be uncalibrated.\nYou should first stack the dark frames and flat field before stacking the images.";
+
+/* Continue button */
+"Continue" = "Continue";
+
+/* Hide list menu */
+"Hide list" = "Hide list";
+
+/* Show list menu */
+"Show list" = "Show list";
+
+/* Detach process menu */
+"Detach process" = "Detach process";
+
+/* Attach process menu */
+"Attach process" = "Attach process";

@@ -1,0 +1,203 @@
+/*
+//  Lynkeos
+//  $Id: Localizable.strings 453 2008-09-21 00:12:39Z j-etienne $
+//
+//  Created by Jean-Etienne LAMIAUD on Sun June 27, 2004.
+//  Copyright (c) 2003-2008. Jean-Etienne LAMIAUD
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+// 
+*/
+
+/* Add image action */
+"Add image" = "Ajouter";
+
+/* List menu title */
+"ListMenu" = "Gestion des listes";
+
+/* List tool title */
+"ListTool" = "Listes";
+
+/* List tooltip */
+"ListTip" = "Gère les listes d'images/séquences";
+
+/* Align tool */
+"Align" = "Aligner";
+
+/* Align tooltip */
+"AlignTip" = "Aligne les images sélectionnées";
+
+/* Analysis menu */
+"AnalyseMenu" = "Analyse du \"piqué\"";
+
+/* Analysis tool */
+"AnalyseTool" = "Analyse";
+
+/* Analysis tooltip */
+"AnalysisTip" = "Analyse le \"piqué\" des images";
+
+/* Deconvolution tool */
+"Deconvolution" = "Déconvolution";
+
+/* Deconvolution tooltip */
+"DeconvolutionTip" = "Augmente facilement le \"piqué\" d'une image";
+
+/* Unsharp mask tool */
+"UnsharpMask" = "Masque flou";
+
+/* Unsharp mask tooltip */
+"UnsharpMaskTip" = "Augmente le contraste à petite échelle";
+
+/* Wavelet transform menu */
+"WaveletMenu" = "Transformation par ondelettes";
+
+/* Wavelet transform tool */
+"WaveletTool" = "Ondelette";
+
+/* Wavelet transform tooltip */
+"WaveletTip" = "Traite les \"couches de fréquences\" de l'image";
+
+/* Wavelet frequency display */
+"WaveletFreq" = "Fréqu.";
+
+/* Wavelet period display */
+"WaveletPeriod" = "Pixels";
+
+/* Lucy/Richardson menu */
+"LucyRichardson" = "Lucy Richardson";
+
+/* Lucy/Richardson tool */
+"LucyRichardsonTool" = "LucyRichardson";
+
+/* Lucy/Richardson tooltip */
+"LucyRichardsonTip" = "Algorithme itératif de déconvolution";
+
+
+/* Process stack menu title */
+"ProcessStackMenu" = "Pile des traitements";
+
+/* Process stack tool title */
+"ProcessStackTool" = "Traitements";
+
+/* Process Stack tooltip */
+"ProcessStackTip" = "Pile des traitements d'une image";
+
+/* Process stack add menu title */
+"AddProcess" = "-Nouveau traitement-";
+
+/* Chromatic align menu title */
+"ChromaAlignMenu" = "Alignement chromatique";
+
+/* Chromatic align tool title */
+"ChromaAlignTool" = "Chroma.";
+
+/* Chromatic align tooltip */
+"ChromaAlignTip" = "Correction de la dispersion chromatique";
+
+/* Red plane name */
+"RedPlane" = "Rouge";
+
+/* Green plane name */
+"GreenPlane" = "Vert";
+
+/* Blue plane name */
+"BluePlane" = "Bleu";
+
+/* Chromatic Levels menu title */
+"ChromaLevelsMenu" = "Niveaux et Gamma";
+
+/* Chromatic Levels tool title */
+"ChromaLevelsTool" = "Niveaux";
+
+/* Chromatic Levels tooltip */
+"ChromaLevelsTip" = "Règle les niveaux et la correctiond de gamma pour chaque couleur";
+
+/* Name of "levels" line */
+"LevelsNames" = "Niveaux";
+
+/* Cannot add alert panel title */
+"CannotAddTitle" = "Impossible d'ajouter une image/sequence";
+
+/* Cannot add alert panel text */
+"CannotAddText" = "Vous ne pouvez pas utiliser cette image/séquence car vous utilisez des images thermiques ou de champs, et elle n'est pas de la même taille que vos précédentes images/séquences";
+
+/* Cannot lock alert panel title */
+"CannotLockTitle" = "Impossible d'utiliser des images thermiques ou de champs";
+
+/* Cannot lock alert panel text */
+"CannotLockText" = "Vous ne pouvez pas utiliser d'images de champ ou thermiques car vos images/séquences ne sont pas toutes de la même taille";
+
+/* Reference image action */
+"Change reference image" = "Changer l'image de référence";
+
+/* Delete image action */
+"Delete image" = "Effacer";
+
+/* First line of lost file alert panel message */
+"FilesNotFound" = "Les fichiers suivants n'ont pas été trouvés\n";
+
+/* Lost file alert panel title */
+"LostFile" = "Fichiers perdus";
+
+/* First line of bad file alert message */
+"BadFile" = "Il y a eu une erreur à l'ouverture de :\n%@\nCe n'est peut être pas une image ni une séquence.";
+
+/* Bad format file alert panel title */
+"BadFileTitle" = "Erreur d'ouverture de fichier";
+
+/* Save image window title */
+"Save image" = "Enregistrer l'image";
+
+/* Stack tool */
+"Stack" = "Accumuler";
+
+/* Stack menu */
+"StackMenu" = "Accumuler les images";
+
+/* Stack tool */
+"StackTool" = "Accumuler";
+
+/* Stack tooltip */
+"StackTip" = "Accumule toutes les images sélectionnées et alignées";
+
+/* Stop button */
+"Stop" = "Stop";
+
+/* Deprecated format alert panel title */
+"DeprecatedFormat" = "Format de fichier désuet";
+
+/* Deprecated format text */
+"DeprecatedFormatText" = "Ce fichier utilise un format qui ne sera plus supporté dans les versions futures.\nVous devriez le réenregistrer afin d'être capable d'utiliser ce fichier plus tard.";
+
+/* Stack alert title */
+"CalibrationNotReadyTitle" = "Trames de calibration non accumulées";
+
+/* Stack alert text */
+"CalibrationNotReadyText" = "Vous avez ajouté des trames thermiques et/ou de champs sans les accumuler. Si vous continuez, l'opération d'accumulation sera non calibrée.\nVous devriez d'abord accumuler les trames de calibration avant d'accumuler les images.";
+
+/* Continue button */
+"Continue" = "Continuer";
+
+/* Hide list menu */
+"Hide list" = "Cacher la liste";
+
+/* Show list menu */
+"Show list" = "Afficher la liste";
+
+/* Detach process menu */
+"Detach process" = "Détacher le traitement";
+
+/* Attach process menu */
+"Attach process" = "Attacher le traitement";

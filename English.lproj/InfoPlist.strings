@@ -1,0 +1,27 @@
+/*
+// Localized versions of Info.plist keys
+// $Id: InfoPlist.strings 506 2011-03-26 18:40:46Z j-etienne $
+//
+//  Copyright (c) 2003-2008. Jean-Etienne LAMIAUD
+//
+// This program is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+//
+*/
+
+CFBundleName = "Lynkeos";
+CFBundleShortVersionString = "Lynkeos version 2.5";
+CFBundleGetInfoString = "Lynkeos version 2.5, Copyright 2003-2011 J-E. Lamiaud";
+NSHumanReadableCopyright = "Copyright 2003-2011 J-E. Lamiaud.";
+CFBundleHelpBookName = "Lynkeos help";

@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                addOneFrequency = id; 
+                algorithmChange = id; 
+                deleteOneFrequency = id; 
+                freqChange = id; 
+                freqDisplayChange = id; 
+                levelChange = id; 
+                numberOfFreqChange = id; 
+                progressionChange = id; 
+                progressionStepChange = id; 
+                selectChange = id; 
+            }; 
+            CLASS = MyWaveletView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_addFreqButton" = NSButton; 
+                "_algorithmPopup" = NSPopUpButton; 
+                "_deleteFreqButton" = NSMatrix; 
+                "_freqDisplaySwitch" = NSButton; 
+                "_freqMatrix" = NSMatrix; 
+                "_levelSliderMatrix" = NSMatrix; 
+                "_levelTextMatrix" = NSMatrix; 
+                "_numberOfFreqStep" = NSStepper; 
+                "_numberOfFreqText" = NSTextField; 
+                "_panel" = NSView; 
+                "_progrStepText" = NSTextField; 
+                "_progress" = NSProgressIndicator; 
+                "_progressionPopup" = NSPopUpButton; 
+                "_selectMatrix" = NSMatrix; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }
+    ); 
+    IBVersion = 1; 
+}

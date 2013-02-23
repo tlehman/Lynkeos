@@ -1,0 +1,196 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\fs24 \cf0 3 Avril 2011: Livraison V2.5\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Ajout de variantes d'accumulation "r\'e9jection sigma" et "extrema" (2271899)\
+\'95	Ajout d'une pr\'e9f\'e9rence RAW pour la rotation automatique de l'image, ou pas.\
+\'95	Fix of plugins help display under OS X 10.6 (3268012)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+18 D\'e9cembre 2008: Livraison V2.4\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction de l'affichage d'images TIFF sur Intel (2127078)\
+\'95	Support des images TIFF en repr\'e9sentation flottante (2216462),\
+\'95	Ajout d'une s\'e9lection/d\'e9selection des traitements d'image dans la fen\'eatre de pile des traitements (2248076),\
+\'95	Implementation d'un cache des traitements d'image,\
+\'95	Refonte de l'encha\'eenement des traitements,\
+\'95	Correction d'un bug d'affichage lors du passage vers/depuis les trames de calibration,\
+\'95	Am\'e9lioration du traitement des exceptions dans les "threads",\
+\'95	Correction de la compatibilit\'e9 de lecture des fichiers ant\'e9rieurs \'e0 la V2.3,\
+\'95	Acc\'e8s \'e0 la fen\'eatre de traitement par le menu "Fen\'eatre",\
+\'95	Optimisation du rafra\'eechissement d'affichage,\
+\'95	Acc\'e8s \'e0 l'aide des greffons (plugins),\
+\'95	Facteurs de zoom ind\'e9pendants pour les modes de liste et de r\'e9sultat.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+28 Septembre 2008: Livraison V2.3\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Ajout de l'algorithme de l'Observatoire Europ\'e9en Austral (ESO) \'e0 l'outil d'ondelettes,\
+\'95	Parallelisation (pour multiproc/multicoeur) et vectorisation (pour Altivec/SSE) de la plupart des traitements d'image,\
+\'95	Correction de la lecture des fichiers TIFF sur Intel (2127078),\
+\'95	Correction d'une fuite m\'e9moire \'e0 la fermeture du document (1975332),\
+\'95	Correction d'un plantage en essayant de sauver une image de liste non modifi\'e9e (1928841),\
+\'95	Cr\'e9ation d'un "framework " LynkeosCore pour permettre le d\'e9vellopement de greffon externes de traitement d'image,\
+\'95	Correction d'un plantage lorsqu'une exception est lev\'e9e dans une "thread" de traitement,\
+\'95	Suppression des fichiers temporaires RAW \'e0 la fin de l'application,\
+\'95	D\'e9tection des fichiers RAW manquants \'e0 l'ouverture du document,\
+\'95	Ajout de pr\'e9f\'e9rences pour la conversion RAW,\
+\'95	Correction de la sauvegarde des tailles de colonne dans le document,\
+\'95	Suppression de la ligne de niveaux et contraste "rouge" pour une image monochrome,\
+\'95	Il est maintenant possible de r\'e9gler les niveaux et le contraste d'une image de la liste,\
+\'95	Correction d'une erreur des valeurs de pixel min et max d'une image apr\'e8s certaines op\'e9rations,\
+\'95	Correction d'une erreur de lecture du seuil de qualit\'e9 dans les documents pr\'e9 V2.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+1er Mai 2008: Livraison V2.2\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction d'un plantage sur certain basculements en mode liste (1928672),\
+\'95	Correction d'un probl\'e8me d'ordre des octets dans le lecteur RAW, qui emp\'eachait son utilisation en architecture Intel (1925582),\
+\'95	Correction d'un rafra\'eechissement d'image manquant dans l'outil d'accumulation (1885959),\
+\'95	Ajout de mises \'e0 jour de l'image dans la "pile des traitements" (1885960),\
+\'95	Correction d'un probl\'e8me d'affichage des niveaux des ondelettes apr\'e8s ouverture du document (1885958),\
+\'95	Correction de l'impossibilit\'e9 de sauver une image d'une liste (1928841),\
+\'95	Ajout d'un outil de correction de la dispersion chromatique (1096730),\
+\'95	Ajout d'ascenseurs aux panneaux d'alerte (1067012),\
+\'95	Les URLs sont d\'e9sormais sauv\'e9es relativement au document, ce qui permet de d\'e9placer les images et les s\'e9quences avec le document vers une autre dossier, ou de les graver sur un CD (1929412),\
+\'95	Ajout de r\'e9glages pour le noir, blanc et gamma, pour chaque plan de couleur.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+23 Mars 2008: Livraison V2.1\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction d'un probl\'e8me d'accumulation qui faisait planter l'application pour certaines configurations (1901691),\
+\'95	Correction de la mise \'e0 jour de l'image pendant les traitements de liste (1922938),\
+\'95	Mise \'e0 jour des types de fichiers RAW (1898526),\
+\'95	Correction de la gestion du curseur "montre" (1210430),\
+\'95	Correction de quelques fuites m\'e9moires,\
+\'95	Impl\'e9mentation d'un cache pour les images de s\'e9quences, qui acc\'e9l\'e8re grandement la mise \'e0 jour de l'image,\
+\'95	Les s\'e9quences Quicktime en niveau de gris ne sont plus lues en RVB (ce qui permet maintenant de sauver le r\'e9sultat en FITS).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+3 F\'e9vrier 2008: Livraison V2.0\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction de l'enregistrement en format FITS de la version V2.0 (1869681),\
+\'95	Correction de quelques "plantages" de la version de d\'e9veloppement (1864269, 1860646, 1860644),\
+\'95	Correction de la cr\'e9ation de traitements d'image \'e0 l'int\'e9rieur de la fen\'eatre "Pile des traitements" (1862762),\
+\'95	Correction de la fermeture de la fen\'eatre pendant un traitement (1114333),\
+\'95	Impl\'e9mentation d'une protection optionnelle contre les alignements erron\'e9s (998921),\
+\'95	Correction de la fonction "Revenir \'e0 la version enregistr\'e9e" (1066998).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+27 D\'e9cembre 2007: Livraison V2.0-dev\
+	Version de d\'e9veloppement pour \'e9valuer la version 2.0 et signaler les bugs.\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Refonte du code de l'application,\
+\'95	Architecture \'e0 "greffon" (plug-in) pour les traitements d'image,\
+\'95	Ajout des filtres d'ondelette et d\'e9convolution de Lucy Richardson.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+3 Septembre 2006: Livraison V1.4\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Support des formats AVI et MPEG gr\'e2ce \'e0 la librairie FFmpeg,\
+\'95	Correction du d\'e9marrage sur G4 (1536026),\
+\'95	Quelques corrections suppl\'e9mentaire dans les plugins, d'image "brouill\'e9e"  (1535076),\
+\'95	Correction d'un probl\'e8me de chargement du plugin de lecture des formats RAW (1539190),\
+\'95	Ajout d'un message d'alerte si l'accumulation est lanc\'e9e sans que les images de calibration n'ait \'e9t\'e9 elles m\'eame accumul\'e9e (1207360),\
+\'95	R\'e9organisation de la fen\'eatre "A propos" (1067014),\
+\'95	R\'e9organisation, corrections et optimisation de la routine d'accumulation.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+7 Ao\'fbt 2006: Livraison V1.3-UB\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Application et plugins recompil\'e9 en "Universal binaries",\
+\'95	Localisation Espagnole par Laurence Bourcier-Huet,\
+\'95	Correction d'un "brouillage" de l'image trait\'e9e (1535076).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+29 Mai 2005: Livraison V1.3\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Architecture \'e0 composants (plugins) pour la lecture et l'enregistrement des formats de fichiers d'images/s\'e9quences,\
+\'95	Lecture \'e0 pleine r\'e9solution du format TIFF (1069798),\
+\'95	Enregistrement d'image en format TIFF 8 ou 16 bits,\
+\'95	Travail sur des images/s\'e9quences monochromes,\
+\'95	Addition LRGB pour combiner des images couleurs et monochrome,\
+\'95	Support du format FITS en lecture et enregistrement (n\'e9cessite l'installation de la librairie partag\'e9e CFITSIO) (1100700),\
+\'95	Support du format d'image RAW de la plupart des marques d'appareil photos num\'e9riques, en lecture (lente),\
+\'95	Echelle logarithmique pour les curseurs de rayon de l'onglet de traitement (1207372),\
+\'95	Correction d'un plantage lors de l'analyse sur un biprocesseur (1207368),\
+\'95	Am\'e9lioration du "scrolling" automatique dans le cadre image (1207375),\
+\'95	Correction de l'acc\'e8s aux menus (1067002).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+6 F\'e9vrier 2005: Livraison V1.2\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Les fichier peuvent d\'e9sormais \'eatre ajout\'e9s au document par glisser d\'e9poser (drag and drop) (1067016),\
+\'95	Utilisation de FFTW3 (Fastest Fourier Transform in the West version 3),  pour l'alignement, l'analyse spectrale et le traitement final. L'alignement est 1,4x plus rapide et le traitement de 1,4x \'e0 90x !\
+\'95	Optimisations multiprocesseur (1069795),
+\f1 \
+
+\f0 \'95	Quelques optimisations suppl\'e9mentaires (l'am\'e9lioration globale par rapport \'e0 la version 1.1 est d'environ 3x pour l'alignement/analyse/accumulation et jusqu'\'e0 100x pour le traitement, sur un G5 biprocesseur),\
+\'95	Correction d'un plantage lors de l'alignement de longue s\'e9quences (1090624),\
+\'95	Correction d'une grosse fuite m\'e9moire dans le code d'alignement (1095271),\
+\'95	Correction d'un "retournement" du rectangle de s\'e9lection lorsque la souris sort de la fen\'eatre (1067003),\
+\'95	Correction de l'affichage du fond altern\'e9 du cadre de liste (1067008),\
+\'95	Correction d'une erreur num\'e9rique dans le calcul d'entropie (1111778),
+\f1 \
+
+\f0 \'95	L'identifiant de "bundle" est maintenant "net.sourceforge.lynkeos".\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+17 D\'e9cembre 2004: Livraison V1.1\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Possibilit\'e9 d'accumuler les images de champs en monochrome (1068329),\
+\'95	Nouvelle m\'e9thode d'analyse, plus efficace, bas\'e9e sur l'entropie de l'image (1066984),\
+\'95	Prise en compte de la luminosit\'e9 globale de l'image dans l'analyse spectrale (1066984),\
+\'95	La mise en veille est empech\'e9e pendant l'alignement, l'analyse et l'accumulation (1069793),\
+\'95	Correction d'un bug lorsque l'on ajoute un "mauvais" fichier de s\'e9quence (1066983),\
+\'95	Correction d'un plantage lors de l'accumulation avec un grand rectangle de s\'e9l\'e9ction (1086655),\
+\'95	Correction d'un plantage lorsque l'on ajoute un grand nombre d'images en une fois (1066992),
+\f1 \
+
+\f0 \'95	Correction d'une fuite m\'e9moire dans le code de gestion des s\'e9quences (1072854),\
+\'95	Le rectangle de s\'e9lection n'est plus modifiable pour les images thermiques et de champs (1066997).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+4 Novembre 2004: Livraison V1.0\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Ajout de la gestion des images thermiques et/ou de champs,\
+\'95	Optimisation de l'alignement et de l'analyse (2 fois plus rapide),\
+\'95	Correction de la perte des niveaux blancs et noir enregistr\'e9s,\
+\'95	Correction d'un bug dans les localisations non anglaises qui revenaient parfois \'e0 l'anglais,\
+\'95	Ajout de la gestion de l'annulation pour l'ajout et l'effacement (pas encore tr\'e8s stable),\
+\'95	Ajout de commentaires de documentation HeaderDoc (avec support de Doxygen) dans le code.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+29 Juillet 2004 : Livraison V0.4\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Correction de "crashes" quand l'alignement ou l'analyse est lanc\'e9 sans que le carr\'e9 ne soit d\'e9fini,\
+\'95	Correction de l'impossibilit\'e9 de supprimer une s\'e9quence.\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+22 Juillet 2004 : Livraison V0.3\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Publication sur SourceForge,\
+\'95	Correction de la perte des actions des fl\'e8che gauche et droite,\
+\'95	Correction de la disparition du rectangle de s\'e9lection lors de l'accumulation,\
+\'95	Correction d'une absence de mise \'e0 jour de l'image trait\'e9e apr\'e8s accumulation.\
+\'95	Correction du "brouillage" de l'image trait\'e9e apr\'e8s changement du rectangle de s\'e9lection.\
+\'95	Correction d'un autre cas de "brouillage" d'une marge de l'image trait\'e9e lorsque le rectangle de s\'e9lection est pr\'e8s d'un bord.\
+\'95	Correction des niveaux du blanc et du noir, quelquefois invalides.\
+\'95	Optimisation quand aucun traitement n'est n\'e9cessaire.
+\f1\b \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+
+\f0\b0 \cf0 \
+10 Juillet 2004 : Livraison V0.2\
+\pard\tx560\tx860\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\li860\fi-280\ql\qnatural
+\cf0 \'95	Migration vers Xcode.\
+\'95	Support des recherches dans l'aide gr\'e2ce \'e0 l'indexation.\
+\'95	Correction de la perte de l'image trait\'e9e dans un document sauvegard\'e9.\
+\'95	Correction de l'oubli de marquer le document "\'e9dit\'e9" sur certaines actions.\
+\'95	Correction de la taille de la NSImage \'e0 sa cr\'e9ation (bien que cela n'ait aucun effet visible).\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\ql\qnatural
+\cf0 \
+20 Juin 2004 : Livraison initiale (V0.1)}

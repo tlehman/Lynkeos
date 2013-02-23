@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Delete HeaderDoc keywords useless for Doxygen 
+# (but keep line numbering intact)
+awk 'BEGIN { inspec = 0; }
+/\/\*!/ { inspec = 1; }
+/\*\// { inspec = 0; }
+/@function/  { if (inspec) { printf( "\n"); next; } }
+/@method/  { if (inspec) { printf( "\n"); next; } }
+
+{ print $0 }
+' $@

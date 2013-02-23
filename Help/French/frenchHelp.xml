@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+<localization>French</localization>
+<destination>Lynkeos help</destination>
+<embed>YES</embed>
+<help xmlns:xsl='http://www.w3.org/1999/XSL/Transform'>
+<file name="help_contents_fr">
+<title>Aide Lynkeos</title>
+<xsl:template match="//img[@align='right']">
+<xsl:copy>
+<xsl:attribute name="align">center</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+<noindex/>
+</file>
+<file name="help_intro_fr">
+<title>Introduction à Lynkeos</title>
+<description>Une brève description de Lynkeos</description>
+</file>
+<file name="help_changes_fr">
+<title>Changements de Lynkeos depuis la version 1</title>
+</file>
+<file name="help_install_fr">
+<title>Installer Lynkeos</title>
+<description>Comment installer Lynkeos</description>
+<xsl:template match="//a[@href='help_tutorial_fr.html']">
+<xsl:copy>
+<xsl:attribute name="href">https://sourceforge.net/apps/mediawiki/lynkeos/index.php?title=Help:Tutorial/fr</xsl:attribute>
+<xsl:attribute name="target">_top</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+</file>
+<file name="help_concepts_fr">
+<title>Concepts de Lynkeos</title>
+<description>Explication de quelques concepts de traitement du signal utilisés par Lynkeos</description>
+</file>
+<file name="help_reference_fr">
+<title>Référence Lynkeos</title>
+<stripTOC/>
+</file>
+<file name="help_ref_docwindow_fr">
+<title>Fenêtre de document</title>
+<description>Description générale de la fenêtre de document</description>
+<xsl:template match="//img[@align='right']">
+<xsl:copy>
+<xsl:attribute name="align">center</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+</file>
+<file name="help_ref_listframe_fr">
+<title>Cadre de liste</title>
+<description>Description de l'affichage et des actions du cadre de liste.</description>
+</file>
+<file name="help_ref_imageframe_fr">
+<title>Cadre image</title>
+<description>Description du cadre image et de ses contrôles</description>
+</file>
+<file name="help_ref_toolsframe_fr">
+<title>Cadre des outils</title>
+<description>Description du cadre des outils</description>
+<xsl:template match="//img[@align='right']">
+<xsl:copy>
+<xsl:attribute name="align">center</xsl:attribute>
+   <xsl:apply-templates select="@*|node()"/>
+</xsl:copy>
+</xsl:template>
+<stripTOC/>
+</file>
+<file name="help_ref_listtab_fr">
+<title>Outil de gestion des listes</title>
+<description>Description de l'outil de construction de la liste des images</description>
+</file>
+<file name="help_ref_aligntab_fr">
+<title>Outil d'alignement</title>
+<description>Description de l'outil d'alignement des images</description>
+</file>
+<file name="help_ref_analyzetab_fr">
+<title>Outil d'analyse</title>
+<description>Description de l'outil d'analyse des images et d'autosélection</description>
+</file>
+<file name="help_ref_stacktab_fr">
+<title>Outil d'accumulation</title>
+<description>Description de l'outil d'accumulation des images</description>
+</file>
+<file name="help_ref_deconvolution_fr">
+<title>Outil de déconvolution</title>
+<description>Description de l'outil de déconvolution</description>
+</file>
+<file name="help_ref_lucyrichardson_fr">
+<title>Outil de déconvolution de Lucy Richardson</title>
+<description>Description de l'outil de déconvolution de Lucy Richardson</description>
+</file>
+<file name="help_ref_wavelet_fr">
+<title>Ondelettes</title>
+<description>Description du filtre d'ondelettes</description>
+</file>
+<file name="help_ref_unsharp_fr">
+<title>Masque flou</title>
+<description>Description de l'outil de masque flou</description>
+</file>
+<file name="help_ref_procstack_fr">
+<title>Pile des traitements</title>
+<description>Description de la pile des traitements</description>
+</file>
+<file name="help_ref_chromalign_fr">
+<title>Alignement chromatique</title>
+<description>Description de l'alignement chromatique</description>
+</file>
+<file name="help_ref_chromalevels_fr">
+<title>Niveaux et gamma</title>
+<description>Description de l'outil de modification des niveaux et gamma</description>
+</file>
+<file name="help_ref_prefwindow_fr">
+<title>Fenêtre de préférences</title>
+<description>Description de la fenêtre des préférences</description>
+</file>
+<file name="help_troubleshooting_fr">
+<title>En cas de problème</title>
+<description>Que faire en cas de problème</description>
+</file>
+<file name="help_GPL">
+<title>GNU General Public License - GNU Project - Free Software Foundation (FSF)</title>
+<description>GNU General Public License</description>
+<noindex/>
+</file>
+</help>
+</xml>
