@@ -35,6 +35,10 @@
 
 /* Begin PBXBuildFile section */
 		621D982816D95A270072133E /* libcfitsio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982716D95A270072133E /* libcfitsio.dylib */; };
+		621D982A16D95B100072133E /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982916D95B100072133E /* libfftw3.a */; };
+		621D982C16D95B210072133E /* libfftw3_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982B16D95B210072133E /* libfftw3_threads.a */; };
+		621D982E16D95B2B0072133E /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982D16D95B2B0072133E /* libfftw3f.a */; };
+		621D983016D95B470072133E /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982F16D95B470072133E /* libfftw3f_threads.a */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
 		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
@@ -192,10 +196,6 @@
 		8FD46CFA0DD304FC00766CE1 /* LynkeosStandardImageBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEEAE0A8409F700672703 /* LynkeosStandardImageBuffer.m */; };
 		8FD46D020DD3054900766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
 		8FD46D520DD305E800766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
-		8FD46D570DD3066100766CE1 /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF540A84132300672703 /* libfftw3.a */; };
-		8FD46D580DD3066100766CE1 /* libfftw3_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF530A84132300672703 /* libfftw3_threads.a */; };
-		8FD46D590DD3066300766CE1 /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF560A84132300672703 /* libfftw3f.a */; };
-		8FD46D5A0DD3066400766CE1 /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDAEF550A84132300672703 /* libfftw3f_threads.a */; };
 		8FD46D680DD3075D00766CE1 /* LynkeosCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */; };
 		8FD46DBD0DD30EA400766CE1 /* corelation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FDAEE930A8409F700672703 /* corelation.m */; };
 		8FD573770D8AF50000D743CC /* MyCachePrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FD573750D8AF50000D743CC /* MyCachePrefs.m */; };
@@ -377,6 +377,10 @@
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		621D982716D95A270072133E /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = ../../../../usr/local/Cellar/cfitsio/3.310/lib/libcfitsio.dylib; sourceTree = "<group>"; };
+		621D982916D95B100072133E /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3.a; sourceTree = "<group>"; };
+		621D982B16D95B210072133E /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_threads.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3_threads.a; sourceTree = "<group>"; };
+		621D982D16D95B2B0072133E /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f.a; sourceTree = "<group>"; };
+		621D982F16D95B470072133E /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f_threads.a; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Lynkeos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lynkeos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F02EE9B12D9F3EA00679086 /* MyImageStacker_Extrema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageStacker_Extrema.h; path = Sources/MyImageStacker_Extrema.h; sourceTree = "<group>"; };
@@ -758,10 +762,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FD46D570DD3066100766CE1 /* libfftw3.a in Frameworks */,
-				8FD46D580DD3066100766CE1 /* libfftw3_threads.a in Frameworks */,
-				8FD46D590DD3066300766CE1 /* libfftw3f.a in Frameworks */,
-				8FD46D5A0DD3066400766CE1 /* libfftw3f_threads.a in Frameworks */,
+				621D982A16D95B100072133E /* libfftw3.a in Frameworks */,
+				621D982C16D95B210072133E /* libfftw3_threads.a in Frameworks */,
+				621D982E16D95B2B0072133E /* libfftw3f.a in Frameworks */,
+				621D983016D95B470072133E /* libfftw3f_threads.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +857,10 @@
 		2A37F4AAFDCFA73011CA2CEA /* Lynkeos */ = {
 			isa = PBXGroup;
 			children = (
+				621D982F16D95B470072133E /* libfftw3f_threads.a */,
+				621D982D16D95B2B0072133E /* libfftw3f.a */,
+				621D982B16D95B210072133E /* libfftw3_threads.a */,
+				621D982916D95B100072133E /* libfftw3.a */,
 				621D982716D95A270072133E /* libcfitsio.dylib */,
 				8FC626E40DE377ED009DF792 /* Help */,
 				8FED912E0A9329A700746C7D /* Doc */,
@@ -2421,11 +2429,13 @@
 				GCC_MODEL_TUNING = "";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/fftw/3.3.3/include/;
 				INFOPLIST_FILE = "LynkeosCore-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/usr/local/Cellar/fftw/3.3.3/lib,
 				);
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -2452,11 +2462,13 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/fftw/3.3.3/include/;
 				INFOPLIST_FILE = "LynkeosCore-Info.plist";
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					/usr/local/Cellar/fftw/3.3.3/lib,
 				);
 				OTHER_LDFLAGS = (
 					"-framework",
