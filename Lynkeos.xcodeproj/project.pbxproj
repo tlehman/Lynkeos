@@ -36,7 +36,7 @@
 /* Begin PBXBuildFile section */
 		621D982816D95A270072133E /* libcfitsio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982716D95A270072133E /* libcfitsio.dylib */; };
 		621D982A16D95B100072133E /* libfftw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982916D95B100072133E /* libfftw3.a */; };
-		621D982C16D95B210072133E /* libfftw3_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982B16D95B210072133E /* libfftw3_threads.a */; };
+		621D982C16D95B210072133E /* libavcodec.54.86.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982B16D95B210072133E /* libavcodec.54.86.100.dylib */; };
 		621D982E16D95B2B0072133E /* libfftw3f.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982D16D95B2B0072133E /* libfftw3f.a */; };
 		621D983016D95B470072133E /* libfftw3f_threads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 621D982F16D95B470072133E /* libfftw3f_threads.a */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
@@ -174,10 +174,10 @@
 		8FCBEB990E844E70008B7545 /* LynkeosFourierBufferTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBEB980E844E70008B7545 /* LynkeosFourierBufferTest.m */; };
 		8FCD24BD0AAA5CDC00925AC5 /* MyImageAligner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */; };
 		8FCD24BF0AAA5CDC00925AC5 /* MyProcessingThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */; };
-		8FCE16D00A94590E0039505F /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CE0A94590E0039505F /* libavcodec.dylib */; };
-		8FCE16D10A94590E0039505F /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CF0A94590E0039505F /* libavformat.dylib */; };
+		8FCE16D00A94590E0039505F /* libswscale.2.1.103.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CE0A94590E0039505F /* libswscale.2.1.103.dylib */; };
+		8FCE16D10A94590E0039505F /* libavformat.54.59.106.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16CF0A94590E0039505F /* libavformat.54.59.106.dylib */; };
 		8FCE16D50A9459350039505F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		8FCE16EA0A945BE80039505F /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16E90A945BE80039505F /* libavutil.dylib */; };
+		8FCE16EA0A945BE80039505F /* libavutil.52.13.100.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCE16E90A945BE80039505F /* libavutil.52.13.100.dylib */; };
 		8FCE16F20A945C270039505F /* FFmpeg.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8FED915C0A937B8B00746C7D /* FFmpeg.bundle */; };
 		8FCE6ED70DD89881008E69EC /* LynkeosProcessingDefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */; };
 		8FCE6F120DD89AC3008E69EC /* LynkeosLogFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F40FB850D256D8A00DC57A3 /* LynkeosLogFields.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -378,7 +378,7 @@
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		621D982716D95A270072133E /* libcfitsio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcfitsio.dylib; path = ../../../../usr/local/Cellar/cfitsio/3.310/lib/libcfitsio.dylib; sourceTree = "<group>"; };
 		621D982916D95B100072133E /* libfftw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3.a; sourceTree = "<group>"; };
-		621D982B16D95B210072133E /* libfftw3_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3_threads.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3_threads.a; sourceTree = "<group>"; };
+		621D982B16D95B210072133E /* libavcodec.54.86.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.54.86.100.dylib; path = ../../../../usr/local/Cellar/ffmpeg/1.1/lib/libavcodec.54.86.100.dylib; sourceTree = "<group>"; };
 		621D982D16D95B2B0072133E /* libfftw3f.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f.a; sourceTree = "<group>"; };
 		621D982F16D95B470072133E /* libfftw3f_threads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfftw3f_threads.a; path = ../../../../usr/local/Cellar/fftw/3.3.3/lib/libfftw3f_threads.a; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -576,9 +576,9 @@
 		8FCD24B80AAA5CDC00925AC5 /* MyImageAligner.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyImageAligner.m; path = Sources/MyImageAligner.m; sourceTree = "<group>"; };
 		8FCD24B90AAA5CDC00925AC5 /* MyProcessingThread.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = MyProcessingThread.h; path = Sources/MyProcessingThread.h; sourceTree = "<group>"; };
 		8FCD24BA0AAA5CDC00925AC5 /* MyProcessingThread.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = MyProcessingThread.m; path = Sources/MyProcessingThread.m; sourceTree = "<group>"; };
-		8FCE16CE0A94590E0039505F /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavcodec.dylib; sourceTree = "<absolute>"; };
-		8FCE16CF0A94590E0039505F /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavformat.dylib; sourceTree = "<absolute>"; };
-		8FCE16E90A945BE80039505F /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/local/lib/libavutil.dylib; sourceTree = "<absolute>"; };
+		8FCE16CE0A94590E0039505F /* libswscale.2.1.103.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.2.1.103.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libswscale.2.1.103.dylib; sourceTree = "<absolute>"; };
+		8FCE16CF0A94590E0039505F /* libavformat.54.59.106.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.54.59.106.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libavformat.54.59.106.dylib; sourceTree = "<absolute>"; };
+		8FCE16E90A945BE80039505F /* libavutil.52.13.100.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.52.13.100.dylib; path = /usr/local/Cellar/ffmpeg/1.1/lib/libavutil.52.13.100.dylib; sourceTree = "<absolute>"; };
 		8FCE6ED60DD89881008E69EC /* LynkeosProcessingDefs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = LynkeosProcessingDefs.m; path = Sources/LynkeosProcessingDefs.m; sourceTree = "<group>"; };
 		8FCEFCAC0CB234A600E417AF /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDeconvolution.nib; sourceTree = "<group>"; };
 		8FD0238F0BFB5207009AD1E0 /* MyImageAlignerPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImageAlignerPrefs.h; path = Sources/MyImageAlignerPrefs.h; sourceTree = "<group>"; };
@@ -763,7 +763,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				621D982A16D95B100072133E /* libfftw3.a in Frameworks */,
-				621D982C16D95B210072133E /* libfftw3_threads.a in Frameworks */,
+				621D982C16D95B210072133E /* libavcodec.54.86.100.dylib in Frameworks */,
 				621D982E16D95B2B0072133E /* libfftw3f.a in Frameworks */,
 				621D983016D95B470072133E /* libfftw3f_threads.a in Frameworks */,
 			);
@@ -793,9 +793,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FCE16D50A9459350039505F /* Cocoa.framework in Frameworks */,
-				8FCE16D00A94590E0039505F /* libavcodec.dylib in Frameworks */,
-				8FCE16D10A94590E0039505F /* libavformat.dylib in Frameworks */,
-				8FCE16EA0A945BE80039505F /* libavutil.dylib in Frameworks */,
+				8FCE16D00A94590E0039505F /* libswscale.2.1.103.dylib in Frameworks */,
+				8FCE16D10A94590E0039505F /* libavformat.54.59.106.dylib in Frameworks */,
+				8FCE16EA0A945BE80039505F /* libavutil.52.13.100.dylib in Frameworks */,
 				8F3FC5F30EBE0431004AC8F6 /* LynkeosCore.framework in Frameworks */,
 				8F27ACA112CA5FA100E2707F /* libswscale.dylib in Frameworks */,
 			);
@@ -821,9 +821,9 @@
 				8FDAEF560A84132300672703 /* libfftw3f.a */,
 				8FD46CDD0DD303FD00766CE1 /* LynkeosCore.framework */,
 				8FBF4DC70A841F5800CF7534 /* libcfitsio.dylib */,
-				8FCE16CE0A94590E0039505F /* libavcodec.dylib */,
-				8FCE16CF0A94590E0039505F /* libavformat.dylib */,
-				8FCE16E90A945BE80039505F /* libavutil.dylib */,
+				8FCE16CE0A94590E0039505F /* libswscale.2.1.103.dylib */,
+				8FCE16CF0A94590E0039505F /* libavformat.54.59.106.dylib */,
+				8FCE16E90A945BE80039505F /* libavutil.52.13.100.dylib */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -859,7 +859,7 @@
 			children = (
 				621D982F16D95B470072133E /* libfftw3f_threads.a */,
 				621D982D16D95B2B0072133E /* libfftw3f.a */,
-				621D982B16D95B210072133E /* libfftw3_threads.a */,
+				621D982B16D95B210072133E /* libavcodec.54.86.100.dylib */,
 				621D982916D95B100072133E /* libfftw3.a */,
 				621D982716D95A270072133E /* libcfitsio.dylib */,
 				8FC626E40DE377ED009DF792 /* Help */,
